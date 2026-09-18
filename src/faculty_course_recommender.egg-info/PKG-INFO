@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: faculty-course-recommender
+Version: 0.1.0
+Summary: An explainable faculty-module ranking and cross-department teaching collaboration system.
+Requires-Python: <3.13,>=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: joblib<2,>=1.4
+Requires-Dist: networkx<4,>=3.3
+Requires-Dist: numpy<3,>=1.26
+Requires-Dist: pandas<3,>=2.2
+Requires-Dist: pydantic<3,>=2.8
+Requires-Dist: pydantic-settings<3,>=2.4
+Requires-Dist: python-dotenv<2,>=1.0
+Requires-Dist: PyYAML<7,>=6.0
+Requires-Dist: rapidfuzz<4,>=3.9
+Requires-Dist: scikit-learn<2,>=1.5
+Requires-Dist: tenacity<10,>=9.0
+Provides-Extra: semantic
+Requires-Dist: sentence-transformers<6,>=3.0; extra == "semantic"
+Provides-Extra: api
+Requires-Dist: fastapi<1,>=0.115; extra == "api"
+Requires-Dist: uvicorn[standard]<1,>=0.30; extra == "api"
+Provides-Extra: ui
+Requires-Dist: streamlit<2,>=1.38; extra == "ui"
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8.0; extra == "dev"
+Requires-Dist: pytest-cov<8,>=5.0; extra == "dev"
+Requires-Dist: ruff<1,>=0.6; extra == "dev"
+
+# Faculty-Course Recommender
+
+An explainable recommendation system for matching academic staff expertise
+to university modules and identifying cross-departmental teaching
+collaboration opportunities.
+
+## Main functions
+
+- Rank academic staff for primary module delivery.
+- Recommend staff from other departments for collaborative lectures.
+- Use staff profiles, research interests, publications and teaching evidence.
+- Enrich publication evidence using available metadata links.
+- Construct an explainable knowledge graph.
+- Display shared topics, graph paths and written explanations.
+
+## Initial methods
+
+- TF-IDF and cosine similarity baseline.
+- Sentence-transformer semantic ranking.
+- Knowledge-graph-enhanced ranking.
+- Cross-department collaboration ranking.
+- Evidence-based explanation generation.
+
+## Interface
+
+The first interface allows users to select an existing course and module.
+Custom teaching-content entry is outside the first implementation.

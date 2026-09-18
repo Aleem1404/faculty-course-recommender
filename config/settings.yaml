@@ -1,0 +1,48 @@
+project:
+  name: faculty-course-recommender
+  version: 0.1.0
+  random_seed: 42
+
+paths:
+  staff_raw: data/raw/staff/university_faculty_profiles.json
+  courses_raw: data/raw/courses/brunel_courses_nested.json
+
+  interim_dir: data/interim
+  processed_dir: data/processed
+
+  publication_cache_dir: data/cache/publications
+  embedding_cache_dir: data/cache/embeddings
+  graph_cache_dir: data/cache/graph
+
+  recommendation_output_dir: data/outputs/recommendations
+  evaluation_output_dir: data/outputs/evaluation
+
+recommendation:
+  primary_top_k: 5
+  collaboration_top_k: 5
+  cross_department_only: true
+  allow_custom_teaching_content: false
+
+ranking:
+  enable_tfidf: true
+  enable_semantic: false
+  enable_graph_features: false
+  enable_cross_encoder: false
+
+enrichment:
+  enabled: false
+  cache_enabled: true
+  refresh_cache: false
+  request_timeout_seconds: 30
+
+graph:
+  implementation: networkx
+  cache_enabled: true
+
+ui:
+  module_selection_only: true
+  show_primary_ranking: true
+  show_collaboration_ranking: true
+  show_shared_topics: true
+  show_graph_paths: true
+  show_explanations: true

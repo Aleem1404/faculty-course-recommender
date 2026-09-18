@@ -1,0 +1,47 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linters
+.ruff_cache/
+
+# Environment values
+.env
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Raw and generated data
+data/raw/
+data/interim/
+data/processed/
+data/cache/
+data/outputs/
+
+# Machine learning artifacts
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.pt
+*.bin
+
+# Operating system files
+.DS_Store
+Thumbs.db
