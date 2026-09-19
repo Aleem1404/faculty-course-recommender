@@ -29,11 +29,21 @@ ranking:
   enable_graph_features: false
   enable_cross_encoder: false
 
+# enrichment:
+#   enabled: false
+#   cache_enabled: true
+#   refresh_cache: false
+#   request_timeout_seconds: 30
+
 enrichment:
-  enabled: false
+  enabled: true
   cache_enabled: true
   refresh_cache: false
   request_timeout_seconds: 30
+  request_delay_seconds: 0.25
+  max_retries: 4
+  crossref_base_url: https://api.crossref.org
+  crossref_batch_size: 10
 
 graph:
   implementation: networkx
