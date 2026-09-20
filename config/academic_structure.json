@@ -1,0 +1,246 @@
+{
+    "schema_version": "1.0",
+    "source": {
+        "institution": "Brunel University of London",
+        "source_type": "official_public_website",
+        "compiled_manually": true,
+        "compiled_date": "2026-09-20"
+    },
+    "colleges": {
+        "cedps": {
+            "name": "College of Engineering, Design and Physical Sciences",
+            "departments": {
+                "computer": {
+                    "name": "Computer Science",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/computer?filter=academic"
+                },
+                "design": {
+                    "name": "Brunel Design School",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/design?filter=academic"
+                },
+                "chemical": {
+                    "name": "Chemical Engineering",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/chemical?filter=academic"
+                },
+                "civil": {
+                    "name": "Civil and Environmental Engineering",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/civil?filter=academic"
+                },
+                "electronic": {
+                    "name": "Electronic and Electrical Engineering",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/electronic?filter=academic"
+                },
+                "mathematics": {
+                    "name": "Mathematics",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/mathematics?filter=academic"
+                },
+                "mechanical": {
+                    "name": "Mechanical and Aerospace Engineering",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/cedps/mechanical?filter=academic"
+                }
+            }
+        },
+        "bbs": {
+            "name": "Brunel Business School",
+            "departments": {
+                "business-analytics-marketing": {
+                    "name": "Business Analytics and Marketing",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/bbs/business-analytics-marketing?filter=academic"
+                },
+                "economics-finance-accounting": {
+                    "name": "Economics, Finance and Accounting",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/bbs/economics-finance-accounting?filter=academic"
+                },
+                "strategy-entrepreneurship-management": {
+                    "name": "Strategy, Entrepreneurship and Management",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/bbs/strategy-entrepreneurship-management?filter=academic"
+                }
+            }
+        },
+        "chmls": {
+            "name": "College of Health, Medicine and Life Sciences",
+            "departments": {
+                "health-sciences": {
+                    "name": "Department of Health Sciences",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/chmls/health-sciences?filter=academic",
+                    "divisions": {
+                        "health-sciences": {
+                            "name": "Global Public Health",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/clinical/Health-Sciences?filter=academic"
+                        },
+                        "clinical-sciences": {
+                            "name": "Health Sciences",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/clinical/Clinical-Sciences?filter=academic"
+                        },
+                        "nursing": {
+                            "name": "Nursing",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/clinical/nursing?filter=academic"
+                        },
+                        "occupational-therapy": {
+                            "name": "Occupational Therapy",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/clinical/Occupational-Therapy-and-Community-Nursing?filter=academic"
+                        },
+                        "physiotherapy": {
+                            "name": "Physiotherapy and Physician Associate",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/clinical/Physiotherapy-and-Physician-Associate?filter=academic"
+                        },
+                        "social-work": {
+                            "name": "Social Work",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/clinical/Social-Work?filter=academic"
+                        }
+                    }
+                },
+                "medical-school": {
+                    "name": "Brunel Medical School",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/chls/MedicalSchool?filter=academic"
+                },
+                "life-sciences": {
+                    "name": "Department of Life Sciences",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/chls/life?filter=academic",
+                    "divisions": {
+                        "bio-sciences": {
+                            "name": "Biosciences",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/life/Biosciences?filter=academic"
+                        },
+                        "environmental-sciences": {
+                            "name": "Environmental Sciences",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/life/Environmental-Sciences?filter=academic"
+                        },
+                        "life-sciences": {
+                            "name": "Life Sciences",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/life/Life-Sciences?filter=academic"
+                        },
+                        "psychology": {
+                            "name": "Psychology",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/life/Psychology?filter=academic"
+                        },
+                        "sport-health-and-exercise-sciences": {
+                            "name": "Sport, Health and Exercise Sciences",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/chls/life/Sport-Health-and-Exercise-Sciences?filter=academic"
+                        }
+                    }
+                }
+            }
+        },
+        "calss": {
+            "name": "College of Arts, Law and Social Sciences",
+            "departments": {
+                "arts-and-humanities": {
+                    "name": "Arts and Humanities",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/calss/arts?filter=academic",
+                    "divisions": {
+                        "digital-arts": {
+                            "name": "Digital Arts - Games",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/arts/Digital-Arts?filter=academic"
+                        },
+                        "english-and-creative-writing": {
+                            "name": "English and Creative Writing",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/arts/English?filter=academic"
+                        },
+                        "theatre": {
+                            "name": "Theatre, Music and Film/TV",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/arts/Theatre?filter=academic"
+                        },
+                        "transdisciplinary-studies": {
+                            "name": "Transdisciplinary Studies in Global Change",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/arts/Transdisciplinary-Studies-in-Global-Change?filter=academic"
+                        }
+                    }
+                },
+                "law": {
+                    "name": "Brunel Law School",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/calss/law?filter=academic"
+                },
+                "education": {
+                    "name": "Education",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/calss/education?filter=academic"
+                },
+                "social-and-political-sciences": {
+                    "name": "Social and Political Sciences",
+                    "staff_filter": "academic",
+                    "staff_url": "https://www.brunel.ac.uk/people/calss/social?filter=academic",
+                    "divisions": {
+                        "criminology": {
+                            "name": "Criminology and Criminal Justice studies",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/social/criminology?filter=academic"
+                        },
+                        "politics-and-history": {
+                            "name": "Politics and History",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/social/Politics?filter=academic"
+                        },
+                        "communication": {
+                            "name": "Social Science and Communications",
+                            "staff_filter": "academic",
+                            "staff_url": "https://www.brunel.ac.uk/people/calss/social/Communication?filter=academic"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "source_mappings": {
+        "staff_departments": {
+            "Health Sciences": [
+                "chmls/health-sciences"
+            ],
+            "Life Sciences": [
+                "chmls/life-sciences"
+            ]
+        },
+        "module_departments": {
+            "Department of Electronic and Computer Engineering": [
+                "cedps/computer",
+                "cedps/electronic"
+            ],
+            "Department of Social Sciences, Media and Communications": [
+                "calss/social-and-political-sciences",
+                "calss/social-and-political-sciences/communication"
+            ],
+            "Department of Economics, Finance and Accounting": [
+                "bbs/economics-finance-accounting"
+            ],
+            "Brunel Business School": [
+                "bbs"
+            ],
+            "Health Sciences": [
+                "chmls/health-sciences"
+            ],
+            "Life Sciences": [
+                "chmls/life-sciences"
+            ]
+        }
+    }
+}

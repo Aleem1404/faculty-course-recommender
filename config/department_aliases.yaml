@@ -1,0 +1,50 @@
+departments:
+  computer_science:
+    - Computer Science
+    - Department of Computer Science
+
+  law:
+    - Law
+    - Law School
+    - Brunel Law School
+
+  electronic_electrical_engineering:
+    - Electronic and Electrical Engineering
+    - Department of Electronic and Electrical Engineering
+    - Electronics and Electrical Engineering
+    - Electrical and Electronic Engineering
+
+  mathematics:
+    - Mathematics
+    - Department of Mathematics
+    - Mathematical Sciences
+
+  design:
+    - Design
+    - Department of Design
+    - Brunel Design School
+
+  business:
+    - Business
+    - Business School
+    - Brunel Business School
+
+  economics_finance:
+    - Economics and Finance
+    - Department of Economics and Finance
+
+  psychology:
+    - Psychology
+    - Department of Psychology
+
+  social_political_sciences:
+    - Social and Political Sciences
+    - Department of Social and Political Sciences
+
+  health_sciences:
+    - Health Sciences
+    - Department of Health Sciences
+
+  life_sciences:
+    - Life Sciences
+    - Department of Life Sciences
