@@ -13,6 +13,10 @@ from faculty_recommender.policy.hierarchy import (
     AcademicHierarchy,
 )
 
+from faculty_recommender.ranking.gate import (
+    gate_primary_recommendation,
+)
+
 from faculty_recommender.ranking.m2_primary import (
     SemanticScoreBundle,
 )
@@ -257,6 +261,8 @@ class M2HierarchyPrimaryRanker:
                     "module_hierarchy_unresolved"
                 ),
                 "review_required": True,
+                "diagnostics": {},
+                "gate_summary": {},
                 "recommendations": [],
             }
 
@@ -279,6 +285,8 @@ class M2HierarchyPrimaryRanker:
                     "module_missing_semantic_embedding"
                 ),
                 "review_required": True,
+                "diagnostics": {},
+                "gate_summary": {},
                 "recommendations": [],
             }
 
@@ -352,7 +360,7 @@ class M2HierarchyPrimaryRanker:
             )
         )
 
-        recommendations = [
+        ungated_recommendations = [
             self._candidate_record(
                 module_position=module_position,
                 staff_position=staff_position,
@@ -364,25 +372,105 @@ class M2HierarchyPrimaryRanker:
                 matching_paths,
                 _eligibility_reason,
             ) in enumerate(
-                eligible_candidates[:self.top_k],
+                eligible_candidates[: self.top_k * 3],
                 start=1,
             )
         ]
 
-        if recommendations:
-            if len(recommendations) >= self.top_k:
+        gated_recommendations = []
+        rejected_candidates = []
+        gate_reason_counts = Counter()
+
+        for recommendation in ungated_recommendations:
+            staff_id = recommendation["staff_id"]
+            staff_record = self.staff_by_id[staff_id]
+
+            gate_decision = gate_primary_recommendation(
+                module_record=module,
+                staff_record=staff_record,
+                recommendation=recommendation,
+            )
+
+            recommendation["gate"] = {
+                "passed": gate_decision.passed,
+                "reason": gate_decision.reason,
+                "diagnostics": gate_decision.diagnostics,
+            }
+
+            gate_reason_counts[
+                gate_decision.reason
+            ] += 1
+
+            if gate_decision.passed:
+                gated_recommendations.append(
+                    recommendation
+                )
+            else:
+                rejected_candidates.append({
+                    "staff_id": recommendation["staff_id"],
+                    "full_name": recommendation["full_name"],
+                    "position": recommendation.get("position"),
+                    "department_name": recommendation.get("department_name"),
+                    "college_name": recommendation.get("college_name"),
+                    "profile_url": recommendation.get("profile_url"),
+                    "recommendation_role": recommendation.get("recommendation_role"),
+                    "staff_hierarchy_paths": recommendation.get(
+                        "staff_hierarchy_paths",
+                        [],
+                    ),
+                    "matched_internal_paths": recommendation.get(
+                        "matched_internal_paths",
+                        [],
+                    ),
+                    "semantic_score": recommendation.get("semantic_score"),
+                    "field_scores": recommendation.get(
+                        "field_scores",
+                        {},
+                    ),
+                    "field_contributions": recommendation.get(
+                        "field_contributions",
+                        {},
+                    ),
+                    "top_evidence_field": recommendation.get(
+                        "top_evidence_field"
+                    ),
+                    "publication_count": recommendation.get(
+                        "publication_count",
+                        0,
+                    ),
+                    "enriched_publication_count": recommendation.get(
+                        "enriched_publication_count",
+                        0,
+                    ),
+                    "gate": recommendation["gate"],
+                })
+
+            if len(gated_recommendations) >= self.top_k:
+                break
+
+        for rank, recommendation in enumerate(
+            gated_recommendations,
+            start=1,
+        ):
+            recommendation["rank"] = rank
+
+        if gated_recommendations:
+            if len(gated_recommendations) >= self.top_k:
                 status = "hierarchy_internal_ranked"
             else:
                 status = "limited_hierarchy_internal_pool"
 
             review_required = (
-                len(recommendations) < self.top_k
+                len(gated_recommendations) < self.top_k
             )
         elif raw_internal_count == 0:
             status = "no_hierarchy_internal_staff"
             review_required = True
         elif eligible_before_embedding == 0:
             status = "no_eligible_hierarchy_staff"
+            review_required = True
+        elif eligible_candidates and not gated_recommendations:
+            status = "all_internal_candidates_failed_gate"
             review_required = True
         else:
             status = "no_hierarchy_staff_with_m2_evidence"
@@ -421,11 +509,26 @@ class M2HierarchyPrimaryRanker:
                 "fitted_internal_staff_count": len(
                     eligible_candidates
                 ),
+                "ungated_candidate_count": len(
+                    ungated_recommendations
+                ),
                 "returned_candidate_count": len(
-                    recommendations
+                    gated_recommendations
                 ),
             },
-            "recommendations": recommendations,
+            "gate_summary": {
+                "gate_reason_counts": dict(
+                    gate_reason_counts
+                ),
+                "passed_count": len(
+                    gated_recommendations
+                ),
+                "failed_count": len(
+                    rejected_candidates
+                ),
+            },
+            "rejected_candidates": rejected_candidates,
+            "recommendations": gated_recommendations,
         }
 
     def rank_all_modules(
@@ -447,6 +550,34 @@ class M2HierarchyPrimaryRanker:
             for result in results
         )
 
+        gate_reason_counts = Counter()
+        total_gate_passed = 0
+        total_gate_failed = 0
+
+        for result in results:
+            summary = result.get(
+                "gate_summary",
+                {},
+            )
+
+            for reason, count in (
+                summary.get(
+                    "gate_reason_counts",
+                    {},
+                ).items()
+            ):
+                gate_reason_counts[reason] += count
+
+            total_gate_passed += summary.get(
+                "passed_count",
+                0,
+            )
+
+            total_gate_failed += summary.get(
+                "failed_count",
+                0,
+            )
+
         return {
             "module_results": len(results),
             "status_counts": dict(
@@ -462,6 +593,11 @@ class M2HierarchyPrimaryRanker:
                 == "limited_hierarchy_internal_pool"
                 for result in results
             ),
+            "gate_failed_modules": sum(
+                result["decision_status"]
+                == "all_internal_candidates_failed_gate"
+                for result in results
+            ),
             "review_required_modules": sum(
                 result["review_required"]
                 for result in results
@@ -470,4 +606,11 @@ class M2HierarchyPrimaryRanker:
                 len(result["recommendations"])
                 for result in results
             ),
+            "gate": {
+                "passed_recommendations": total_gate_passed,
+                "failed_candidates": total_gate_failed,
+                "reason_counts": dict(
+                    gate_reason_counts
+                ),
+            },
         }

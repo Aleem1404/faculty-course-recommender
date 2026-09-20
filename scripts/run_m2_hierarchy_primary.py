@@ -148,7 +148,39 @@ def main() -> None:
         / "m2_hierarchy_primary_summary.json"
     )
 
+    gate_rejections_path = (
+        output_directory
+        / "m2_hierarchy_primary_gate_rejections.jsonl"
+    )
+
     write_jsonl(output_path, results)
+
+    gate_rejections = []
+
+    for result in results:
+        for rejected in result.get(
+            "rejected_candidates",
+            [],
+        ):
+            gate_rejections.append({
+                "module_id": result.get("module_id"),
+                "module_code": result.get("module_code"),
+                "module_title": result.get("module_title"),
+                "module_departments": result.get(
+                    "module_departments",
+                    [],
+                ),
+                "module_colleges": result.get(
+                    "module_colleges",
+                    [],
+                ),
+                **rejected,
+            })
+
+    write_jsonl(
+        gate_rejections_path,
+        gate_rejections,
+    )
 
     summary.update({
         "model": "M2-H",
@@ -156,6 +188,7 @@ def main() -> None:
         "semantic_model": score_bundle.model_name,
         "top_k": 5,
         "output_path": str(output_path),
+        "gate_rejections_path": str(gate_rejections_path),
     })
 
     summary_path.parent.mkdir(
