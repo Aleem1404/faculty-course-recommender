@@ -1,5 +1,6 @@
 from __future__ import annotations
-
+ 
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -10,6 +11,25 @@ from faculty_recommender.agents.base import (
     AgentResult,
     PipelineAgent,
 )
+
+
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+
+    records: list[dict[str, Any]] = []
+
+    with path.open(
+        "r",
+        encoding="utf-8",
+    ) as file:
+        for line in file:
+            if line.strip():
+                records.append(
+                    json.loads(line)
+                )
+
+    return records
 
 
 def load_jsonl_count(path: Path) -> int:
@@ -114,15 +134,69 @@ class MatchingAgent(PipelineAgent):
                     f"Produced {output_path.name}"
                 )
 
+        m2_module_results = 0
+        m3_module_results = 0
+
         if output_m2.exists():
+            m2_module_results = load_jsonl_count(output_m2)
             metrics[
                 "m2_module_results"
-            ] = load_jsonl_count(output_m2)
+            ] = m2_module_results
 
         if output_m3.exists():
+            m3_module_results = load_jsonl_count(output_m3)
             metrics[
                 "m3_module_results"
-            ] = load_jsonl_count(output_m3)
+            ] = m3_module_results
+
+        if m2_module_results > 0:
+            metrics["m3_coverage_rate"] = round(
+                m3_module_results / m2_module_results,
+                4,
+            )
+            metrics["m3_excluded_modules"] = (
+                m2_module_results - m3_module_results
+            )
+
+        module_topics_path = context.resolve(
+            "data",
+            "processed",
+            "graph",
+            "module_topics.jsonl",
+        )
+        staff_topics_path = context.resolve(
+            "data",
+            "processed",
+            "graph",
+            "staff_topics.jsonl",
+        )
+
+        module_topics = load_jsonl(module_topics_path)
+        staff_topics = load_jsonl(staff_topics_path)
+
+        non_empty_module_topics = sum(
+            1
+            for record in module_topics
+            if record.get("topic_names")
+        )
+
+        non_empty_staff_topics = sum(
+            1
+            for record in staff_topics
+            if record.get("topic_names")
+        )
+
+        if module_topics:
+            metrics["module_topic_coverage_rate"] = round(
+                non_empty_module_topics / len(module_topics),
+                4,
+            )
+
+        if staff_topics:
+            metrics["staff_topic_coverage_rate"] = round(
+                non_empty_staff_topics / len(staff_topics),
+                4,
+            )
 
         context.set_value(
             "matching_agent_summary",

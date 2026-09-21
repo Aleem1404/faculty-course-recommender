@@ -121,6 +121,28 @@ class GraphAgent(PipelineAgent):
             "non_empty_staff_topics"
         ] = non_empty_staff_topics
 
+        if module_topics:
+            metrics["module_topic_coverage_rate"] = round(
+                non_empty_module_topics / len(module_topics),
+                4,
+            )
+
+        if staff_topics:
+            metrics["staff_topic_coverage_rate"] = round(
+                non_empty_staff_topics / len(staff_topics),
+                4,
+            )
+
+        if "modules_with_graph_overlap" in kg_summary:
+            metrics["modules_with_graph_overlap"] = kg_summary[
+                "modules_with_graph_overlap"
+            ]
+
+        if "candidates_with_shared_topics" in kg_summary:
+            metrics["candidates_with_shared_topics"] = kg_summary[
+                "candidates_with_shared_topics"
+            ]
+
         context.set_value(
             "graph_agent_summary",
             metrics,
