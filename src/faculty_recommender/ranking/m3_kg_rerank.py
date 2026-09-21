@@ -7,6 +7,7 @@ from typing import Any
 
 from faculty_recommender.graph.graph_features import (
     compute_graph_features,
+    strongest_shared_topics,
 )
 
 
@@ -131,6 +132,10 @@ class M3KnowledgeGraphReranker:
         }
 
         if graph_features is None:
+            enriched["shared_topics"] = []
+            enriched["explanation"] = explanation.get(
+                "explanation_text", ""
+            )
             enriched["graph_features"] = {
                 "shared_topic_count": 0,
                 "shared_topics": [],
@@ -139,6 +144,17 @@ class M3KnowledgeGraphReranker:
                 "same_college": False,
             }
         else:
+            all_strongest = strongest_shared_topics(
+                module_topic_record=module_topic_record,
+                staff_topic_record=staff_topic_record,
+                top_n=len(graph_features.shared_topics),
+            )
+            enriched["shared_topics"] = [
+                item["topic"] for item in all_strongest
+            ]
+            enriched["explanation"] = explanation.get(
+                "explanation_text", ""
+            )
             enriched["graph_features"] = {
                 "shared_topic_count": (
                     graph_features.shared_topic_count

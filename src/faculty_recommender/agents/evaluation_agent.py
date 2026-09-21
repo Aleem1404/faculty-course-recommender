@@ -152,9 +152,14 @@ class EvaluationAgent(PipelineAgent):
             )
             metrics[
                 "case_studies_selected"
-            ] = case_summary.get(
-                "selected_case_studies",
-                0,
+            ] = (
+                case_summary.get(
+                    "selected_case_count"
+                )
+                or case_summary.get(
+                    "selected_case_studies"
+                )
+                or 0
             )
 
         if expert_summary_path.exists():

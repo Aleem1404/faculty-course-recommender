@@ -71,17 +71,23 @@ class ExplanationAgent(PipelineAgent):
             ):
                 recommendation_count += 1
 
-                explanation = recommendation.get(
-                    "explanation",
-                    ""
+                explanation = (
+                    recommendation.get("explanation")
+                    or recommendation.get(
+                        "graph_explanation", {}
+                    ).get("explanation_text")
+                    or ""
                 )
 
                 if explanation:
                     explanation_count += 1
 
-                shared_topics = recommendation.get(
-                    "shared_topics",
-                    []
+                shared_topics = (
+                    recommendation.get("shared_topics")
+                    or recommendation.get(
+                        "graph_features", {}
+                    ).get("shared_topics")
+                    or []
                 )
 
                 if shared_topics:

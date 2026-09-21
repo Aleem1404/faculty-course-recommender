@@ -356,6 +356,9 @@ def build_summary(
         "selected_case_count": len(
             selected_rows
         ),
+        "selected_case_studies": len(
+            selected_rows
+        ),
         "case_type_counts": (
             case_type_counts
         ),
