@@ -457,12 +457,13 @@ body {
   grid-template-columns: 420px 1fr;
   gap: 1.25rem;
   flex: 1;
-  min-height: 600px;
+  min-height: 750px;
 }
 
 @media (max-width: 1024px) {
   .explorer-grid {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 }
 
@@ -475,7 +476,8 @@ body {
   flex-direction: column;
   overflow: hidden;
   backdrop-filter: blur(16px);
-  max-height: calc(100vh - 280px);
+  height: calc(100vh - 170px);
+  min-height: 720px;
 }
 
 .list-header {
@@ -574,7 +576,8 @@ body {
   border-radius: var(--radius-xl);
   padding: 1.5rem;
   overflow-y: auto;
-  max-height: calc(100vh - 280px);
+  height: calc(100vh - 170px);
+  min-height: 720px;
   backdrop-filter: blur(16px);
 }
 
