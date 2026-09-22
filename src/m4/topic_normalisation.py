@@ -9,7 +9,7 @@ import re
 import unicodedata
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
 import numpy as np
 
@@ -38,6 +38,7 @@ DEFAULT_GENERIC_TOPICS = {
     "student",
     "students",
     "learning",
+    "learn",
     "lecture",
     "lectures",
     "seminar",
@@ -46,18 +47,27 @@ DEFAULT_GENERIC_TOPICS = {
     "topics",
     "knowledge",
     "skills",
+    "skill",
     "study",
     "studies",
     "introduction",
     "advanced topics",
     "fundamentals",
+    "fundamental",
     "principles",
+    "principle",
     "applications",
+    "application",
     "methods",
+    "method",
     "methodologies",
+    "methodology",
     "systems",
+    "system",
     "technology",
     "technologies",
+    "technique",
+    "techniques",
 }
 
 DEFAULT_STOPWORDS = {
@@ -86,31 +96,20 @@ DEFAULT_FIELD_CANDIDATES = [
     "topics",
     "topic_keywords",
     "keywords",
+    "research_keywords",
+    "topic_names",
     "extracted_topics",
     "staff_topics",
     "expertise_topics",
     "research_interests_topics",
 ]
 
-DEFAULT_TEXT_FIELD_CANDIDATES = [
-    "description",
-    "summary",
-    "overview",
-    "content",
-    "module_description",
-    "learning_outcomes",
-    "research_interests",
-    "expertise",
-    "specialisms",
-    "profile_text",
-    "biography",
-    "teaching_interests",
-]
-
 DEFAULT_RECORD_ID_FIELDS = [
-    "module_code",
+    "module_id",
     "staff_id",
+    "course_id",
     "id",
+    "module_code",
     "code",
     "slug",
     "url",
@@ -172,14 +171,20 @@ class TopicNormaliser:
         self.similarity_threshold = similarity_threshold
         self.min_topic_words = min_topic_words
         self.max_topic_words = max_topic_words
-        self.generic_topics = generic_topics or set(DEFAULT_GENERIC_TOPICS)
-        self.stopwords = stopwords or set(DEFAULT_STOPWORDS)
+        
+        raw_generic = generic_topics or DEFAULT_GENERIC_TOPICS
+        self.generic_topics = {w.strip().lower() for w in raw_generic if w.strip()}
+        
+        raw_stopwords = stopwords or DEFAULT_STOPWORDS
+        self.stopwords = {w.strip().lower() for w in raw_stopwords if w.strip()}
+        
         self.use_lemma = use_lemma
         self.spacy_model = spacy_model
         self.batch_size = batch_size
 
         self._embedding_model = None
         self._nlp = None
+        self._norm_cache: Dict[str, str] = {}
 
     def load_nlp(self):
         if not self.use_lemma:
@@ -293,18 +298,23 @@ class TopicNormaliser:
             return items
 
         if isinstance(value, dict):
+            topic_text = ""
             if "topic" in value:
                 topic_text = str(value["topic"]).strip()
-                weight = float(value.get("weight", 1.0))
-                if topic_text:
-                    items.append((topic_text, weight))
-                return items
-            if "label" in value:
+            elif "label" in value:
                 topic_text = str(value["label"]).strip()
-                weight = float(value.get("weight", 1.0))
-                if topic_text:
-                    items.append((topic_text, weight))
+            elif "name" in value:
+                topic_text = str(value["name"]).strip()
+
+            if topic_text:
+                raw_weight = value.get("weight", value.get("score", 1.0))
+                try:
+                    weight = float(raw_weight)
+                except (ValueError, TypeError):
+                    weight = 1.0
+                items.append((topic_text, weight))
                 return items
+
             for k, v in value.items():
                 if isinstance(v, (int, float)):
                     items.append((str(k).strip(), float(v)))
@@ -321,6 +331,12 @@ class TopicNormaliser:
         text = unicodedata.normalize("NFKD", text)
         text = text.encode("ascii", "ignore").decode("ascii")
         text = text.lower()
+        
+        # Protect common tech terms and languages before stripping symbols
+        text = re.sub(r"\bc\+\+\b|\bc\s*\+\+", "cpp", text)
+        text = re.sub(r"\bc#\b|\bc\s*#", "csharp", text)
+        text = re.sub(r"\.net\b", "dotnet", text)
+        
         text = text.replace("&", " and ")
         text = re.sub(r"[/|]", " ", text)
         text = re.sub(r"[_\-]+", " ", text)
@@ -329,8 +345,12 @@ class TopicNormaliser:
         return text
 
     def tokenise_and_normalise(self, text: str) -> str:
+        if text in self._norm_cache:
+            return self._norm_cache[text]
+
         cleaned = self.basic_clean(text)
         if not cleaned:
+            self._norm_cache[text] = ""
             return ""
 
         if self.use_lemma:
@@ -364,6 +384,7 @@ class TopicNormaliser:
 
         text_out = " ".join(tokens)
         text_out = self.normalise_whitespace(text_out)
+        self._norm_cache[text] = text_out
         return text_out
 
     def is_valid_topic(self, topic: str) -> bool:
@@ -380,13 +401,20 @@ class TopicNormaliser:
         if len(words) > self.max_topic_words:
             return False
 
-        if len(topic) < 3:
+        # Reject empty or single-character non-whitelisted strings
+        if len(topic) < 2:
             return False
 
+        # Reject pure single letters or single digits
+        if re.fullmatch(r"[a-z0-9]", topic):
+            return False
+
+        # Reject pure numbers
+        if re.fullmatch(r"\d+", topic):
+            return False
+
+        # Reject if all words are stopwords
         if all(w in self.stopwords for w in words):
-            return False
-
-        if re.fullmatch(r"[a-z]$", topic):
             return False
 
         return True
@@ -445,6 +473,8 @@ class TopicNormaliser:
         return all_candidates
 
     def embed_topics(self, topics: Sequence[str]) -> np.ndarray:
+        if not topics:
+            return np.empty((0, 384), dtype=np.float32)
         model = self.load_embedding_model()
         embeddings = model.encode(
             list(topics),
@@ -464,57 +494,69 @@ class TopicNormaliser:
         topic_to_canonical_id: Dict[str, str] = {}
         topic_to_similarity: Dict[str, float] = {}
 
-        centroids: List[np.ndarray] = []
-        clusters: List[List[str]] = []
-        cluster_source_types: List[set[str]] = []
+        if len(unique_topics) == 0:
+            return canonical_topics, topic_to_canonical_id, topic_to_similarity
+
+        dim = embeddings.shape[1]
+        
+        centroid_matrix = np.empty((0, dim), dtype=np.float32)
+        cluster_sums: List[np.ndarray] = []
         cluster_counts: List[int] = []
+        clusters: List[List[str]] = []
+        cluster_indices: List[List[int]] = []
 
         for idx, topic in enumerate(unique_topics):
-            vec = embeddings[idx]
+            vec = embeddings[idx]  # unit-normalized vector
 
-            if not centroids:
-                cluster_id = self.stable_topic_id(topic)
-                centroids.append(vec.copy())
-                clusters.append([topic])
-                cluster_source_types.append(set())
+            if len(clusters) == 0:
+                cluster_sums.append(vec.copy())
                 cluster_counts.append(1)
-                topic_to_canonical_id[topic] = cluster_id
-                topic_to_similarity[topic] = 1.0
+                clusters.append([topic])
+                cluster_indices.append([idx])
+                centroid_matrix = vec.reshape(1, dim)
                 continue
 
-            best_cluster_idx = -1
-            best_score = -1.0
-
-            for c_idx, centroid in enumerate(centroids):
-                score = self.cosine_similarity(vec, centroid)
-                if score > best_score:
-                    best_score = score
-                    best_cluster_idx = c_idx
+            # Vectorized cosine similarity: centroids and vec are both unit-normalized
+            scores = centroid_matrix @ vec
+            best_cluster_idx = int(np.argmax(scores))
+            best_score = float(scores[best_cluster_idx])
 
             if best_score >= self.similarity_threshold:
                 clusters[best_cluster_idx].append(topic)
+                cluster_indices[best_cluster_idx].append(idx)
                 cluster_counts[best_cluster_idx] += 1
-                centroids[best_cluster_idx] = (
-                    (centroids[best_cluster_idx] * (cluster_counts[best_cluster_idx] - 1) + vec)
-                    / cluster_counts[best_cluster_idx]
-                )
-                canonical_label = self.choose_canonical_label(clusters[best_cluster_idx])
-                cluster_id = self.stable_topic_id(canonical_label)
-                topic_to_canonical_id[topic] = cluster_id
-                topic_to_similarity[topic] = best_score
+                cluster_sums[best_cluster_idx] += vec
+                
+                # Re-normalize centroid vector
+                norm = np.linalg.norm(cluster_sums[best_cluster_idx])
+                if norm > 0:
+                    centroid_matrix[best_cluster_idx] = cluster_sums[best_cluster_idx] / norm
+                else:
+                    centroid_matrix[best_cluster_idx] = cluster_sums[best_cluster_idx]
             else:
-                cluster_id = self.stable_topic_id(topic)
-                centroids.append(vec.copy())
                 clusters.append([topic])
-                cluster_source_types.append(set())
+                cluster_indices.append([idx])
                 cluster_counts.append(1)
-                topic_to_canonical_id[topic] = cluster_id
-                topic_to_similarity[topic] = 1.0
+                cluster_sums.append(vec.copy())
+                centroid_matrix = np.vstack([centroid_matrix, vec.reshape(1, dim)])
 
+        # Post-clustering: calculate true similarities to final centroids & choose medoid labels
         for c_idx, members in enumerate(clusters):
-            canonical_label = self.choose_canonical_label(members)
+            final_centroid = centroid_matrix[c_idx]
+            member_idxs = cluster_indices[c_idx]
+            member_vecs = embeddings[member_idxs]
+            
+            member_sims = member_vecs @ final_centroid
+            
+            for m_topic, sim in zip(members, member_sims):
+                topic_to_similarity[m_topic] = float(sim)
+
+            canonical_label = self.choose_canonical_label(members, member_sims)
             cluster_id = self.stable_topic_id(canonical_label)
-            centroid = centroids[c_idx]
+
+            for member in members:
+                topic_to_canonical_id[member] = cluster_id
+
             canonical_topics.append(
                 CanonicalTopic(
                     topic_id=cluster_id,
@@ -523,21 +565,29 @@ class TopicNormaliser:
                     member_count=len(members),
                     source_types=[],
                     source_count=0,
-                    centroid_vector=centroid.tolist(),
+                    centroid_vector=final_centroid.tolist(),
                 )
             )
-
-            for member in members:
-                topic_to_canonical_id[member] = cluster_id
 
         canonical_topics.sort(key=lambda x: (-x.member_count, x.canonical_label))
         return canonical_topics, topic_to_canonical_id, topic_to_similarity
 
     @staticmethod
-    def choose_canonical_label(members: Sequence[str]) -> str:
-        members = list(members)
-        members.sort(key=lambda x: (len(x.split()), len(x), x))
-        return members[0]
+    def choose_canonical_label(members: Sequence[str], similarities: Optional[Sequence[float]] = None) -> str:
+        if not members:
+            return "topic"
+        if len(members) == 1 or similarities is None:
+            return sorted(members, key=lambda x: (len(x.split()), len(x), x))[0]
+
+        # Balance highest similarity to centroid with conciseness
+        scored = []
+        for member, sim in zip(members, similarities):
+            words = member.split()
+            score = sim - 0.02 * max(0, len(words) - 1)
+            scored.append((score, -len(member), member))
+        
+        scored.sort(reverse=True)
+        return scored[0][2]
 
     def build_outputs(
         self,
@@ -546,6 +596,9 @@ class TopicNormaliser:
         unique_topics = sorted({c.normalised_text for c in candidates})
         LOGGER.info("Unique normalised topics: %d", len(unique_topics))
 
+        if not unique_topics:
+            return [], [], {}
+
         embeddings = self.embed_topics(unique_topics)
         topic_vectors = {topic: embeddings[i] for i, topic in enumerate(unique_topics)}
 
@@ -553,13 +606,25 @@ class TopicNormaliser:
 
         canonical_by_id = {c.topic_id: c for c in canonical_topics}
 
-        source_types_by_canonical: Dict[str, set[str]] = {}
+        source_records_by_canonical: Dict[str, Set[str]] = {}
+        source_types_by_canonical: Dict[str, Set[str]] = {}
         assignments: List[TopicAssignment] = []
 
+        # Deduplicate per (source_record_id, canonical_topic_id) so each record has one clean assignment per topic
+        seen_record_canonical: Set[Tuple[str, str]] = set()
+
         for c in candidates:
-            canonical_id = topic_to_canonical_id[c.normalised_text]
+            canonical_id = topic_to_canonical_id.get(c.normalised_text)
+            if not canonical_id:
+                continue
             canonical = canonical_by_id[canonical_id]
             source_types_by_canonical.setdefault(canonical_id, set()).add(c.source_type)
+            source_records_by_canonical.setdefault(canonical_id, set()).add(c.source_record_id)
+
+            key = (c.source_record_id, canonical_id)
+            if key in seen_record_canonical:
+                continue
+            seen_record_canonical.add(key)
 
             assignments.append(
                 TopicAssignment(
@@ -571,17 +636,13 @@ class TopicNormaliser:
                     canonical_topic_id=canonical_id,
                     canonical_label=canonical.canonical_label,
                     source_weight=c.source_weight,
-                    similarity_to_canonical=topic_to_similarity.get(c.normalised_text, None),
+                    similarity_to_canonical=topic_to_similarity.get(c.normalised_text, 1.0),
                 )
             )
 
-        assignment_counts: Dict[str, int] = {}
-        for assignment in assignments:
-            assignment_counts[assignment.canonical_topic_id] = assignment_counts.get(assignment.canonical_topic_id, 0) + 1
-
         for c in canonical_topics:
             c.source_types = sorted(source_types_by_canonical.get(c.topic_id, set()))
-            c.source_count = assignment_counts.get(c.topic_id, 0)
+            c.source_count = len(source_records_by_canonical.get(c.topic_id, set()))
 
         return canonical_topics, assignments, topic_vectors
 
@@ -605,6 +666,9 @@ class TopicNormaliser:
 
         LOGGER.info("Module topic candidates kept: %d", len(module_candidates))
         LOGGER.info("Staff topic candidates kept: %d", len(staff_candidates))
+
+        if not module_candidates and not staff_candidates:
+            LOGGER.warning("No topic candidates were extracted! Verify input files and topic field names.")
 
         all_candidates = module_candidates + staff_candidates
         canonical_topics, assignments, vectors = self.build_outputs(all_candidates)
