@@ -1,0 +1,3665 @@
+[
+  {
+    "course_id": "course_c75ac82c587f488b",
+    "course_title": "Accountancy BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_dd7d4660fd958570",
+    "course_title": "Accounting and Business Management BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_3dfe8e36a4bd745c",
+    "course_title": "Accounting and Business Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8833e00a4c08744c",
+    "course_title": "Advanced Chemical Engineering (Hydrogen and Low Carbon Technologies) MSc",
+    "departments": [
+      "Department of Chemical Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_df99de3defca2526",
+    "course_title": "Advanced Clinical Practice (Cardiovascular Health) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_651cbe0c58d3365f",
+    "course_title": "Advanced Clinical Practice (Critical Care) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_57eccc38424ab37f",
+    "course_title": "Advanced Clinical Practice (Musculoskeletal Rehabilitation) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_c0cade07b3783cf9",
+    "course_title": "Advanced Clinical Practice (Neurological Rehabilitation) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1f7d8f3d7d0f9e85",
+    "course_title": "Advanced Clinical Practice (Occupational Therapy) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_f7eddf9108d12957",
+    "course_title": "Advanced Clinical Practice (Pelvic Health) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1e7cc558eb6cc971",
+    "course_title": "Advanced Clinical Practice CPD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['CPD']"
+  },
+  {
+    "course_id": "course_849699ec93c4c935",
+    "course_title": "Advanced Clinical Practice MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_148280144e284fd2",
+    "course_title": "Advanced Electronic and Electrical Engineering MSc",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_63288a98a7813cc1",
+    "course_title": "Advanced Engineering Design MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_46c96e83971fc0f1",
+    "course_title": "Advanced Manufacturing Systems MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_2502d9a8863af0b6",
+    "course_title": "Advanced Mechanical Engineering MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_4776fbf5e1ee5744",
+    "course_title": "Advanced Musculoskeletal Ultrasound Skills",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_b8ac664910fc44c0",
+    "course_title": "Advanced Powertrain and Fuels PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_b7601c3d8b10f296",
+    "course_title": "Advanced Professional Practice (APP) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1d2b92a765ea2e96",
+    "course_title": "Advanced Professional Practice (Cardiovascular Health) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_189cb0b951650381",
+    "course_title": "Advanced Professional Practice (Critical Care) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6e7dfc330b458a7d",
+    "course_title": "Advanced Professional Practice (Musculoskeletal Rehabilitation) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_75516d86efab4800",
+    "course_title": "Advanced Professional Practice (Neurological Rehabilitation) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_3c7915b2ee16fbf0",
+    "course_title": "Advanced Professional Practice (Pelvic Health) PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_7a1720a377097ffd",
+    "course_title": "Advertising and Communications MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_febd28d470c93073",
+    "course_title": "Aerospace Engineering BEng (Hons)",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_4ca0386aee79d1ed",
+    "course_title": "Aerospace Engineering MEng (Hons)",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_1bb8888b9c24dd18",
+    "course_title": "Aerospace Engineering MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_ac51a8894108f710",
+    "course_title": "Ageing Studies PhD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_02ef33a8ae2c6a86",
+    "course_title": "Anthropology and Sociology BSc (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_269dcc80d49b013b",
+    "course_title": "Anthropology BSc (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_e9c6b80b533fd61d",
+    "course_title": "Anthropology PhD",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_0aa787e0409e2261",
+    "course_title": "Antimicrobial Resistance MRes",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_c6696e0d4e35e836",
+    "course_title": "Art Psychotherapy MA",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_901498ee353d1934",
+    "course_title": "Artificial Intelligence for Brand Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_921c9c8a9ae0241b",
+    "course_title": "Artificial Intelligence MSc",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_896e6fe304ea900a",
+    "course_title": "Artificial Intelligence Strategy MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e060b45cc09753e7",
+    "course_title": "Artificial Intelligence, Law and Technology LLM",
+    "departments": [
+      "Brunel Law School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e35188f67776e179",
+    "course_title": "Arts and Health PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_44503ccd599ac766",
+    "course_title": "Automotive and Motorsport Engineering MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a6e97bf58e883d5e",
+    "course_title": "Automotive Engineering BEng (Hons)",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c4e74a82fbefd50b",
+    "course_title": "Automotive Engineering MEng",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_7e7a002f496670a1",
+    "course_title": "Banking and Finance BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_193a4493be687aa8",
+    "course_title": "Banking and Finance MSc",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_2bd45815f46e491d",
+    "course_title": "Biomedical Engineering PhD",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_1b13be94793cd848",
+    "course_title": "Biomedical Science (Biochemistry) BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_97e676352ccb234f",
+    "course_title": "Biomedical Science BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_d5a2815a19793ece",
+    "course_title": "Biosciences PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_b23ce08a9d1c41ad",
+    "course_title": "Building Services Engineering Management MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_08325a632184ced2",
+    "course_title": "Building Services Engineering MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_613f5d6a764ef749",
+    "course_title": "Building Services Engineering with Sustainable Energy MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_d4c95261c6239449",
+    "course_title": "Business Administration MBA",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_d9e047d6644bc0c0",
+    "course_title": "Business Analytics and Marketing Research PhD",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_1257c5ddaf084345",
+    "course_title": "Business and Management BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_1b9e6b29a50deb86",
+    "course_title": "Business Computing (eBusiness) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_52078ad152126a4d",
+    "course_title": "Business Computing (Human Computer Interaction) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_387fe7dde54fee42",
+    "course_title": "Business Computing (Social Media) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_0efa331dc27ba530",
+    "course_title": "Business Computing BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9b959fe6f8277791",
+    "course_title": "Business Finance MSc",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_afb36c0e484945dd",
+    "course_title": "Business Intelligence and Digital Marketing MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_7b2b2fc5baa26791",
+    "course_title": "Business Management with Entrepreneurship BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_af521b9da9b4feef",
+    "course_title": "Cancer Research MRes",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_51603dc1f6ba765a",
+    "course_title": "Cancer Research MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_fa74391825c25293",
+    "course_title": "Chemical Engineering BEng (Hons)",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_83fe6c0dcd382618",
+    "course_title": "Chemical Engineering MEng",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_0a4ec0e7d9151b96",
+    "course_title": "Chemical Engineering PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_60f3045dec274cdf",
+    "course_title": "Childhood, Youth and Education MSc",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_d013b96b56edf6b9",
+    "course_title": "Children, Youth and International Development MA",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6809fef491212b17",
+    "course_title": "Civil Engineering BEng (Hons)",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_467f3a5c68752371",
+    "course_title": "Civil Engineering MEng",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_180f8f21c95e8062",
+    "course_title": "Civil Engineering MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_42a0d91f34a869cf",
+    "course_title": "Civil Engineering PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_7b521148f2d2af1f",
+    "course_title": "Clinical Psychology MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6fc65681f8153f71",
+    "course_title": "Cognitive and Clinical Neuroscience MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e915015003c7ffce",
+    "course_title": "Cognitive and Clinical Neuroscience PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_ade457623443bf09",
+    "course_title": "Comedy Studies PhD",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_c6d4954985ca3199",
+    "course_title": "Computer Science (Artificial Intelligence) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_ceb456079565fa0e",
+    "course_title": "Computer Science (Cybersecurity) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_7fd0dce9765a5beb",
+    "course_title": "Computer Science (Digital Media and Games) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9fbf5cf6ffd73cea",
+    "course_title": "Computer Science (Network Computing) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9e1c841815e21f3c",
+    "course_title": "Computer Science (Software Engineering) BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_d628a536e7833bc9",
+    "course_title": "Computer Science BSc (Hons)",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_973f6e22570e1199",
+    "course_title": "Computer Science PhD",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_eb19367d72de9f0c",
+    "course_title": "Computer Systems Engineering BEng (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_375bb3417f0a4140",
+    "course_title": "Computer Systems Engineering PhD",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_9b1d4339439ed21f",
+    "course_title": "Contemporary Writing PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_874e1c78f13d3a56",
+    "course_title": "Creative Writing BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_bde3ce35e5d04b4a",
+    "course_title": "Creative Writing MA",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_9f02e9b44f482315",
+    "course_title": "Creative Writing PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_69d6a1e4be84512e",
+    "course_title": "Crime Science, Investigation and Intelligence MSc",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_bc0002e368c6b4ce",
+    "course_title": "Criminology BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_30234ccd9f8a6ef0",
+    "course_title": "Criminology MSc",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_2bd21921554724d3",
+    "course_title": "Criminology PhD",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_589c674a9329296d",
+    "course_title": "Culture and Evolution PhD",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_7a058ec22e815c93",
+    "course_title": "Data Science and Analytics MSc",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a42c699e0fe7c51c",
+    "course_title": "Data Science and Analytics MSc by Research",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_facb10ab1f1cebab",
+    "course_title": "Design and Branding Strategy MA",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1c81f0193da9a1bc",
+    "course_title": "Design BSc (Hons)",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_99266db690da15a6",
+    "course_title": "Design for Sustainability and Circular Economy MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_4508518e505453fb",
+    "course_title": "Design MDes",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_4d2d090201d74e67",
+    "course_title": "Design PhD",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_62617632f5182901",
+    "course_title": "Design Strategy and Innovation MA",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_9eb72f1a8d0d8d48",
+    "course_title": "Digital Business Analytics BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_6cf37362464b34e4",
+    "course_title": "Digital Design (3D Animation) MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_73048653006b1a2a",
+    "course_title": "Digital Design (Creative Artificial Intelligence) MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_c8689fd0d8202829",
+    "course_title": "Digital Design (Immersive Mixed Reality) MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6ef4be9d641ca661",
+    "course_title": "Digital Design (Motion Graphics) MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a16b3ef20a930a8a",
+    "course_title": "Digital Design and Branding MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e78f88b81ca8dcda",
+    "course_title": "Digital Design BSc (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_099bb089ed27adb3",
+    "course_title": "Digital Games Theory and Design MA",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_028386a5b71252dc",
+    "course_title": "Digital Media PhD",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_405d1a1ff5455bb5",
+    "course_title": "Dramatherapy MA",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8ebabc2711d720fc",
+    "course_title": "Economics and Accounting BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_5e7195cb5bf9ddb8",
+    "course_title": "Economics and Business Finance BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_e94cdaa2f64be31b",
+    "course_title": "Economics and Finance PhD",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_8ec7215a9f6176cf",
+    "course_title": "Economics and Management BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_64313d8a0d4632aa",
+    "course_title": "Economics and Mathematics with an Integrated Foundation Year",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate', 'Foundation']"
+  },
+  {
+    "course_id": "course_d4a98bd0d1ccc8f5",
+    "course_title": "Economics BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_15f730f670b4a2cd",
+    "course_title": "Economics, Finance and Accounting Research PhD",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_09804f2e06490eab",
+    "course_title": "Education BA (Hons)",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_8107757845bf0183",
+    "course_title": "Education EdD",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_f10eaeafadc6ce37",
+    "course_title": "Education MA",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_aa5b3c34e174c90b",
+    "course_title": "Education PhD",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_41b10ca78c710e95",
+    "course_title": "Electric Vehicle Systems MSc",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_9b664ce022f80310",
+    "course_title": "Electronic and Communications Engineering BEng (China) (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_cc88ac77d6edcdf7",
+    "course_title": "Electronic and Computer Engineering PhD",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_70e74d9f718aef79",
+    "course_title": "Electronic and Electrical Engineering BEng (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9c7146a91dc9a427",
+    "course_title": "Electronic and Electrical Engineering MEng",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_631cb64a8d237ddd",
+    "course_title": "Electronic and Electrical Engineering PhD",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_af373007765b5d0e",
+    "course_title": "Electronic Engineering BEng (Top Up) (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9a897496eb31a0a3",
+    "course_title": "Energy Efficient and Sustainable Technologies PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_890a3d14808cbc47",
+    "course_title": "Engineering Design PhD",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_b84bba8055394cd9",
+    "course_title": "Engineering Management MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_22e22fc0493b7e15",
+    "course_title": "Engineering Management PGCert",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate', 'Pre-Masters']"
+  },
+  {
+    "course_id": "course_5655b1ded2e180a5",
+    "course_title": "Engineering with an Integrated Foundation Year",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate', 'Foundation']"
+  },
+  {
+    "course_id": "course_b4059290e9dc4d34",
+    "course_title": "Engineering with Business BEng (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_b9dfd06ccc637340",
+    "course_title": "Engineering with Business MEng",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_303a28eef1dd8d2e",
+    "course_title": "English and History BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_699cf3e5e32555c6",
+    "course_title": "English BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_ac7e7c394a60793a",
+    "course_title": "English Literature MA",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a32dce28aafe8fb8",
+    "course_title": "English PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_bf3de38e1cc89c4c",
+    "course_title": "English with Creative Writing BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_4bbcb32fb5fc4764",
+    "course_title": "English@Brunel",
+    "departments": [
+      "Brunel Language Centre"
+    ],
+    "colleges": [
+      "Brunel Language Centre"
+    ],
+    "level": "['Pre-sessional']"
+  },
+  {
+    "course_id": "course_f407f8a0534b6fc8",
+    "course_title": "Enhanced Clinical Practice (Pelvic Health) PgCert",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1a58f0b24d2e846f",
+    "course_title": "Environment and Health PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_a7894cf239721581",
+    "course_title": "Environmental Management (Pollution) MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_9c3596353eeff55d",
+    "course_title": "Environmental Management (Resources and Waste Management) MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1be8dfe9d24afe2a",
+    "course_title": "Environmental Management (Sustainable Water Resources) MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_7eb10d718e517f18",
+    "course_title": "Environmental Management MRes",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e37ff86c4abc40d9",
+    "course_title": "Environmental Sciences MRes",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_7705bf67aa013b2b",
+    "course_title": "Environmental Sciences PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_83af2ba1f4c9a43d",
+    "course_title": "Film and Media Production BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_fcc5bbae2fc671c3",
+    "course_title": "Film and Television Studies and English BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_3d1cd62f09122292",
+    "course_title": "Film and Television Studies BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_b35a93e13ae9243a",
+    "course_title": "Film Production and Theatre BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_cf13c4b1d44dcf31",
+    "course_title": "Film Production BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c23db55c61c80df7",
+    "course_title": "Finance and Accounting BSc (Hons)",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_2fc4a1778184e294",
+    "course_title": "Finance and Accounting MSc",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_4203fd78a918e2b4",
+    "course_title": "Finance and Investment MSc",
+    "departments": [
+      "Department of Economics, Finance and Accounting"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_3510c272b0bbdf76",
+    "course_title": "Financial Markets CPD",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['CPD']"
+  },
+  {
+    "course_id": "course_9f8dd6ecd7312337",
+    "course_title": "Financial Mathematics BSc (Hons)",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_aea345dc18c95ed2",
+    "course_title": "Financial Mathematics MMath",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_494d3705fb993926",
+    "course_title": "Financial Mathematics MSc",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_d5595e196a251b52",
+    "course_title": "Flood and Coastal Engineering (with Infrastructure Design) MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_804e204b73a300b6",
+    "course_title": "Games Design and Creative Writing BA (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_66d550df9fa4cb0c",
+    "course_title": "Games Design BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_01ccf572927e287e",
+    "course_title": "Games Design PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_51ea2129ce94ed86",
+    "course_title": "Geography BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9f7252226ae57043",
+    "course_title": "Geography PhD",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_c33a6cbccd1af658",
+    "course_title": "Global Challenges BASc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_333b2d46c42281e0",
+    "course_title": "Global Challenges PhD",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_71bed37cab4f9a8f",
+    "course_title": "Global Healthcare Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_55d50079a59fc22c",
+    "course_title": "Global Supply Chain Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_b36bdff59c1fb50b",
+    "course_title": "Health Economics PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_1d6ee46b3113d359",
+    "course_title": "History and Human Geography BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_b63b5cf6be485c25",
+    "course_title": "History and International Relations BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_ae7f650be8d65dbc",
+    "course_title": "History BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_cea14d364ac8036d",
+    "course_title": "Human Geography and Anthropology BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_f9fcd0901307cb96",
+    "course_title": "Human Performance, Exercise and Rehabilitation PhD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_0b8d27625473d77d",
+    "course_title": "Human Resource Management BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_992ae2f6d6e2bf36",
+    "course_title": "Human Resource Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_de4cdcecf8af77ea",
+    "course_title": "Human-AI Interaction MSc",
+    "departments": [
+      "Department of Computer Science"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_59e3b02d230f1561",
+    "course_title": "IMechE approved distance learning modules",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['CPD']"
+  },
+  {
+    "course_id": "course_b81e158f06740b92",
+    "course_title": "Industrial Design BA (Hons)",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_fe2279e1d6bcb9c8",
+    "course_title": "Industrial Design MDes",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_85ff297abcc85294",
+    "course_title": "Infection and Antimicrobial Discovery MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e10e972c420e5a35",
+    "course_title": "Infection and Immunity MRes",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8aeda70b352de7db",
+    "course_title": "Integrated Product Design MSc",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_37f32b08a8211876",
+    "course_title": "Intellectual Property Law LLM",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e84f6584d1b8c460",
+    "course_title": "Intellectual Property Law Postgraduate Certificate",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_0bb04c5eb45cbacf",
+    "course_title": "Intelligence Analysis PgCert (Distance Learning)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a2d02a21a2a90bd5",
+    "course_title": "Intelligence and Security Studies MA",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8d54adb4d981e78c",
+    "course_title": "Intelligence and Security Studies PhD",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_40377e523a9a8e24",
+    "course_title": "International Arbitration LLM",
+    "departments": [
+      "Brunel Law School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_9d0a8bf2d6be9c67",
+    "course_title": "International Business and Entrepreneurship MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1248d681c745d5da",
+    "course_title": "International Business and Sustainability MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8b02f7c0ac923f46",
+    "course_title": "International Business BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_8a05690d86d8fefe",
+    "course_title": "International Business MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_da3f52f451e1e966",
+    "course_title": "International Commercial Law LLM",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_0013f9197f54c083",
+    "course_title": "International Development and Humanitarianism MSc",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_88c27a85ed684ab0",
+    "course_title": "International Financial Regulation and Corporate Law LLM",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_775921d261a33fe5",
+    "course_title": "International Human Rights Law LLM",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_3cbec723123f7a0a",
+    "course_title": "International Journalism MA",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_7cc0b0ef19e2b8d0",
+    "course_title": "International Politics BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_3fdaef6f1997c7c5",
+    "course_title": "International Relations and History BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_7d0cd083c2daf27b",
+    "course_title": "International Relations MA",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a5d152524c6342a5",
+    "course_title": "Journalism (Communication) BA (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_9571136260d7f70c",
+    "course_title": "Journalism (Politics) BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_3c312d4026a2dc42",
+    "course_title": "Journalism PhD",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_b96c927f18dfffbe",
+    "course_title": "Law (Graduate Entry) LLB (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_38f2b81edc7900d2",
+    "course_title": "Law LLB (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_ca04758561f6e8e0",
+    "course_title": "Law PhD",
+    "departments": [
+      "Brunel Law School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_64eefed1041971f9",
+    "course_title": "Law with Criminal Justice LLB (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_cd5533a5c1839ace",
+    "course_title": "Law with International Arbitration and Commercial Law LLB (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_683cc33fc75343c6",
+    "course_title": "Leadership in the Global Digital World MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_b2dbceca324a55c4",
+    "course_title": "Life Sciences BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c3a64e8aeb37a01a",
+    "course_title": "Luxury Marketing MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_1324f762eec10c95",
+    "course_title": "Magna Carta Institute PhD",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_efa5a346fc5ba936",
+    "course_title": "Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_bf77f1f80f765be7",
+    "course_title": "Management PhD",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_c62195d989889532",
+    "course_title": "Manufacturing and Enterprise Engineering PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_8b7b06e805e28f10",
+    "course_title": "Marketing and Consumer Analytics MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_94997cc12f76c05d",
+    "course_title": "Marketing BSc (Hons)",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_0e5dd8d87f377d97",
+    "course_title": "Marketing MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_92ac1377e0764a35",
+    "course_title": "Master of Laws (LLM Law)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_aa7bc45c62876ae6",
+    "course_title": "Master of Laws (LLM) with SQE 1 Preparation",
+    "departments": [
+      "Brunel Law School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_b6164d8ec2e51ecc",
+    "course_title": "Materials Characterisation and Processing PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_25a144f5308db9c8",
+    "course_title": "Materials Engineering PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_53312fbb1e5faf09",
+    "course_title": "Mathematics and Computing with Integrated Foundation Year",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate', 'Foundation']"
+  },
+  {
+    "course_id": "course_e205ed13848bd2df",
+    "course_title": "Mathematics BSc (Hons)",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_d3b6f81c6a1affca",
+    "course_title": "Mathematics for Data Science BSc (Hons)",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_d7bc17707f8daf79",
+    "course_title": "Mathematics MMath",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_fcfe8cc6e1f90be6",
+    "course_title": "Mathematics PhD",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_0418c76eb1144499",
+    "course_title": "Mathematics with Computer Science BSc (Hons)",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_fcad8288a0bfdef1",
+    "course_title": "Mechanical Engineering BEng (Hons)",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_cfb50c75b609843e",
+    "course_title": "Mechanical Engineering MEng",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_171d80cdbea660b1",
+    "course_title": "Mechanical Engineering PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_97553e4c7981a164",
+    "course_title": "Media and Communications (Media Practice) MSc",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_3a94689a60349048",
+    "course_title": "Media and Communications BSc (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_85bac34f06f6d765",
+    "course_title": "Media and Communications MSc",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_d3933198c8fc2067",
+    "course_title": "Media and Communications PhD",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_323ca96cbba394e9",
+    "course_title": "Medical Anthropology MSc",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_ffa696b124e866c3",
+    "course_title": "Medical Biosciences BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_35d82efafd48be08",
+    "course_title": "Medicine MBBS",
+    "departments": [
+      "Brunel Medical School"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_42d79b7c1c278cd4",
+    "course_title": "Metallurgy PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_dd79d93ff2d4dc38",
+    "course_title": "Micro-Nano Manufacturing PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_7f26a4ad7084f1e8",
+    "course_title": "Military and International History BA (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_8c7152c4f2e98e61",
+    "course_title": "Molecular Genetics MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8225cce5e8ff1344",
+    "course_title": "Musculoskeletal Ultrasound Foot and Ankle PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8aa0fb97e9733fe8",
+    "course_title": "Musculoskeletal Ultrasound PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_cfb0c399fc8f068a",
+    "course_title": "Music (Production) BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_0f50f57da023d5d6",
+    "course_title": "Music BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_1006521e336733da",
+    "course_title": "Music PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_a31a88b6f73faac9",
+    "course_title": "Nursing (Adult) BSc (Hons)",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_1c005abd2a6aace3",
+    "course_title": "Nursing (Child Health) BSc (Hons)",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_7cbb47754f63f5da",
+    "course_title": "Nursing (Mental Health) BSc (Hons)",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_3f1d9df6a75eb605",
+    "course_title": "Nursing CPD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['CPD']"
+  },
+  {
+    "course_id": "course_43bf30b04821d6e1",
+    "course_title": "Occupational Therapy (Pre-registration) MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_27c42ce6ad43e76b",
+    "course_title": "Occupational Therapy (Pre-registration) MSci",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_1d696b6258105ab1",
+    "course_title": "Occupational Therapy BSc (Hons)",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_758f473e53f989e1",
+    "course_title": "Occupational Therapy PhD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_c64e579af1792abc",
+    "course_title": "PGCE in Primary Education (5-11 years) with recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e3b3151d1453312a",
+    "course_title": "PGCE in Secondary Education (English) with Recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_3b8ffeec59efe641",
+    "course_title": "PGCE in Secondary Education (Mathematics) with recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_8b44ab4567fb439b",
+    "course_title": "PGCE in Secondary Education (Physical Education) with Recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_2294d343c73e63fe",
+    "course_title": "PGCE in Secondary Education (Physics with Mathematics) with recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_120d3a61e6e2ce22",
+    "course_title": "PGCE in Secondary Education (Science with Biology) with recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_fee102f79346a4b5",
+    "course_title": "PGCE in Secondary Education (Science with Chemistry) with recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_4c5a2331cd02af96",
+    "course_title": "PGCE in Secondary Education (Science with Physics) with recommendation for QTS",
+    "departments": [
+      "Department of Education"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6fcc55148cf329db",
+    "course_title": "PhD without residence - Ahlia",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_c956a3be6386b72a",
+    "course_title": "Physical Activity and Exercise for Health MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6cb9bf464f8f0a98",
+    "course_title": "Physiotherapy (Pre-registration) MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_10f5692be371f9f4",
+    "course_title": "Physiotherapy BSc (Hons)",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_22cd5d6941a584bb",
+    "course_title": "Physiotherapy MSci",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_1253812dc9c407d2",
+    "course_title": "Physiotherapy PhD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_09bb5dc8d0d535e3",
+    "course_title": "Political Communication MSc",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_415f2905f97744b9",
+    "course_title": "Politics and History BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_fc5af9cbf391007d",
+    "course_title": "Politics and History PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_90b8c930aa44a6f4",
+    "course_title": "Politics and Sociology BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_ea493aebce2f317e",
+    "course_title": "Politics BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_dcf2843e44f4714f",
+    "course_title": "Pre-sessional English",
+    "departments": [
+      "Brunel Language Centre"
+    ],
+    "colleges": [
+      "Brunel Language Centre"
+    ],
+    "level": "['Pre-sessional']"
+  },
+  {
+    "course_id": "course_18dde3430c344a45",
+    "course_title": "Pre-sessional for Brunel Pathway College",
+    "departments": [
+      "Brunel Language Centre"
+    ],
+    "colleges": [
+      "Brunel Language Centre"
+    ],
+    "level": "['Pre-sessional']"
+  },
+  {
+    "course_id": "course_eee23641e66a9f76",
+    "course_title": "Product Design Engineering BSc (Hons)",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_8375a61a49f24761",
+    "course_title": "Product Design Engineering MDes",
+    "departments": [
+      "Brunel Design School"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_249624c0991c3c59",
+    "course_title": "Project and Infrastructure Management MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_6ddb00c07d3c4174",
+    "course_title": "Project Management MSc",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_816da217e598ec5c",
+    "course_title": "Psychological Sciences (Conversion) MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_9d2e49bf84348a26",
+    "course_title": "Psychology (Sport, Health and Exercise) BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c7f6f6468aa5a2e4",
+    "course_title": "Psychology BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_ce530a8113e78f08",
+    "course_title": "Psychology PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_ddd4f6d19d86be75",
+    "course_title": "Public Health and Health Promotion MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_5857c90f341edeb7",
+    "course_title": "Public Health and Health Promotion PhD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_05088059dd4b7014",
+    "course_title": "Public Relations and Media Strategies MA",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_4c89dcf6ff4e0b28",
+    "course_title": "Registered Nurse (Adult) MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_46ccec8ed78a6207",
+    "course_title": "Registered Nurse (Child) MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_4eaacce1f7279608",
+    "course_title": "Registered Nurse (Mental Health) MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_38e36a0e65eb0d6a",
+    "course_title": "Renewable Energy Engineering MSc",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_2d97b9cb8924221d",
+    "course_title": "Resource Efficient Future Cities PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_83de29418db52d84",
+    "course_title": "Screen Media (Film and TV) PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_3854733652966aea",
+    "course_title": "Smart Power Networks PhD",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_d7a5c7260245d06a",
+    "course_title": "Social Anthropology MRes",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_d677fb696ef47254",
+    "course_title": "Social Work MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_b6ad33e5abc78a8e",
+    "course_title": "Social Work PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_08463947eb90a650",
+    "course_title": "Sociology (Digital Media) BSc (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_e61c7db893cfd29e",
+    "course_title": "Sociology and Communication PhD",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_05761441d30886de",
+    "course_title": "Sociology and Criminology BSc (Hons)",
+    "departments": [
+      "Department of Social and Political Sciences"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_b8c38f845d52e94b",
+    "course_title": "Sociology BSc (Hons)",
+    "departments": [
+      "Department of Social Sciences, Media and Communications"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c0ec3ac3e2e13010",
+    "course_title": "Specialist Community Public Health Nursing - Health Visiting, Occupational Health Nursing and School Nursing PgDip",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_3cad0a38b01a9904",
+    "course_title": "Sport and Exercise Psychology MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_c715b183f438ea7c",
+    "course_title": "Sport Performance Science MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_30c196796941aca6",
+    "course_title": "Sport, Health and Exercise Sciences (Physical Education, Coaching and Social Issues) BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_4e3e25c96adfd01f",
+    "course_title": "Sport, Health and Exercise Sciences BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c3c4e032083c46cd",
+    "course_title": "Sport, Health and Exercise Sciences PhD",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_2241750667de6ea2",
+    "course_title": "Sport, Health and Exercise Sciences with Business Studies BSc (Hons)",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_4cb9df76f13d1e10",
+    "course_title": "Statistics with Data Analytics MSc",
+    "departments": [
+      "Department of Mathematics"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_568c32f0d6db0b9f",
+    "course_title": "Strategy, Entrepreneurship and Global Management Research PhD",
+    "departments": [
+      "Brunel Business School"
+    ],
+    "colleges": [
+      "Brunel Business School"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_081d9f777fd64c80",
+    "course_title": "Structural Engineering MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a7d1ec9c1a07e480",
+    "course_title": "Structural Integrity PhD",
+    "departments": [
+      "Department of Mechanical and Aerospace Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_de942b56da81bd04",
+    "course_title": "Sustainability, Entrepreneurship and Design MSc",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_0e80fdab90ddb663",
+    "course_title": "Sustainable Electrical Power MSc",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_41c82e4284a77254",
+    "course_title": "Synthetic Biology PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_f75d3cb562d645d0",
+    "course_title": "Theatre and Creative Writing BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_8ef0f2c83312971d",
+    "course_title": "Theatre and English BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_4fb1862b7b85d549",
+    "course_title": "Theatre BA (Hons)",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_8d500a37634cced7",
+    "course_title": "Theatre PhD",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_39f69f8a275ee609",
+    "course_title": "Ultrasound for Musculoskeletal Practice PgCert, PgDip and MSc",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_5e63c450582cf0f6",
+    "course_title": "Ultrasound Guided Injection Therapy",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_802ff3e15ffa3ffe",
+    "course_title": "Ultrasound Guided Injection Therapy in the Foot and Ankle",
+    "departments": [
+      "Department of Health Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_a784615ddf8ebe20",
+    "course_title": "Visual Effects and Motion Graphics BSc (Hons)",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Undergraduate']"
+  },
+  {
+    "course_id": "course_c4c724b018604a32",
+    "course_title": "Wargaming and Resilience Planning MA",
+    "departments": [
+      "Department of Arts and Humanities"
+    ],
+    "colleges": [
+      "College of Arts, Law and Social Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_e7c2c5decfd8315f",
+    "course_title": "Water and Environmental Engineering MSc",
+    "departments": [
+      "Department of Civil and Environmental Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  },
+  {
+    "course_id": "course_f84caa656ebf9826",
+    "course_title": "Welfare, Health and Wellbeing PhD",
+    "departments": [
+      "Department of Life Sciences"
+    ],
+    "colleges": [
+      "College of Health, Medicine and Life Sciences"
+    ],
+    "level": "['PhD & Research']"
+  },
+  {
+    "course_id": "course_47ea8af50f27ca09",
+    "course_title": "Wireless and Computer Communication Networks MSc",
+    "departments": [
+      "Department of Electronic and Computer Engineering"
+    ],
+    "colleges": [
+      "College of Engineering, Design and Physical Sciences"
+    ],
+    "level": "['Postgraduate']"
+  }
+]

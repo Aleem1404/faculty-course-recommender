@@ -6,6 +6,7 @@
 class RecommenderApp {
   constructor() {
     this.allModules = [];
+    this.allCourses = [];
     this.filteredModules = [];
     this.selectedModule = null;
     this.summaryData = null;
@@ -26,8 +27,7 @@ class RecommenderApp {
       searchInput: document.getElementById('module-search'),
       clearSearchBtn: document.getElementById('clear-search-btn'),
       departmentFilter: document.getElementById('department-filter'),
-      classificationFilter: document.getElementById('classification-filter'),
-      collaborationFilter: document.getElementById('collaboration-filter'),
+      courseFilter: document.getElementById('course-filter'),
       aspectBarContainer: document.getElementById('aspect-bar-container'),
       metricsPanel: document.getElementById('metrics-panel'),
       toggleStatsBtn: document.getElementById('toggle-stats-btn'),
@@ -41,6 +41,7 @@ class RecommenderApp {
     this.setupEventListeners();
     await this.loadData();
     this.populateDepartmentFilter();
+    this.populateCourseFilter('ALL');
     this.renderAspectMeters();
     this.applyFilters();
 
@@ -72,18 +73,16 @@ class RecommenderApp {
       this.applyFilters();
     });
 
-    // Filters
+    // Department Filter Change -> Dynamically updates Courses dropdown!
     this.elements.departmentFilter.addEventListener('change', () => {
+      const selectedDept = this.elements.departmentFilter.value;
+      this.populateCourseFilter(selectedDept);
       this.currentPage = 1;
       this.applyFilters();
     });
 
-    this.elements.classificationFilter.addEventListener('change', () => {
-      this.currentPage = 1;
-      this.applyFilters();
-    });
-
-    this.elements.collaborationFilter.addEventListener('change', () => {
+    // Course Filter Change
+    this.elements.courseFilter.addEventListener('change', () => {
       this.currentPage = 1;
       this.applyFilters();
     });
@@ -124,9 +123,10 @@ class RecommenderApp {
 
   async loadData() {
     try {
-      const [recsRes, summaryRes] = await Promise.all([
+      const [recsRes, summaryRes, coursesRes] = await Promise.all([
         fetch('data/recommendations.json'),
         fetch('data/summary.json'),
+        fetch('data/courses.json'),
       ]);
 
       if (recsRes.ok) {
@@ -135,6 +135,10 @@ class RecommenderApp {
 
       if (summaryRes.ok) {
         this.summaryData = await summaryRes.json();
+      }
+
+      if (coursesRes.ok) {
+        this.allCourses = await coursesRes.json();
       }
     } catch (err) {
       console.error('Failed to load dataset:', err);
@@ -156,6 +160,50 @@ class RecommenderApp {
       opt.textContent = dept;
       this.elements.departmentFilter.appendChild(opt);
     });
+  }
+
+  populateCourseFilter(selectedDepartment) {
+    this.elements.courseFilter.innerHTML = '';
+
+    let availableCourses = [];
+    if (selectedDepartment === 'ALL') {
+      availableCourses = this.allCourses;
+      const allOpt = document.createElement('option');
+      allOpt.value = 'ALL';
+      allOpt.textContent = `All Courses (${availableCourses.length})`;
+      this.elements.courseFilter.appendChild(allOpt);
+    } else {
+      // Find courses linked to this department directly or through modules
+      availableCourses = this.allCourses.filter(c => {
+        if ((c.departments || []).includes(selectedDepartment)) return true;
+        return false;
+      });
+
+      // If direct course departments are empty, fallback to scanning module courses in that department
+      if (availableCourses.length === 0) {
+        const courseIdsInDept = new Set();
+        this.allModules.forEach(m => {
+          if ((m.module_departments || []).includes(selectedDepartment)) {
+            (m.courses || []).forEach(c => courseIdsInDept.add(c.course_id));
+          }
+        });
+        availableCourses = this.allCourses.filter(c => courseIdsInDept.has(c.course_id));
+      }
+
+      const allOpt = document.createElement('option');
+      allOpt.value = 'ALL';
+      allOpt.textContent = `All Courses in ${selectedDepartment} (${availableCourses.length})`;
+      this.elements.courseFilter.appendChild(allOpt);
+    }
+
+    availableCourses.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c.course_id;
+      opt.textContent = c.course_title;
+      this.elements.courseFilter.appendChild(opt);
+    });
+
+    this.elements.courseFilter.value = 'ALL';
   }
 
   renderAspectMeters() {
@@ -185,8 +233,7 @@ class RecommenderApp {
   applyFilters() {
     const query = this.elements.searchInput.value.trim().toLowerCase();
     const selectedDept = this.elements.departmentFilter.value;
-    const selectedClass = this.elements.classificationFilter.value;
-    const selectedCollab = this.elements.collaborationFilter.value;
+    const selectedCourseId = this.elements.courseFilter.value;
 
     this.filteredModules = this.allModules.filter(m => {
       const code = (m.module_code || '').toLowerCase();
@@ -203,21 +250,11 @@ class RecommenderApp {
         if (!depts.includes(selectedDept)) return false;
       }
 
-      // Classification matching
-      if (selectedClass !== 'ALL') {
-        if (m.module_classification !== selectedClass) return false;
-      }
-
-      // Collaboration status matching
-      const collabs = (m.layer_2_intelligent_collaboration || {}).cross_department_collaborations || [];
-      const isEligible = m.collaboration_eligible;
-
-      if (selectedCollab === 'HAS_COLLAB') {
-        if (collabs.length === 0) return false;
-      } else if (selectedCollab === 'EXEMPT') {
-        if (isEligible) return false;
-      } else if (selectedCollab === 'NO_COLLAB') {
-        if (!isEligible || collabs.length > 0) return false;
+      // Course matching
+      if (selectedCourseId !== 'ALL') {
+        const modCourses = m.courses || [];
+        const matchesCourse = modCourses.some(c => c.course_id === selectedCourseId);
+        if (!matchesCourse) return false;
       }
 
       return true;
@@ -311,6 +348,24 @@ class RecommenderApp {
     const isExempt = !m.collaboration_eligible;
     const gaps = l2.curriculum_gaps_identified || [];
     const collabs = l2.cross_department_collaborations || [];
+    const modCourses = m.courses || [];
+
+    // Format linked degree programmes
+    let coursesHtml = '';
+    if (modCourses.length > 0) {
+      coursesHtml = `
+        <div class="banner-courses-block" style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px dashed var(--border-color);">
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.35rem;">Associated Degree Programmes (${modCourses.length})</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+            ${modCourses.map(c => `
+              <span class="badge badge-accent badge-xs">
+                ${c.course_title} ${c.year_of_study ? `(Year ${c.year_of_study})` : ''} ${c.module_type ? `&bull; ${c.module_type}` : ''}
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
 
     // Format top 5 internal faculty rows
     let top5Html = '';
@@ -400,6 +455,7 @@ class RecommenderApp {
           <div class="banner-info-item">College: <strong>${(m.module_colleges || [])[0] || 'Unknown'}</strong></div>
           <div class="banner-info-item">Module ID: <strong>${m.module_id}</strong></div>
         </div>
+        ${coursesHtml}
       </div>
 
       <!-- Dual Layer Grid -->
