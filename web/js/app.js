@@ -123,10 +123,11 @@ class RecommenderApp {
 
   async loadData() {
     try {
+      const cacheBust = Date.now();
       const [recsRes, summaryRes, coursesRes] = await Promise.all([
-        fetch('data/recommendations.json'),
-        fetch('data/summary.json'),
-        fetch('data/courses.json'),
+        fetch(`data/recommendations.json?t=${cacheBust}`),
+        fetch(`data/summary.json?t=${cacheBust}`),
+        fetch(`data/courses.json?t=${cacheBust}`),
       ]);
 
       if (recsRes.ok) {
@@ -173,22 +174,26 @@ class RecommenderApp {
       allOpt.textContent = `All Courses (${availableCourses.length})`;
       this.elements.courseFilter.appendChild(allOpt);
     } else {
-      // Find courses linked to this department directly or through modules
-      availableCourses = this.allCourses.filter(c => {
-        if ((c.departments || []).includes(selectedDepartment)) return true;
-        return false;
+      // Find courses linked directly or via module offerings in that department
+      const courseIdSet = new Set();
+
+      // 1. Direct department match
+      this.allCourses.forEach(c => {
+        if ((c.departments || []).includes(selectedDepartment)) {
+          courseIdSet.add(c.course_id);
+        }
       });
 
-      // If direct course departments are empty, fallback to scanning module courses in that department
-      if (availableCourses.length === 0) {
-        const courseIdsInDept = new Set();
-        this.allModules.forEach(m => {
-          if ((m.module_departments || []).includes(selectedDepartment)) {
-            (m.courses || []).forEach(c => courseIdsInDept.add(c.course_id));
-          }
-        });
-        availableCourses = this.allCourses.filter(c => courseIdsInDept.has(c.course_id));
-      }
+      // 2. Module-linked courses in that department
+      this.allModules.forEach(m => {
+        if ((m.module_departments || []).includes(selectedDepartment)) {
+          (m.courses || []).forEach(c => {
+            if (c.course_id) courseIdSet.add(c.course_id);
+          });
+        }
+      });
+
+      availableCourses = this.allCourses.filter(c => courseIdSet.has(c.course_id));
 
       const allOpt = document.createElement('option');
       allOpt.value = 'ALL';
@@ -261,6 +266,20 @@ class RecommenderApp {
     });
 
     this.renderModuleList();
+
+    // Auto-select first matching module if currently selected module is no longer in filtered list
+    if (this.filteredModules.length > 0) {
+      const stillVisible = this.selectedModule && this.filteredModules.some(m => m.module_id === this.selectedModule.module_id);
+      if (!stillVisible) {
+        this.selectModule(this.filteredModules[0]);
+      }
+    } else {
+      this.selectedModule = null;
+      if (this.elements.emptyState && this.elements.detailContent) {
+        this.elements.emptyState.style.display = 'flex';
+        this.elements.detailContent.style.display = 'none';
+      }
+    }
   }
 
   renderModuleList() {
