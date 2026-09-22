@@ -390,14 +390,31 @@ class RecommenderApp {
     let top5Html = '';
     (l1.top_5_internal_recommendations || []).forEach(r => {
       const sharedTopics = (r.shared_topics || []).map(t => `<span class="topic-tag">${t}</span>`).join('');
+      const explanationText = this.generateInternalFacultyExplanation(
+        r,
+        r.rank,
+        m.module_title,
+        (m.module_departments || [])[0] || 'Department'
+      );
+      const rProfileUrl = r.profile_url || (r.staff_id ? `https://www.brunel.ac.uk/people/${r.staff_id}` : '#');
+
       top5Html += `
         <div class="internal-faculty-row">
           <span class="rank-badge">#${r.rank}</span>
           <div class="internal-faculty-info">
-            <strong>${r.full_name}</strong> <span>(${r.department_name})</span>
+            <div class="internal-faculty-header-line">
+              <div class="faculty-name-row">
+                <strong>${r.full_name}</strong> 
+                <span class="faculty-pos-dept">(${r.position || 'Academic Staff'} &bull; ${r.department_name})</span>
+                <a href="${rProfileUrl}" target="_blank" rel="noopener noreferrer" class="profile-link-badge" title="View ${r.full_name}'s Brunel Profile">
+                  Profile ↗
+                </a>
+              </div>
+              <span class="aspect-bar-count">Score: ${(r.m3_kg_score || 0).toFixed(4)}</span>
+            </div>
             ${sharedTopics ? `<div class="topic-tags">${sharedTopics}</div>` : ''}
+            <div class="internal-faculty-rationale">${explanationText}</div>
           </div>
-          <span class="aspect-bar-count">${(r.m3_kg_score || 0).toFixed(4)}</span>
         </div>
       `;
     });
@@ -434,22 +451,36 @@ class RecommenderApp {
         ${gapsHtml}
         <div class="ranking-title" style="margin-top: 1rem;">Recommended Cross-Department Collaborators (${collabs.length})</div>
         <div class="collab-cards-list">
-          ${collabs.map(c => `
-            <div class="collab-card">
-              <div class="collab-card-header">
-                <div class="collab-name-dept">
-                  <h4>${c.full_name}</h4>
-                  <div class="collab-dept">${c.department_name}</div>
+          ${collabs.map(c => {
+            const dynamicRationale = this.generateCollabRationale(
+              c,
+              l1.lead_staff_name || 'Primary Lead',
+              (m.module_departments || [])[0] || 'Department',
+              m.module_title
+            );
+            const cProfileUrl = c.profile_url || (c.staff_id ? `https://www.brunel.ac.uk/people/${c.staff_id}` : '#');
+            return `
+              <div class="collab-card">
+                <div class="collab-card-header">
+                  <div class="collab-name-dept">
+                    <div class="faculty-name-row">
+                      <h4>${c.full_name}</h4>
+                      <a href="${cProfileUrl}" target="_blank" rel="noopener noreferrer" class="profile-link-badge profile-link-collab" title="View ${c.full_name}'s Brunel Profile">
+                        Profile ↗
+                      </a>
+                    </div>
+                    <div class="collab-dept">${c.position || 'Faculty Member'} &bull; ${c.department_name}</div>
+                  </div>
+                  <div class="collab-aspect-badge">${c.aspect_title}</div>
                 </div>
-                <div class="collab-aspect-badge">${c.aspect_title}</div>
+                <div class="collab-rationale">${dynamicRationale}</div>
+                <div class="collab-scores-row">
+                  <div class="collab-score-item">Aspect Affinity: <strong>${(c.aspect_affinity_score || 0).toFixed(4)}</strong></div>
+                  <div class="collab-score-item">Collaboration Suitability: <strong>${(c.collaboration_suitability_score || 0).toFixed(4)}</strong></div>
+                </div>
               </div>
-              <div class="collab-rationale">${c.rationale}</div>
-              <div class="collab-scores-row">
-                <div class="collab-score-item">Aspect Affinity: <strong>${(c.aspect_affinity_score || 0).toFixed(4)}</strong></div>
-                <div class="collab-score-item">Collaboration Suitability: <strong>${(c.collaboration_suitability_score || 0).toFixed(4)}</strong></div>
-              </div>
-            </div>
-          `).join('')}
+            `;
+          }).join('')}
         </div>
       `;
     } else {
@@ -460,6 +491,8 @@ class RecommenderApp {
         </div>
       `;
     }
+
+    const leadProfileUrl = l1.top_5_internal_recommendations?.[0]?.profile_url || (l1.lead_staff_id ? `https://www.brunel.ac.uk/people/${l1.lead_staff_id}` : '#');
 
     this.elements.detailContent.innerHTML = `
       <!-- Header Banner -->
@@ -484,14 +517,19 @@ class RecommenderApp {
           <div class="layer-header">
             <div class="layer-title-wrap">
               <span class="badge badge-layer1">LAYER 1</span>
-              <h3>Primary Delivery (${(m.module_departments || [])[0] || 'Offering Department'})</h3>
+              <h3>Primary Curriculum Allocation (Departmental Fit)</h3>
             </div>
-            <span class="badge badge-layer1">${l1.supervision_role || 'Primary Delivery'}</span>
+            <span class="badge badge-layer1">Sole / Lead Allocation</span>
           </div>
           <div class="layer-body">
             <div class="lead-faculty-card">
               <div class="faculty-name-dept">
-                <h4>${l1.lead_staff_name}</h4>
+                <div class="faculty-name-row">
+                  <h4>${l1.lead_staff_name}</h4>
+                  <a href="${leadProfileUrl}" target="_blank" rel="noopener noreferrer" class="profile-link-badge" title="View ${l1.lead_staff_name}'s Brunel Profile">
+                    Brunel Profile ↗
+                  </a>
+                </div>
                 <div class="faculty-dept-pos">${l1.lead_department} &bull; ${l1.top_5_internal_recommendations?.[0]?.position || 'Academic Staff'}</div>
               </div>
               <div class="faculty-score-pill">
@@ -526,6 +564,59 @@ class RecommenderApp {
         </div>
       </div>
     `;
+  }
+
+  generateInternalFacultyExplanation(faculty, rank, moduleTitle, deptName) {
+    const topics = faculty.shared_topics || [];
+    const score = faculty.m3_kg_score || 0.0;
+    const topicsStr = topics.length > 0 ? topics.slice(0, 3).map(t => `'${t}'`).join(', ') : 'core syllabus topics';
+
+    if (rank === 1) {
+      return `<strong>Primary Module Lead:</strong> Highest ${deptName} Knowledge Graph alignment (score: ${score.toFixed(3)}) with strong syllabus alignment in ${topicsStr}. Primary candidate for module leadership, lecture delivery, and syllabus management.`;
+    } else if (rank === 2) {
+      return `<strong>Core Co-Lecturer:</strong> Close departmental alignment in ${topicsStr} (score: ${score.toFixed(3)}). Ideal partner for co-teaching theoretical units and leading problem-solving tutorial tracks.`;
+    } else if (rank === 3) {
+      return `<strong>Lab & Seminar Lead:</strong> High domain alignment with syllabus topics (${topicsStr}). Well-equipped to supervise hands-on laboratory sessions and continuous coursework assessments.`;
+    } else {
+      return `<strong>Specialist Seminar Support:</strong> Complementary departmental profile in ${topicsStr} (score: ${score.toFixed(3)}). Available as alternate lecturer or specialist coursework marker.`;
+    }
+  }
+
+  generateCollabRationale(collab, leadName, leadDept, moduleTitle) {
+    const pos = collab.position || 'Faculty Member';
+    const dept = collab.department_name || 'External Department';
+    const aspect = collab.aspect_title || 'Specialist Domain';
+    const aspectId = (collab.aspect_id || '').toLowerCase();
+    const aff = collab.aspect_affinity_score || 0.0;
+    const suit = collab.collaboration_suitability_score || 0.0;
+
+    let action = `expands cross-disciplinary perspectives in ${aspect}`;
+    let pedagogy = `delivering guest masterclasses and student project critique`;
+
+    if (aspectId.includes('law') || aspectId.includes('policy') || aspectId.includes('ethics')) {
+      action = `bridges critical regulatory frameworks, statutory compliance, and ethical accountability`;
+      pedagogy = `delivering guest workshops on professional standards, legal governance, and risk mitigation`;
+    } else if (aspectId.includes('robotics') || aspectId.includes('hardware')) {
+      action = `connects software/theoretical concepts with embedded hardware, sensor integration, and real-world physical systems`;
+      pedagogy = `running applied lab demonstrations and hands-on cyber-physical case studies`;
+    } else if (aspectId.includes('sustainability') || aspectId.includes('climate')) {
+      action = `embeds environmental sustainability, carbon lifecycle metrics, and circular design principles`;
+      pedagogy = `leading specialized masterclasses on eco-standards and sustainable industry practices`;
+    } else if (aspectId.includes('computational') || aspectId.includes('modeling') || aspectId.includes('simulation')) {
+      action = `deepens rigorous computational modeling, numerical optimization, and formal algorithmic simulation`;
+      pedagogy = `delivering advanced seminars on quantitative modeling and algorithmic benchmarking`;
+    } else if (aspectId.includes('ux') || aspectId.includes('human') || aspectId.includes('design')) {
+      action = `introduces human-centered design heuristics, usability testing, and accessibility frameworks`;
+      pedagogy = `mentoring student teams on user research and interface prototyping`;
+    } else if (aspectId.includes('business') || aspectId.includes('economics') || aspectId.includes('management')) {
+      action = `integrates market feasibility, economic appraisal, and technology commercialization perspectives`;
+      pedagogy = `co-facilitating business case analysis and industry translation sessions`;
+    } else if (aspectId.includes('health') || aspectId.includes('biomedical')) {
+      action = `provides clinical translation, physiological data integration, and biomedical device compliance`;
+      pedagogy = `presenting clinical impact studies and healthcare deployment challenges`;
+    }
+
+    return `<strong>${pos}</strong> from <em>${dept}</em> who ${action}. Complements ${leadName} (${leadDept}) by ${pedagogy} (Suitability: <strong>${suit.toFixed(2)}</strong>, Aspect Affinity: <strong>${aff.toFixed(2)}</strong>).`;
   }
 }
 

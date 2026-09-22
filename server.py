@@ -25,6 +25,11 @@ class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         sys.stderr.write(f"[Server] {self.address_string()} - {args[0]} {args[1]}\n")
 
 
+class ThreadingServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
+    daemon_threads = True
+    allow_reuse_address = True
+
+
 def start_server(port: int = PORT, auto_open: bool = True) -> None:
     # Verify data files exist
     recs_json = WEB_DIR / "data" / "recommendations.json"
@@ -40,7 +45,7 @@ def start_server(port: int = PORT, auto_open: bool = True) -> None:
 
     for attempt in range(max_attempts):
         try:
-            httpd = socketserver.TCPServer(("", current_port), CustomHTTPRequestHandler)
+            httpd = ThreadingServer(("", current_port), CustomHTTPRequestHandler)
             break
         except OSError:
             current_port += 1
