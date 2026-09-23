@@ -7,6 +7,14 @@ import numpy as np
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+try:
+    import matplotlib.pyplot as plt
+    import matplotlib
+    matplotlib.use("Agg")
+    MATPLOTLIB_AVAILABLE = True
+except ImportError:
+    MATPLOTLIB_AVAILABLE = False
+
 # Add src to sys.path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
@@ -112,8 +120,12 @@ def render_charts() -> None:
     )
 
     lorenz_path = output_dir / "lorenz_gini_comparison.png"
-    fig_lorenz.write_image(str(lorenz_path), scale=2)
-    print(f"Rendered: {lorenz_path.name}")
+    try:
+        fig_lorenz.write_image(str(lorenz_path), scale=2)
+        print(f"Rendered: {lorenz_path.name}")
+    except Exception as e:
+        print(f"[!] Plotly export failed for {lorenz_path.name}: {e}. Using Matplotlib...")
+        render_lorenz_matplotlib(summary, lorenz_path)
 
     # -------------------------------------------------------------
     # 2. Workload Distribution Histogram Comparison
@@ -169,13 +181,17 @@ def render_charts() -> None:
     )
 
     hist_path = output_dir / "workload_distribution_comparison.png"
-    fig_hist.write_image(str(hist_path), scale=2)
-    print(f"Rendered: {hist_path.name}")
+    try:
+        fig_hist.write_image(str(hist_path), scale=2)
+        print(f"Rendered: {hist_path.name}")
+    except Exception as e:
+        print(f"[!] Plotly export failed for {hist_path.name}: {e}. Using Matplotlib...")
+        render_hist_matplotlib(summary, hist_path)
 
     # -------------------------------------------------------------
     # 3. Sensitivity & Pareto Frontier Curve (Relevance vs Gini across Cap Limits)
     # -------------------------------------------------------------
-    print("Computing Pareto frontier across capacity constraints (C = 1, 2, 3, 4, 5, 10)...")
+    print("Computing Pareto frontier across capacity constraints (C = 1, 2, 3, 4, 5, 8, 15)...")
     caps = [1, 2, 3, 4, 5, 8, 15]
     gini_vals = []
     rel_vals = []
@@ -252,9 +268,106 @@ def render_charts() -> None:
     fig_pareto.update_yaxes(title_text="Average Relevance Score", gridcolor="#e2e8f0", row=1, col=2)
 
     pareto_path = output_dir / "capacity_pareto_curve.png"
-    fig_pareto.write_image(str(pareto_path), scale=2)
-    print(f"Rendered: {pareto_path.name}")
+    try:
+        fig_pareto.write_image(str(pareto_path), scale=2)
+        print(f"Rendered: {pareto_path.name}")
+    except Exception as e:
+        print(f"[!] Plotly export failed for {pareto_path.name}: {e}. Using Matplotlib...")
+        render_pareto_matplotlib(caps, gini_vals, rel_vals, pareto_path)
+
     print(f"\nAll M5 charts successfully saved to {output_dir}")
+
+
+def render_lorenz_matplotlib(summary: dict, output_path: Path) -> None:
+    if not MATPLOTLIB_AVAILABLE:
+        return
+    comp = summary["comparison_metrics"]
+    base = comp["baseline_greedy_m4"]
+    m5 = comp["m5_load_balanced"]
+
+    fig, ax = plt.subplots(figsize=(8, 6), dpi=200)
+    ax.plot([0, 1], [0, 1], "k--", alpha=0.6, label="Line of Perfect Equality (Gini = 0.0)")
+
+    base_lorenz = base.get("lorenz_curve_points", [])
+    if base_lorenz:
+        x_b = [p["faculty_share"] for p in base_lorenz]
+        y_b = [p["workload_share"] for p in base_lorenz]
+        ax.plot(x_b, y_b, color="#EF4444", lw=2, label=f"M4-v2 Greedy (Gini = {base['gini_coefficient']:.3f})")
+
+    m5_lorenz = m5.get("lorenz_curve_points", [])
+    if m5_lorenz:
+        x_m = [p["faculty_share"] for p in m5_lorenz]
+        y_m = [p["workload_share"] for p in m5_lorenz]
+        ax.plot(x_m, y_m, color="#10B981", lw=2.5, label=f"M5 Balanced (Gini = {m5['gini_coefficient']:.3f})")
+
+    ax.set_title("Cumulative Faculty Workload Allocation (Lorenz Curve)", fontsize=13, fontweight="bold", pad=12)
+    ax.set_xlabel("Cumulative Share of Faculty Members (Lowest to Highest)", fontweight="bold")
+    ax.set_ylabel("Cumulative Share of Assigned Modules", fontweight="bold")
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.legend(loc="upper left")
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close()
+    print(f"Rendered (Matplotlib): {output_path.name}")
+
+
+def render_hist_matplotlib(summary: dict, output_path: Path) -> None:
+    if not MATPLOTLIB_AVAILABLE:
+        return
+    comp = summary["comparison_metrics"]
+    base = comp["baseline_greedy_m4"]
+    m5 = comp["m5_load_balanced"]
+
+    base_hist = base.get("workload_distribution_histogram", {})
+    m5_hist = m5.get("workload_distribution_histogram", {})
+    all_keys = sorted(set(map(int, base_hist.keys())) | set(map(int, m5_hist.keys())))
+    x = np.arange(len(all_keys))
+    w = 0.35
+
+    y_base = [base_hist.get(str(k), base_hist.get(k, 0)) for k in all_keys]
+    y_m5 = [m5_hist.get(str(k), m5_hist.get(k, 0)) for k in all_keys]
+
+    fig, ax = plt.subplots(figsize=(9, 5), dpi=200)
+    ax.bar(x - w/2, y_base, w, label=f"M4-v2 Greedy (Max: {base['max_workload']} mods)", color="#F87171")
+    ax.bar(x + w/2, y_m5, w, label=f"M5 Balanced (Max: {m5['max_workload']} mods)", color="#34D399")
+    ax.set_title("Faculty Workload Concentration: Unconstrained Greedy vs M5 Constrained", fontsize=12, fontweight="bold", pad=12)
+    ax.set_xlabel("Modules Allocated per Faculty Member", fontweight="bold")
+    ax.set_ylabel("Number of Faculty Members", fontweight="bold")
+    ax.set_xticks(x)
+    ax.set_xticklabels([f"{k} mods" for k in all_keys], fontsize=9)
+    ax.grid(axis="y", linestyle="--", alpha=0.5)
+    ax.legend(loc="upper right")
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close()
+    print(f"Rendered (Matplotlib): {output_path.name}")
+
+
+def render_pareto_matplotlib(caps: list[int], gini_vals: list[float], rel_vals: list[float], output_path: Path) -> None:
+    if not MATPLOTLIB_AVAILABLE:
+        return
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4.5), dpi=200)
+    ax1.plot(caps, gini_vals, "o-", color="#6366F1", lw=2)
+    for c, g in zip(caps, gini_vals):
+        ax1.annotate(f"{g:.3f}", (c, g + 0.01), fontsize=8, fontweight="bold")
+    ax1.set_title("Gini Inequality vs Workload Capacity (C)", fontsize=11, fontweight="bold")
+    ax1.set_xlabel("Max Primary Modules / Faculty (C)", fontweight="bold")
+    ax1.set_ylabel("Gini Coefficient (Lower = Fairer)", fontweight="bold")
+    ax1.grid(True, linestyle="--", alpha=0.5)
+
+    ax2.plot(caps, rel_vals, "s-", color="#0EA5E9", lw=2)
+    for c, r in zip(caps, rel_vals):
+        ax2.annotate(f"{r:.3f}", (c, r + 0.005), fontsize=8, fontweight="bold")
+    ax2.set_title("Mean Relevance Score vs Workload Capacity (C)", fontsize=11, fontweight="bold")
+    ax2.set_xlabel("Max Primary Modules / Faculty (C)", fontweight="bold")
+    ax2.set_ylabel("Average Relevance Score", fontweight="bold")
+    ax2.grid(True, linestyle="--", alpha=0.5)
+
+    plt.suptitle("Multi-Objective Pareto Sensitivity Analysis (Capacity vs Fairness vs Quality)", fontsize=13, fontweight="bold", y=1.02)
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close()
+    print(f"Rendered (Matplotlib): {output_path.name}")
 
 
 if __name__ == "__main__":
