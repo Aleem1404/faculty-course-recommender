@@ -11,6 +11,7 @@ class RecommenderApp {
     this.selectedModule = null;
     this.summaryData = null;
 
+    this.allocationMode = 'M5'; // 'M5' (Load-Balanced) or 'M4' (Greedy)
     this.currentPage = 1;
     this.pageSize = 25;
 
@@ -32,6 +33,9 @@ class RecommenderApp {
       metricsPanel: document.getElementById('metrics-panel'),
       toggleStatsBtn: document.getElementById('toggle-stats-btn'),
       themeToggle: document.getElementById('theme-toggle'),
+      modeM5Btn: document.getElementById('mode-m5-btn'),
+      modeM4Btn: document.getElementById('mode-m4-btn'),
+      appVersionBadge: document.getElementById('app-version-badge'),
     };
 
     this.init();
@@ -53,6 +57,26 @@ class RecommenderApp {
   }
 
   setupEventListeners() {
+    // Mode Switcher: M5 Balanced vs M4-v2 Greedy
+    if (this.elements.modeM5Btn && this.elements.modeM4Btn) {
+      this.elements.modeM5Btn.addEventListener('click', () => {
+        this.allocationMode = 'M5';
+        this.elements.modeM5Btn.classList.add('active');
+        this.elements.modeM4Btn.classList.remove('active');
+        if (this.elements.appVersionBadge) this.elements.appVersionBadge.textContent = 'M5-Fair';
+        this.renderModuleList();
+        if (this.selectedModule) this.renderModuleDetail(this.selectedModule);
+      });
+
+      this.elements.modeM4Btn.addEventListener('click', () => {
+        this.allocationMode = 'M4';
+        this.elements.modeM4Btn.classList.add('active');
+        this.elements.modeM5Btn.classList.remove('active');
+        if (this.elements.appVersionBadge) this.elements.appVersionBadge.textContent = 'M4-v2';
+        this.renderModuleList();
+        if (this.selectedModule) this.renderModuleDetail(this.selectedModule);
+      });
+    }
     // Search input debounce
     let searchDebounce;
     this.elements.searchInput.addEventListener('input', (e) => {
@@ -311,11 +335,17 @@ class RecommenderApp {
       const isSelected = this.selectedModule && this.selectedModule.module_id === m.module_id;
       const collabs = (m.layer_2_intelligent_collaboration || {}).cross_department_collaborations || [];
       const isExempt = !m.collaboration_eligible;
-      const lead = (m.layer_1_primary_delivery || {}).lead_staff_name || 'Unassigned';
+
+      const isM5 = this.allocationMode === 'M5' && m.m5_balanced_primary_delivery;
+      const l1Active = isM5 ? m.m5_balanced_primary_delivery : (m.layer_1_primary_delivery || {});
+      const lead = l1Active.lead_staff_name || 'Unassigned';
+      const isDisplaced = isM5 && l1Active.is_capacity_constrained;
 
       let statusBadge = '';
       if (isExempt) {
         statusBadge = '<span class="badge badge-gray badge-xs">Exempt</span>';
+      } else if (isDisplaced) {
+        statusBadge = '<span class="badge badge-warn badge-xs">⚖️ Capped &bull; Shifted</span>';
       } else if (collabs.length > 0) {
         statusBadge = `<span class="badge badge-layer2 badge-xs">${collabs.length} Guest${collabs.length === 1 ? '' : 's'}</span>`;
       } else {
@@ -361,9 +391,13 @@ class RecommenderApp {
     this.elements.emptyState.style.display = 'none';
     this.elements.detailContent.style.display = 'block';
 
+    const isM5 = this.allocationMode === 'M5' && m.m5_balanced_primary_delivery;
     const l1 = m.layer_1_primary_delivery || {};
+    const m5l1 = m.m5_balanced_primary_delivery || {};
+    const activeL1 = isM5 ? m5l1 : l1;
+
     const l2 = m.layer_2_intelligent_collaboration || {};
-    const leadScore = l1.top_5_internal_recommendations?.[0]?.m3_kg_score || 0.0;
+    const leadScore = isM5 ? (activeL1.assigned_relevance_score || 0.0) : (l1.top_5_internal_recommendations?.[0]?.m3_kg_score || 0.0);
     const isExempt = !m.collaboration_eligible;
     const gaps = l2.curriculum_gaps_identified || [];
     const collabs = l2.cross_department_collaborations || [];
@@ -386,25 +420,55 @@ class RecommenderApp {
       `;
     }
 
+    // Format M5 policy alert banner
+    let policyBannerHtml = '';
+    if (isM5 && activeL1.m5_workload_policy_explanation) {
+      const exp = activeL1.m5_workload_policy_explanation;
+      const isCap = exp.policy_flag === 'CapacityQuotaEnforced';
+      policyBannerHtml = `
+        <div class="m5-policy-banner ${isCap ? 'capacity-enforced' : 'balanced-optimal'}">
+          <div class="m5-policy-title">
+            <span>${isCap ? '⚠️' : '⚖️'}</span>
+            <strong>${exp.allocation_category} (${isCap ? 'Institutional Quota Enforced' : 'Unconstrained Optimal Match'})</strong>
+          </div>
+          <div>${exp.allocation_rationale}</div>
+        </div>
+      `;
+    }
+
     // Format top 5 internal faculty rows
+    const candidateList = l1.top_5_internal_recommendations || [];
     let top5Html = '';
-    (l1.top_5_internal_recommendations || []).forEach(r => {
+    candidateList.forEach(r => {
       const sharedTopics = (r.shared_topics || []).map(t => `<span class="topic-tag">${t}</span>`).join('');
       const explanationText = this.generateInternalFacultyExplanation(
         r,
         r.rank,
         m.module_title,
-        (m.module_departments || [])[0] || 'Department'
+        (m.module_departments || [])[0] || 'Department',
+        activeL1,
+        isM5
       );
       const rProfileUrl = r.profile_url || (r.staff_id ? `https://www.brunel.ac.uk/people/${r.staff_id}` : '#');
 
+      const isAllocatedInCurrentMode = isM5 ? (r.staff_id === activeL1.lead_staff_id) : (r.rank === 1);
+      const isDisplacedByQuota = isM5 && activeL1.is_capacity_constrained && r.rank <= (activeL1.rank_shift_from_greedy || 0);
+
+      let allocationBadge = '';
+      if (isAllocatedInCurrentMode) {
+        allocationBadge = '<span class="badge badge-layer1 badge-xs" style="margin-left: 0.4rem;">🎯 Allocated Lead</span>';
+      } else if (isDisplacedByQuota) {
+        allocationBadge = '<span class="badge badge-warn badge-xs" style="margin-left: 0.4rem;">⚠️ Max Quota Capped</span>';
+      }
+
       top5Html += `
-        <div class="internal-faculty-row">
+        <div class="internal-faculty-row ${isAllocatedInCurrentMode ? 'active-allocation' : ''}">
           <span class="rank-badge">#${r.rank}</span>
           <div class="internal-faculty-info">
             <div class="internal-faculty-header-line">
               <div class="faculty-name-row">
-                <strong>${r.full_name}</strong> 
+                <strong>${r.full_name}</strong>
+                ${allocationBadge}
                 <span class="faculty-pos-dept">(${r.position || 'Academic Staff'} &bull; ${r.department_name})</span>
                 <a href="${rProfileUrl}" target="_blank" rel="noopener noreferrer" class="profile-link-badge" title="View ${r.full_name}'s Brunel Profile">
                   Profile ↗
@@ -454,7 +518,7 @@ class RecommenderApp {
           ${collabs.map(c => {
             const dynamicRationale = this.generateCollabRationale(
               c,
-              l1.lead_staff_name || 'Primary Lead',
+              activeL1.lead_staff_name || 'Primary Lead',
               (m.module_departments || [])[0] || 'Department',
               m.module_title
             );
@@ -492,7 +556,8 @@ class RecommenderApp {
       `;
     }
 
-    const leadProfileUrl = l1.top_5_internal_recommendations?.[0]?.profile_url || (l1.lead_staff_id ? `https://www.brunel.ac.uk/people/${l1.lead_staff_id}` : '#');
+    const leadProfileUrl = activeL1.lead_staff_id ? `https://www.brunel.ac.uk/people/${activeL1.lead_staff_id}` : '#';
+    const leadPosition = candidateList.find(c => c.staff_id === activeL1.lead_staff_id)?.position || 'Academic Staff';
 
     this.elements.detailContent.innerHTML = `
       <!-- Header Banner -->
@@ -500,6 +565,7 @@ class RecommenderApp {
         <div class="banner-meta-row">
           <span class="banner-code-badge">[${m.module_code || 'N/A'}]</span>
           <span class="badge ${isExempt ? 'badge-gray' : 'badge-layer1'}">${m.module_classification.replace(/_/g, ' ').toUpperCase()}</span>
+          ${isM5 ? '<span class="badge badge-accent badge-xs">M5 Load-Balanced</span>' : '<span class="badge badge-warn badge-xs">M4-v2 Greedy</span>'}
         </div>
         <h2 class="banner-title">${m.module_title}</h2>
         <div class="banner-info-grid">
@@ -517,29 +583,30 @@ class RecommenderApp {
           <div class="layer-header">
             <div class="layer-title-wrap">
               <span class="badge badge-layer1">LAYER 1</span>
-              <h3>Primary Curriculum Allocation (Departmental Fit)</h3>
+              <h3>Primary Curriculum Allocation (${isM5 ? 'M5 Policy-Balanced' : 'Greedy Expertise Match'})</h3>
             </div>
-            <span class="badge badge-layer1">Sole / Lead Allocation</span>
+            <span class="badge badge-layer1">Primary Module Lead</span>
           </div>
           <div class="layer-body">
+            ${policyBannerHtml}
             <div class="lead-faculty-card">
               <div class="faculty-name-dept">
                 <div class="faculty-name-row">
-                  <h4>${l1.lead_staff_name}</h4>
-                  <a href="${leadProfileUrl}" target="_blank" rel="noopener noreferrer" class="profile-link-badge" title="View ${l1.lead_staff_name}'s Brunel Profile">
+                  <h4>${activeL1.lead_staff_name}</h4>
+                  <a href="${leadProfileUrl}" target="_blank" rel="noopener noreferrer" class="profile-link-badge" title="View ${activeL1.lead_staff_name}'s Brunel Profile">
                     Brunel Profile ↗
                   </a>
                 </div>
-                <div class="faculty-dept-pos">${l1.lead_department} &bull; ${l1.top_5_internal_recommendations?.[0]?.position || 'Academic Staff'}</div>
+                <div class="faculty-dept-pos">${activeL1.lead_department} &bull; ${leadPosition}</div>
               </div>
               <div class="faculty-score-pill">
                 <div class="score-num">${leadScore.toFixed(4)}</div>
-                <div class="score-label">M3-KG Score</div>
+                <div class="score-label">${isM5 ? 'M5 Score' : 'M3-KG Score'}</div>
               </div>
             </div>
 
             <div class="top5-ranking-section">
-              <div class="ranking-title">Top-5 Departmental Faculty Ranking</div>
+              <div class="ranking-title">Top-5 Departmental Faculty Candidates</div>
               <div class="internal-faculty-list">
                 ${top5Html}
               </div>
@@ -566,10 +633,22 @@ class RecommenderApp {
     `;
   }
 
-  generateInternalFacultyExplanation(faculty, rank, moduleTitle, deptName) {
+  generateInternalFacultyExplanation(faculty, rank, moduleTitle, deptName, activeL1 = null, isM5 = false) {
     const topics = faculty.shared_topics || [];
     const score = faculty.m3_kg_score || 0.0;
     const topicsStr = topics.length > 0 ? topics.slice(0, 3).map(t => `'${t}'`).join(', ') : 'core syllabus topics';
+
+    if (isM5 && activeL1 && faculty.staff_id === activeL1.lead_staff_id) {
+      if (activeL1.is_capacity_constrained) {
+        return `<strong>🎯 Allocated Lead (M5 Balanced):</strong> Assigned as optimal qualified faculty member from ${deptName} under institutional workload policy (Score: ${score.toFixed(3)}). Directs module leadership and curriculum delivery.`;
+      } else {
+        return `<strong>🎯 Primary Module Lead:</strong> Highest ${deptName} Knowledge Graph alignment (Score: ${score.toFixed(3)}) with strong syllabus alignment in ${topicsStr}. Primary candidate for module leadership.`;
+      }
+    }
+
+    if (isM5 && activeL1 && activeL1.is_capacity_constrained && rank <= (activeL1.rank_shift_from_greedy || 0)) {
+      return `<strong>⚠️ Capacity Quota Reached:</strong> Ranked #${rank} in expertise (Score: ${score.toFixed(3)}), but capped at maximum institutional teaching quota to ensure balanced workload distribution across faculty.`;
+    }
 
     if (rank === 1) {
       return `<strong>Primary Module Lead:</strong> Highest ${deptName} Knowledge Graph alignment (score: ${score.toFixed(3)}) with strong syllabus alignment in ${topicsStr}. Primary candidate for module leadership, lecture delivery, and syllabus management.`;

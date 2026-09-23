@@ -18,13 +18,22 @@
   <header class="app-header">
     <div class="header-container">
       <div class="brand-section">
-        <div class="logo-badge">M4-v2</div>
+        <div class="logo-badge" id="app-version-badge">M5-Fair</div>
         <div class="brand-info">
           <h1>Faculty-Course Recommender</h1>
-          <p class="subtitle">Dual-Layer Academic Allocation &amp; Interdisciplinary Co-Delivery Engine</p>
+          <p class="subtitle">Multi-Objective Load-Balanced Allocation &amp; Interdisciplinary Co-Delivery</p>
         </div>
       </div>
       <div class="header-actions">
+        <!-- Model / Engine Mode Switcher -->
+        <div class="mode-switch-group">
+          <button id="mode-m5-btn" class="btn btn-mode active" title="M5: Multi-Objective Constrained Load Balancing (Fairness & Capacity Quotas)">
+            ⚖️ M5 Balanced
+          </button>
+          <button id="mode-m4-btn" class="btn btn-mode" title="M4-v2: Unconstrained Greedy Expertise Matching">
+            ⚡ M4-v2 Greedy
+          </button>
+        </div>
         <button id="toggle-stats-btn" class="btn btn-secondary">
           <span class="icon">📊</span> University Metrics
         </button>
@@ -50,14 +59,24 @@
           <div class="kpi-subtext">Excludes 47 Placements/Dissertations</div>
         </div>
         <div class="kpi-card highlight-card">
-          <div class="kpi-label">Taught Collaboration Coverage</div>
-          <div class="kpi-value highlight-text" id="kpi-coverage-pct">81.94%</div>
-          <div class="kpi-subtext">1,252 Modules with Co-Delivery</div>
+          <div class="kpi-label">Workload Gini Inequality</div>
+          <div class="kpi-value highlight-text" id="kpi-gini-val">0.5385</div>
+          <div class="kpi-subtext" id="kpi-gini-subtext">M5: -29.02% Inequality Drop vs Greedy (0.7587)</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-label">Interdisciplinary Pairings</div>
-          <div class="kpi-value" id="kpi-total-pairings">2,100</div>
-          <div class="kpi-subtext">Avg 1.37 Guests / Taught Module</div>
+          <div class="kpi-label">Active Faculty Utilization</div>
+          <div class="kpi-value" id="kpi-faculty-util">64.72%</div>
+          <div class="kpi-subtext" id="kpi-util-subtext">410 / 634 Faculty (+15.8% vs Greedy)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Taught Co-Delivery Coverage</div>
+          <div class="kpi-value" id="kpi-coverage-pct">81.94%</div>
+          <div class="kpi-subtext">1,252 Modules with Interdisciplinary Guests</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Top-10 Workload Share</div>
+          <div class="kpi-value" id="kpi-top10-conc">9.62%</div>
+          <div class="kpi-subtext">Halved from 17.93% in Greedy</div>
         </div>
       </div>
 
