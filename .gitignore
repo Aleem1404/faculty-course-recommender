@@ -28,17 +28,23 @@ logs/
 
 # Data tracking for Google Colab reproducibility
 data/interim/
-data/cache/
+data/cache/publications/
+data/cache/models/
+data/cache/embeddings/enriched_tfidf.joblib
 data/outputs/
 data/processed/audit/m2_primary/fallback_review.json
 
+# Unignore semantic embedding cache for Colab one-click reproducibility
+!data/cache/embeddings/
+!data/cache/embeddings/semantic/
+!data/cache/embeddings/semantic/semantic_embeddings.npz
+!data/cache/embeddings/semantic/semantic_embedding_index.json
+!data/cache/embeddings/tfidf_baseline.joblib
 
-# Machine learning artifacts
-*.joblib
+# Machine learning artifacts (general)
 *.pkl
 *.pickle
 *.npy
-*.npz
 *.pt
 *.bin
 
