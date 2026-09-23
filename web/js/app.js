@@ -32,12 +32,19 @@ class RecommenderApp {
       aspectBarContainer: document.getElementById('aspect-bar-container'),
       metricsPanel: document.getElementById('metrics-panel'),
       toggleStatsBtn: document.getElementById('toggle-stats-btn'),
+      toggleM6Btn: document.getElementById('toggle-m6-btn'),
+      m6Modal: document.getElementById('m6-modal'),
+      closeM6ModalBtn: document.getElementById('close-m6-modal-btn'),
+      benchmarkIrTbody: document.getElementById('benchmark-ir-tbody'),
+      benchmarkSigTbody: document.getElementById('benchmark-sig-tbody'),
+      reliabilityContainer: document.getElementById('reliability-summary-container'),
       themeToggle: document.getElementById('theme-toggle'),
       modeM5Btn: document.getElementById('mode-m5-btn'),
       modeM4Btn: document.getElementById('mode-m4-btn'),
       appVersionBadge: document.getElementById('app-version-badge'),
     };
 
+    this.m6BenchmarkData = null;
     this.init();
   }
 
@@ -136,6 +143,39 @@ class RecommenderApp {
         : '<span class="icon">📊</span> University Metrics';
     });
 
+    // Toggle M6 Benchmark Modal
+    if (this.elements.toggleM6Btn && this.elements.m6Modal) {
+      this.elements.toggleM6Btn.addEventListener('click', () => {
+        this.elements.m6Modal.classList.remove('hidden');
+        this.renderM6Benchmark();
+      });
+
+      if (this.elements.closeM6ModalBtn) {
+        this.elements.closeM6ModalBtn.addEventListener('click', () => {
+          this.elements.m6Modal.classList.add('hidden');
+        });
+      }
+
+      this.elements.m6Modal.addEventListener('click', (e) => {
+        if (e.target === this.elements.m6Modal) {
+          this.elements.m6Modal.classList.add('hidden');
+        }
+      });
+
+      // Benchmark sub-tab navigation
+      const tabBtns = this.elements.m6Modal.querySelectorAll('.bench-tab-btn');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          this.elements.m6Modal.querySelectorAll('.bench-tab-content').forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          const targetTab = btn.getAttribute('data-tab');
+          const content = document.getElementById(targetTab);
+          if (content) content.classList.add('active');
+        });
+      });
+    }
+
     // Theme Switcher
     this.elements.themeToggle.addEventListener('click', () => {
       document.body.classList.toggle('light-theme');
@@ -148,10 +188,11 @@ class RecommenderApp {
   async loadData() {
     try {
       const cacheBust = Date.now();
-      const [recsRes, summaryRes, coursesRes] = await Promise.all([
+      const [recsRes, summaryRes, coursesRes, m6Res] = await Promise.all([
         fetch(`data/recommendations.json?t=${cacheBust}`),
         fetch(`data/summary.json?t=${cacheBust}`),
         fetch(`data/courses.json?t=${cacheBust}`),
+        fetch(`data/m6_benchmark.json?t=${cacheBust}`).catch(() => null),
       ]);
 
       if (recsRes.ok) {
@@ -164,6 +205,12 @@ class RecommenderApp {
 
       if (coursesRes.ok) {
         this.allCourses = await coursesRes.json();
+      }
+
+      if (m6Res && m6Res.ok) {
+        this.m6BenchmarkData = await m6Res.json();
+      } else if (this.summaryData && this.summaryData.m6_benchmark_summary) {
+        this.m6BenchmarkData = this.summaryData.m6_benchmark_summary;
       }
     } catch (err) {
       console.error('Failed to load dataset:', err);
@@ -697,9 +744,153 @@ class RecommenderApp {
 
     return `<strong>${pos}</strong> from <em>${dept}</em> who ${action}. Complements ${leadName} (${leadDept}) by ${pedagogy} (Suitability: <strong>${suit.toFixed(2)}</strong>, Aspect Affinity: <strong>${aff.toFixed(2)}</strong>).`;
   }
+
+  renderM6Benchmark() {
+    if (!this.m6BenchmarkData) {
+      if (this.elements.benchmarkIrTbody) {
+        this.elements.benchmarkIrTbody.innerHTML = '<tr><td colspan="7" class="text-center">Loading M6 Benchmark Data...</td></tr>';
+      }
+      return;
+    }
+
+    this.renderM6BenchmarkTable();
+    this.renderM6SignificanceTable();
+    this.renderM6Reliability();
+  }
+
+  renderM6BenchmarkTable() {
+    if (!this.elements.benchmarkIrTbody || !this.m6BenchmarkData) return;
+    const modelsSummary = this.m6BenchmarkData.model_performance_summary || {};
+    
+    let html = '';
+    for (const [modelId, data] of Object.entries(modelsSummary)) {
+      const name = data.display_name;
+      const macro = data.macro_metrics || {};
+      const cis = data.confidence_intervals_95 || {};
+
+      const ndcg = macro.mean_ndcg_at_5 || 0;
+      const ndcgCi = cis.ndcg_at_5 ? `[${cis.ndcg_at_5.ci_lower.toFixed(3)}, ${cis.ndcg_at_5.ci_upper.toFixed(3)}]` : '';
+      const p1 = macro.mean_precision_at_1_strict || 0;
+      const p5 = macro.mean_precision_at_5_strict || 0;
+      const mrr = macro.mean_mrr_strict || 0;
+      const map = macro.mean_map_at_5_strict || 0;
+      const meanRel = macro.mean_mean_relevance || 0;
+
+      const isM5 = modelId === 'M5_LoadBalanced';
+      const isM4 = modelId === 'M4_v2_DualLayer';
+      const rowClass = isM5 ? 'highlight-row-m5' : (isM4 ? 'highlight-row-m4' : '');
+
+      html += `
+        <tr class="${rowClass}">
+          <td class="model-name-cell">
+            <strong>${name}</strong>
+            ${isM5 ? '<span class="badge badge-success">Balanced</span>' : ''}
+            ${isM4 ? '<span class="badge badge-accent">Greedy</span>' : ''}
+          </td>
+          <td>
+            <div class="metric-score-wrap">
+              <span class="metric-primary ${ndcg >= 0.7 ? 'score-high' : 'score-low'}">${ndcg.toFixed(4)}</span>
+              <span class="ci-pill">${ndcgCi}</span>
+            </div>
+          </td>
+          <td><span class="metric-num">${p1.toFixed(4)}</span></td>
+          <td><span class="metric-num">${p5.toFixed(4)}</span></td>
+          <td><span class="metric-num">${mrr.toFixed(4)}</span></td>
+          <td><span class="metric-num">${map.toFixed(4)}</span></td>
+          <td><span class="metric-num">${meanRel.toFixed(4)}</span></td>
+        </tr>
+      `;
+    }
+
+    this.elements.benchmarkIrTbody.innerHTML = html;
+  }
+
+  renderM6SignificanceTable() {
+    if (!this.elements.benchmarkSigTbody || !this.m6BenchmarkData) return;
+    const pairwise = this.m6BenchmarkData.pairwise_statistical_significance || [];
+
+    let html = '';
+    pairwise.forEach(pair => {
+      const transName = `${pair.model_a} &rarr; ${pair.model_b}`;
+      const tests = pair.metric_tests || {};
+
+      for (const [metric, test] of Object.entries(tests)) {
+        const isSig = test.is_significant;
+        const pVal = test.primary_p_value < 0.0001 ? '< 0.0001' : test.primary_p_value.toFixed(4);
+        const gain = test.percentage_gain || 0;
+        const gainClass = gain > 0 ? 'gain-pos' : (gain < 0 ? 'gain-neg' : 'gain-zero');
+
+        html += `
+          <tr>
+            <td class="trans-name"><code>${transName}</code></td>
+            <td><strong>${metric}</strong></td>
+            <td>${test.mean_a.toFixed(3)} &rarr; ${test.mean_b.toFixed(3)}</td>
+            <td><span class="${gainClass}">${gain >= 0 ? '+' : ''}${gain.toFixed(1)}%</span></td>
+            <td><code>${pVal}</code></td>
+            <td>${test.cohens_d.toFixed(2)}</td>
+            <td>
+              ${isSig 
+                ? '<span class="sig-badge sig-yes">✓ Statistically Significant (p < 0.05)</span>' 
+                : '<span class="sig-badge sig-no">✕ No Significant Difference</span>'
+              }
+            </td>
+          </tr>
+        `;
+      }
+    });
+
+    this.elements.benchmarkSigTbody.innerHTML = html;
+  }
+
+  renderM6Reliability() {
+    if (!this.elements.reliabilityContainer || !this.m6BenchmarkData) return;
+    const rel = this.m6BenchmarkData.inter_rater_reliability || {};
+    const ku = rel.cohens_kappa_unweighted || {};
+    const kl = rel.cohens_kappa_linear || {};
+    const kq = rel.cohens_kappa_quadratic || {};
+    const fl = rel.fleiss_kappa || {};
+
+    this.elements.reliabilityContainer.innerHTML = `
+      <div class="reliability-card">
+        <div class="card-icon">🤝</div>
+        <h3>Cohen's Kappa (Unweighted &kappa;)</h3>
+        <div class="kappa-value">${(ku.kappa || 0).toFixed(4)}</div>
+        <div class="kappa-badge">${ku.interpretation || 'Moderate Agreement'}</div>
+        <div class="card-meta">
+          <span>Observed Agreement (P<sub>o</sub>): <strong>${((ku.observed_agreement || 0) * 100).toFixed(1)}%</strong></span>
+          <span>Expected by Chance (P<sub>e</sub>): <strong>${((ku.expected_agreement || 0) * 100).toFixed(1)}%</strong></span>
+          <span>Double-Coded Cases: <strong>${rel.cases_evaluated || 20}</strong></span>
+        </div>
+      </div>
+
+      <div class="reliability-card">
+        <div class="card-icon">⚖️</div>
+        <h3>Weighted Cohen's Kappa</h3>
+        <div class="kappa-value">${(kl.kappa || 0).toFixed(4)}</div>
+        <div class="kappa-badge">Linear &amp; Quadratic Weighted</div>
+        <div class="card-meta">
+          <span>Penalizes distance between partial vs full agreement categories.</span>
+          <span>Interpretation: <strong>${kl.interpretation || 'Moderate Agreement'}</strong></span>
+        </div>
+      </div>
+
+      <div class="reliability-card">
+        <div class="card-icon">👥</div>
+        <h3>Fleiss' Multi-Rater Kappa</h3>
+        <div class="kappa-value">${(fl.kappa || 0).toFixed(4)}</div>
+        <div class="kappa-badge">${fl.interpretation || 'Fair Agreement'}</div>
+        <div class="card-meta">
+          <span>Observed Agreement (P<sub>o</sub>): <strong>${((fl.observed_agreement || 0) * 100).toFixed(1)}%</strong></span>
+          <span>Expected (P<sub>e</sub>): <strong>${((fl.expected_agreement || 0) * 100).toFixed(1)}%</strong></span>
+          <span>Subjects: <strong>${fl.subjects || 20}</strong>, Categories: <strong>${fl.categories || 3}</strong></span>
+        </div>
+      </div>
+    `;
+  }
 }
 
 // Instantiate on DOM load
 document.addEventListener('DOMContentLoaded', () => {
   window.recommenderApp = new RecommenderApp();
 });
+

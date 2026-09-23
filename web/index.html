@@ -34,6 +34,9 @@
             ⚡ M4-v2 Greedy
           </button>
         </div>
+        <button id="toggle-m6-btn" class="btn btn-secondary" title="M6: Formal Information Retrieval Benchmark & Statistical Reliability">
+          <span class="icon">📈</span> IR Benchmark (M6)
+        </button>
         <button id="toggle-stats-btn" class="btn btn-secondary">
           <span class="icon">📊</span> University Metrics
         </button>
@@ -148,13 +151,142 @@
     </section>
   </main>
 
+  <!-- M6 Benchmark & Statistical Reliability Modal -->
+  <div id="m6-modal" class="modal-overlay hidden">
+    <div class="modal-container benchmark-modal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="badge badge-accent">M6 Benchmark</div>
+          <h2>Formal Information Retrieval &amp; Statistical Reliability Benchmark</h2>
+          <p class="modal-subtitle">Comparative Evaluation across Ablation Spectrum (M0 → M1 → M2 → M3 → M4-v2 → M5) on Verified Ground-Truth (N=178)</p>
+        </div>
+        <button id="close-m6-modal-btn" class="modal-close-btn" title="Close Benchmark Modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Sub-Navigation Tabs -->
+        <div class="benchmark-nav-tabs">
+          <button class="bench-tab-btn active" data-tab="tab-ir-table">📊 1. Multi-Model IR Benchmark</button>
+          <button class="bench-tab-btn" data-tab="tab-significance">🔬 2. Pairwise Hypothesis Tests (p-values)</button>
+          <button class="bench-tab-btn" data-tab="tab-reliability">🤝 3. Inter-Rater Reliability (Kappa)</button>
+          <button class="bench-tab-btn" data-tab="tab-charts">📈 4. Publication Charts Gallery</button>
+        </div>
+
+        <!-- Tab 1: Multi-Model IR Benchmark -->
+        <div id="tab-ir-table" class="bench-tab-content active">
+          <div class="benchmark-summary-banner">
+            <div class="banner-stat">
+              <span class="stat-num">N = 178</span>
+              <span class="stat-desc">Common Taught Modules Evaluated</span>
+            </div>
+            <div class="banner-stat">
+              <span class="stat-num">B = 2,000</span>
+              <span class="stat-desc">Bootstrap Resamples for 95% CI</span>
+            </div>
+            <div class="banner-stat highlight">
+              <span class="stat-num">+235.0%</span>
+              <span class="stat-desc">NDCG@5 Jump from TF-IDF (M0) to Neural (M2)</span>
+            </div>
+            <div class="banner-stat highlight-green">
+              <span class="stat-num">99.4%</span>
+              <span class="stat-desc">NDCG Retention in Balanced M5 vs Greedy</span>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="benchmark-table" id="benchmark-ir-table">
+              <thead>
+                <tr>
+                  <th>Model Architecture</th>
+                  <th>NDCG@5 (95% CI)</th>
+                  <th>Precision@1 (Strict)</th>
+                  <th>Precision@5 (Strict)</th>
+                  <th>MRR (Strict)</th>
+                  <th>MAP@5 (Strict)</th>
+                  <th>Mean Relevance</th>
+                </tr>
+              </thead>
+              <tbody id="benchmark-ir-tbody">
+                <!-- Dynamically Populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          <div class="table-legend">
+            <p><strong>Relevance Grading:</strong> <em>r = 2</em> (Verified Ground-Truth Instructor), <em>r = 1</em> (Qualified Same-Department Subject Expert, Sim ≥ 0.30), <em>r = 0</em> (Unrelated/Non-Departmental).</p>
+          </div>
+        </div>
+
+        <!-- Tab 2: Pairwise Significance -->
+        <div id="tab-significance" class="bench-tab-content">
+          <div class="section-intro">
+            <p>Non-parametric Wilcoxon signed-rank and Paired Student's t-tests establishing whether improvements between ablation stages are statistically significant (&alpha; = 0.05).</p>
+          </div>
+          <div class="table-responsive">
+            <table class="benchmark-table" id="benchmark-sig-table">
+              <thead>
+                <tr>
+                  <th>Ablation Transition</th>
+                  <th>Metric Evaluated</th>
+                  <th>Baseline &rarr; Proposed</th>
+                  <th>Relative Gain</th>
+                  <th>p-value</th>
+                  <th>Cohen's d</th>
+                  <th>Statistical Significance</th>
+                </tr>
+              </thead>
+              <tbody id="benchmark-sig-tbody">
+                <!-- Dynamically Populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: Inter-Rater Reliability -->
+        <div id="tab-reliability" class="bench-tab-content">
+          <div class="reliability-grid" id="reliability-summary-container">
+            <!-- Dynamically Populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Tab 4: Charts Gallery -->
+        <div id="tab-charts" class="bench-tab-content">
+          <div class="charts-gallery-grid">
+            <div class="chart-gallery-card">
+              <h4>Ablation Metric Progression (M0 &rarr; M5)</h4>
+              <p class="chart-caption">Grouped bar comparison of NDCG@5, P@1, P@5, MRR, and MAP across all model tiers.</p>
+              <div class="chart-image-wrap">
+                <img src="data/charts/ir_metrics_progression_m0_to_m5.png" alt="IR Metrics Progression" class="gallery-img">
+              </div>
+            </div>
+
+            <div class="chart-gallery-card">
+              <h4>NDCG@5 with 95% Non-Parametric Bootstrap CI</h4>
+              <p class="chart-caption">Mean ranking quality with empirical 95% confidence intervals (B=2000 resamples).</p>
+              <div class="chart-image-wrap">
+                <img src="data/charts/ndcg_confidence_intervals.png" alt="NDCG Confidence Intervals" class="gallery-img">
+              </div>
+            </div>
+
+            <div class="chart-gallery-card full-width-card">
+              <h4>Multi-Dimensional Performance Radar Comparison</h4>
+              <p class="chart-caption">Comprehensive trade-off comparison between lexical, semantic, KG, and capacity-balanced architectures.</p>
+              <div class="chart-image-wrap radar-wrap">
+                <img src="data/charts/radar_ablation_comparison.png" alt="Radar Ablation Comparison" class="gallery-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="app-footer">
     <div class="footer-container">
       <p>Faculty-Course Recommender System &bull; Mohammed Aleem &bull; Brunel University of London</p>
     </div>
   </footer>
 
-  <script src="js/app.js?v=3"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 
 </html>

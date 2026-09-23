@@ -210,5 +210,1032 @@
       "jsonl_recommendations": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m5\\m5_balanced_recommendations.jsonl",
       "csv_audit_sheet": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m5\\m5_allocation_audit_sheet.csv"
     }
+  },
+  "m6_benchmark_summary": {
+    "benchmark_metadata": {
+      "evaluation_modules_evaluated": 178,
+      "bootstraps_run": 2000,
+      "significance_alpha": 0.05,
+      "total_ground_truth_faculty": 270,
+      "total_ground_truth_assignments": 1461
+    },
+    "model_performance_summary": {
+      "M0_TFIDF": {
+        "display_name": "M0: Lexical TF-IDF Baseline",
+        "macro_metrics": {
+          "mean_ndcg_at_5": 0.251508,
+          "mean_precision_at_1_relaxed": 0.140449,
+          "mean_precision_at_1_strict": 0.134831,
+          "mean_precision_at_5_relaxed": 0.077528,
+          "mean_precision_at_5_strict": 0.076404,
+          "mean_mrr_relaxed": 0.218165,
+          "mean_mrr_strict": 0.213951,
+          "mean_map_at_5_relaxed": 0.214794,
+          "mean_map_at_5_strict": 0.212687,
+          "mean_hit_rate_relaxed": 0.365169,
+          "mean_hit_rate_strict": 0.365169,
+          "mean_mean_relevance": 0.153933
+        },
+        "confidence_intervals_95": {
+          "ndcg_at_5": {
+            "mean": 0.251508,
+            "ci_lower": 0.199674,
+            "ci_upper": 0.309495,
+            "std_err": 0.027194,
+            "confidence_level": 0.95
+          },
+          "precision_at_1_strict": {
+            "mean": 0.134831,
+            "ci_lower": 0.089888,
+            "ci_upper": 0.185393,
+            "std_err": 0.025197,
+            "confidence_level": 0.95
+          },
+          "precision_at_5_strict": {
+            "mean": 0.076404,
+            "ci_lower": 0.061798,
+            "ci_upper": 0.092135,
+            "std_err": 0.007767,
+            "confidence_level": 0.95
+          },
+          "mrr_strict": {
+            "mean": 0.213951,
+            "ci_lower": 0.166081,
+            "ci_upper": 0.269014,
+            "std_err": 0.025866,
+            "confidence_level": 0.95
+          },
+          "map_at_5_strict": {
+            "mean": 0.212687,
+            "ci_lower": 0.164371,
+            "ci_upper": 0.267652,
+            "std_err": 0.025625,
+            "confidence_level": 0.95
+          }
+        }
+      },
+      "M1_Enriched_TFIDF": {
+        "display_name": "M1: Publication-Enriched TF-IDF",
+        "macro_metrics": {
+          "mean_ndcg_at_5": 0.203118,
+          "mean_precision_at_1_relaxed": 0.11236,
+          "mean_precision_at_1_strict": 0.11236,
+          "mean_precision_at_5_relaxed": 0.060674,
+          "mean_precision_at_5_strict": 0.060674,
+          "mean_mrr_relaxed": 0.173689,
+          "mean_mrr_strict": 0.173689,
+          "mean_map_at_5_relaxed": 0.173689,
+          "mean_map_at_5_strict": 0.173689,
+          "mean_hit_rate_relaxed": 0.292135,
+          "mean_hit_rate_strict": 0.292135,
+          "mean_mean_relevance": 0.121348
+        },
+        "confidence_intervals_95": {
+          "ndcg_at_5": {
+            "mean": 0.203118,
+            "ci_lower": 0.15399,
+            "ci_upper": 0.254882,
+            "std_err": 0.025886,
+            "confidence_level": 0.95
+          },
+          "precision_at_1_strict": {
+            "mean": 0.11236,
+            "ci_lower": 0.067416,
+            "ci_upper": 0.162921,
+            "std_err": 0.023516,
+            "confidence_level": 0.95
+          },
+          "precision_at_5_strict": {
+            "mean": 0.060674,
+            "ci_lower": 0.047191,
+            "ci_upper": 0.075281,
+            "std_err": 0.007279,
+            "confidence_level": 0.95
+          },
+          "mrr_strict": {
+            "mean": 0.173689,
+            "ci_lower": 0.127807,
+            "ci_upper": 0.224258,
+            "std_err": 0.024352,
+            "confidence_level": 0.95
+          },
+          "map_at_5_strict": {
+            "mean": 0.173689,
+            "ci_lower": 0.127807,
+            "ci_upper": 0.224258,
+            "std_err": 0.024352,
+            "confidence_level": 0.95
+          }
+        }
+      },
+      "M2_Semantic": {
+        "display_name": "M2: Semantic Transformer (Bi-Encoder)",
+        "macro_metrics": {
+          "mean_ndcg_at_5": 0.842467,
+          "mean_precision_at_1_relaxed": 0.882022,
+          "mean_precision_at_1_strict": 0.078652,
+          "mean_precision_at_5_relaxed": 0.766292,
+          "mean_precision_at_5_strict": 0.069663,
+          "mean_mrr_relaxed": 0.8897,
+          "mean_mrr_strict": 0.177622,
+          "mean_map_at_5_relaxed": 0.888015,
+          "mean_map_at_5_strict": 0.177622,
+          "mean_hit_rate_relaxed": 0.904494,
+          "mean_hit_rate_strict": 0.348315,
+          "mean_mean_relevance": 0.835955
+        },
+        "confidence_intervals_95": {
+          "ndcg_at_5": {
+            "mean": 0.842467,
+            "ci_lower": 0.79745,
+            "ci_upper": 0.883337,
+            "std_err": 0.021984,
+            "confidence_level": 0.95
+          },
+          "precision_at_1_strict": {
+            "mean": 0.078652,
+            "ci_lower": 0.039326,
+            "ci_upper": 0.117978,
+            "std_err": 0.020512,
+            "confidence_level": 0.95
+          },
+          "precision_at_5_strict": {
+            "mean": 0.069663,
+            "ci_lower": 0.055056,
+            "ci_upper": 0.08427,
+            "std_err": 0.007242,
+            "confidence_level": 0.95
+          },
+          "mrr_strict": {
+            "mean": 0.177622,
+            "ci_lower": 0.134829,
+            "ci_upper": 0.223972,
+            "std_err": 0.022168,
+            "confidence_level": 0.95
+          },
+          "map_at_5_strict": {
+            "mean": 0.177622,
+            "ci_lower": 0.134829,
+            "ci_upper": 0.223972,
+            "std_err": 0.022168,
+            "confidence_level": 0.95
+          }
+        }
+      },
+      "M3_KG": {
+        "display_name": "M3: Knowledge Graph Hybrid Re-ranker",
+        "macro_metrics": {
+          "mean_ndcg_at_5": 0.720387,
+          "mean_precision_at_1_relaxed": 0.735955,
+          "mean_precision_at_1_strict": 0.078652,
+          "mean_precision_at_5_relaxed": 0.57191,
+          "mean_precision_at_5_strict": 0.069663,
+          "mean_mrr_relaxed": 0.75927,
+          "mean_mrr_strict": 0.176685,
+          "mean_map_at_5_relaxed": 0.750281,
+          "mean_map_at_5_strict": 0.176685,
+          "mean_hit_rate_relaxed": 0.797753,
+          "mean_hit_rate_strict": 0.348315,
+          "mean_mean_relevance": 0.641573
+        },
+        "confidence_intervals_95": {
+          "ndcg_at_5": {
+            "mean": 0.720387,
+            "ci_lower": 0.659108,
+            "ci_upper": 0.776566,
+            "std_err": 0.029622,
+            "confidence_level": 0.95
+          },
+          "precision_at_1_strict": {
+            "mean": 0.078652,
+            "ci_lower": 0.039326,
+            "ci_upper": 0.117978,
+            "std_err": 0.020512,
+            "confidence_level": 0.95
+          },
+          "precision_at_5_strict": {
+            "mean": 0.069663,
+            "ci_lower": 0.055056,
+            "ci_upper": 0.08427,
+            "std_err": 0.007242,
+            "confidence_level": 0.95
+          },
+          "mrr_strict": {
+            "mean": 0.176685,
+            "ci_lower": 0.134625,
+            "ci_upper": 0.221636,
+            "std_err": 0.022129,
+            "confidence_level": 0.95
+          },
+          "map_at_5_strict": {
+            "mean": 0.176685,
+            "ci_lower": 0.134625,
+            "ci_upper": 0.221636,
+            "std_err": 0.022129,
+            "confidence_level": 0.95
+          }
+        }
+      },
+      "M4_v2_DualLayer": {
+        "display_name": "M4-v2: Dual-Layer Interdisciplinary Recommender",
+        "macro_metrics": {
+          "mean_ndcg_at_5": 0.714769,
+          "mean_precision_at_1_relaxed": 0.730337,
+          "mean_precision_at_1_strict": 0.078652,
+          "mean_precision_at_5_relaxed": 0.569663,
+          "mean_precision_at_5_strict": 0.069663,
+          "mean_mrr_relaxed": 0.753652,
+          "mean_mrr_strict": 0.176685,
+          "mean_map_at_5_relaxed": 0.744663,
+          "mean_map_at_5_strict": 0.176685,
+          "mean_hit_rate_relaxed": 0.792135,
+          "mean_hit_rate_strict": 0.348315,
+          "mean_mean_relevance": 0.639326
+        },
+        "confidence_intervals_95": {
+          "ndcg_at_5": {
+            "mean": 0.714769,
+            "ci_lower": 0.654572,
+            "ci_upper": 0.771264,
+            "std_err": 0.029907,
+            "confidence_level": 0.95
+          },
+          "precision_at_1_strict": {
+            "mean": 0.078652,
+            "ci_lower": 0.039326,
+            "ci_upper": 0.117978,
+            "std_err": 0.020512,
+            "confidence_level": 0.95
+          },
+          "precision_at_5_strict": {
+            "mean": 0.069663,
+            "ci_lower": 0.055056,
+            "ci_upper": 0.08427,
+            "std_err": 0.007242,
+            "confidence_level": 0.95
+          },
+          "mrr_strict": {
+            "mean": 0.176685,
+            "ci_lower": 0.134625,
+            "ci_upper": 0.221636,
+            "std_err": 0.022129,
+            "confidence_level": 0.95
+          },
+          "map_at_5_strict": {
+            "mean": 0.176685,
+            "ci_lower": 0.134625,
+            "ci_upper": 0.221636,
+            "std_err": 0.022129,
+            "confidence_level": 0.95
+          }
+        }
+      },
+      "M5_LoadBalanced": {
+        "display_name": "M5: Capacity-Aware Balanced Recommender",
+        "macro_metrics": {
+          "mean_ndcg_at_5": 0.710281,
+          "mean_precision_at_1_relaxed": 0.679775,
+          "mean_precision_at_1_strict": 0.123596,
+          "mean_precision_at_5_relaxed": 0.569663,
+          "mean_precision_at_5_strict": 0.069663,
+          "mean_mrr_relaxed": 0.730805,
+          "mean_mrr_strict": 0.198127,
+          "mean_map_at_5_relaxed": 0.730212,
+          "mean_map_at_5_strict": 0.198127,
+          "mean_hit_rate_relaxed": 0.792135,
+          "mean_hit_rate_strict": 0.348315,
+          "mean_mean_relevance": 0.639326
+        },
+        "confidence_intervals_95": {
+          "ndcg_at_5": {
+            "mean": 0.710281,
+            "ci_lower": 0.650226,
+            "ci_upper": 0.767565,
+            "std_err": 0.0299,
+            "confidence_level": 0.95
+          },
+          "precision_at_1_strict": {
+            "mean": 0.123596,
+            "ci_lower": 0.078652,
+            "ci_upper": 0.174157,
+            "std_err": 0.025148,
+            "confidence_level": 0.95
+          },
+          "precision_at_5_strict": {
+            "mean": 0.069663,
+            "ci_lower": 0.055056,
+            "ci_upper": 0.08427,
+            "std_err": 0.007242,
+            "confidence_level": 0.95
+          },
+          "mrr_strict": {
+            "mean": 0.198127,
+            "ci_lower": 0.150833,
+            "ci_upper": 0.250564,
+            "std_err": 0.025185,
+            "confidence_level": 0.95
+          },
+          "map_at_5_strict": {
+            "mean": 0.198127,
+            "ci_lower": 0.150833,
+            "ci_upper": 0.250564,
+            "std_err": 0.025185,
+            "confidence_level": 0.95
+          }
+        }
+      }
+    },
+    "pairwise_statistical_significance": [
+      {
+        "model_a": "M0_TFIDF",
+        "model_b": "M1_Enriched_TFIDF",
+        "model_a_name": "M0: Lexical TF-IDF Baseline",
+        "model_b_name": "M1: Publication-Enriched TF-IDF",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.251508,
+            "mean_b": 0.203118,
+            "mean_difference": -0.04839,
+            "percentage_gain": -19.24,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -2.043745,
+            "ttest_p_value": 0.042461,
+            "wilcoxon_statistic": 631.0,
+            "wilcoxon_p_value": 0.03616,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.03616,
+            "cohens_d": -0.153185,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.134831,
+            "mean_b": 0.11236,
+            "mean_difference": -0.022472,
+            "percentage_gain": -16.67,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.815729,
+            "ttest_p_value": 0.415752,
+            "wilcoxon_statistic": 125.0,
+            "wilcoxon_p_value": 0.414216,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.414216,
+            "cohens_d": -0.061141,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.076404,
+            "mean_b": 0.060674,
+            "mean_difference": -0.01573,
+            "percentage_gain": -20.59,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -2.363192,
+            "ttest_p_value": 0.019203,
+            "wilcoxon_statistic": 203.5,
+            "wilcoxon_p_value": 0.019631,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.019631,
+            "cohens_d": -0.177129,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.213951,
+            "mean_b": 0.173689,
+            "mean_difference": -0.040262,
+            "percentage_gain": -18.82,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.721048,
+            "ttest_p_value": 0.086989,
+            "wilcoxon_statistic": 670.0,
+            "wilcoxon_p_value": 0.070524,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.070524,
+            "cohens_d": -0.128998,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.212687,
+            "mean_b": 0.173689,
+            "mean_difference": -0.038998,
+            "percentage_gain": -18.34,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.676721,
+            "ttest_p_value": 0.095362,
+            "wilcoxon_statistic": 678.0,
+            "wilcoxon_p_value": 0.080318,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.080318,
+            "cohens_d": -0.125676,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      },
+      {
+        "model_a": "M0_TFIDF",
+        "model_b": "M2_Semantic",
+        "model_a_name": "M0: Lexical TF-IDF Baseline",
+        "model_b_name": "M2: Semantic Transformer (Bi-Encoder)",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.251508,
+            "mean_b": 0.842467,
+            "mean_difference": 0.590959,
+            "percentage_gain": 234.97,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 16.719844,
+            "ttest_p_value": 0.0,
+            "wilcoxon_statistic": 436.5,
+            "wilcoxon_p_value": 0.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.0,
+            "cohens_d": 1.253205,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.134831,
+            "mean_b": 0.078652,
+            "mean_difference": -0.05618,
+            "percentage_gain": -41.67,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.977122,
+            "ttest_p_value": 0.049581,
+            "wilcoxon_statistic": 108.0,
+            "wilcoxon_p_value": 0.04986,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.04986,
+            "cohens_d": -0.148192,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.076404,
+            "mean_b": 0.069663,
+            "mean_difference": -0.006742,
+            "percentage_gain": -8.82,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.7611,
+            "ttest_p_value": 0.44761,
+            "wilcoxon_statistic": 715.0,
+            "wilcoxon_p_value": 0.443845,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.443845,
+            "cohens_d": -0.057047,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.213951,
+            "mean_b": 0.177622,
+            "mean_difference": -0.03633,
+            "percentage_gain": -16.98,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.36709,
+            "ttest_p_value": 0.173331,
+            "wilcoxon_statistic": 1332.0,
+            "wilcoxon_p_value": 0.223586,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.223586,
+            "cohens_d": -0.102468,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.212687,
+            "mean_b": 0.177622,
+            "mean_difference": -0.035066,
+            "percentage_gain": -16.49,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.315122,
+            "ttest_p_value": 0.19017,
+            "wilcoxon_statistic": 1380.0,
+            "wilcoxon_p_value": 0.247805,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.247805,
+            "cohens_d": -0.098573,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      },
+      {
+        "model_a": "M1_Enriched_TFIDF",
+        "model_b": "M2_Semantic",
+        "model_a_name": "M1: Publication-Enriched TF-IDF",
+        "model_b_name": "M2: Semantic Transformer (Bi-Encoder)",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.203118,
+            "mean_b": 0.842467,
+            "mean_difference": 0.639349,
+            "percentage_gain": 314.77,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 16.887332,
+            "ttest_p_value": 0.0,
+            "wilcoxon_statistic": 722.5,
+            "wilcoxon_p_value": 0.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.0,
+            "cohens_d": 1.265759,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.11236,
+            "mean_b": 0.078652,
+            "mean_difference": -0.033708,
+            "percentage_gain": -30.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.28151,
+            "ttest_p_value": 0.201691,
+            "wilcoxon_statistic": 92.0,
+            "wilcoxon_p_value": 0.200825,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.200825,
+            "cohens_d": -0.096053,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.060674,
+            "mean_b": 0.069663,
+            "mean_difference": 0.008989,
+            "percentage_gain": 14.81,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 1.180842,
+            "ttest_p_value": 0.23925,
+            "wilcoxon_statistic": 387.0,
+            "wilcoxon_p_value": 0.238185,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.238185,
+            "cohens_d": 0.088508,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.173689,
+            "mean_b": 0.177622,
+            "mean_difference": 0.003933,
+            "percentage_gain": 2.26,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.1684,
+            "ttest_p_value": 0.866461,
+            "wilcoxon_statistic": 1154.0,
+            "wilcoxon_p_value": 0.748221,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.748221,
+            "cohens_d": 0.012622,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.173689,
+            "mean_b": 0.177622,
+            "mean_difference": 0.003933,
+            "percentage_gain": 2.26,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.1684,
+            "ttest_p_value": 0.866461,
+            "wilcoxon_statistic": 1154.0,
+            "wilcoxon_p_value": 0.748221,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.748221,
+            "cohens_d": 0.012622,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      },
+      {
+        "model_a": "M2_Semantic",
+        "model_b": "M3_KG",
+        "model_a_name": "M2: Semantic Transformer (Bi-Encoder)",
+        "model_b_name": "M3: Knowledge Graph Hybrid Re-ranker",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.842467,
+            "mean_b": 0.720387,
+            "mean_difference": -0.122081,
+            "percentage_gain": -14.49,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -5.273838,
+            "ttest_p_value": 0.0,
+            "wilcoxon_statistic": 2.5,
+            "wilcoxon_p_value": 0.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.0,
+            "cohens_d": -0.395291,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.078652,
+            "mean_b": 0.078652,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.069663,
+            "mean_b": 0.069663,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.177622,
+            "mean_b": 0.176685,
+            "mean_difference": -0.000936,
+            "percentage_gain": -0.53,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.0,
+            "ttest_p_value": 0.318676,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": -0.074953,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.177622,
+            "mean_b": 0.176685,
+            "mean_difference": -0.000936,
+            "percentage_gain": -0.53,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.0,
+            "ttest_p_value": 0.318676,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": -0.074953,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      },
+      {
+        "model_a": "M3_KG",
+        "model_b": "M4_v2_DualLayer",
+        "model_a_name": "M3: Knowledge Graph Hybrid Re-ranker",
+        "model_b_name": "M4-v2: Dual-Layer Interdisciplinary Recommender",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.720387,
+            "mean_b": 0.714769,
+            "mean_difference": -0.005618,
+            "percentage_gain": -0.78,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -1.0,
+            "ttest_p_value": 0.318676,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": -0.074953,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.078652,
+            "mean_b": 0.078652,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.069663,
+            "mean_b": 0.069663,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.176685,
+            "mean_b": 0.176685,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.176685,
+            "mean_b": 0.176685,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      },
+      {
+        "model_a": "M4_v2_DualLayer",
+        "model_b": "M5_LoadBalanced",
+        "model_a_name": "M4-v2: Dual-Layer Interdisciplinary Recommender",
+        "model_b_name": "M5: Capacity-Aware Balanced Recommender",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.714769,
+            "mean_b": 0.710281,
+            "mean_difference": -0.004488,
+            "percentage_gain": -0.63,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.458541,
+            "ttest_p_value": 0.647126,
+            "wilcoxon_statistic": 317.0,
+            "wilcoxon_p_value": 0.437354,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.437354,
+            "cohens_d": -0.034369,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.078652,
+            "mean_b": 0.123596,
+            "mean_difference": 0.044944,
+            "percentage_gain": 57.14,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 2.017168,
+            "ttest_p_value": 0.045189,
+            "wilcoxon_statistic": 34.0,
+            "wilcoxon_p_value": 0.0455,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.0455,
+            "cohens_d": 0.151193,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.069663,
+            "mean_b": 0.069663,
+            "mean_difference": 0.0,
+            "percentage_gain": 0.0,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 0.0,
+            "ttest_p_value": 1.0,
+            "wilcoxon_statistic": 0.0,
+            "wilcoxon_p_value": 1.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 1.0,
+            "cohens_d": 0.0,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.176685,
+            "mean_b": 0.198127,
+            "mean_difference": 0.021442,
+            "percentage_gain": 12.14,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 1.511316,
+            "ttest_p_value": 0.132491,
+            "wilcoxon_statistic": 181.0,
+            "wilcoxon_p_value": 0.286088,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.286088,
+            "cohens_d": 0.113278,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.176685,
+            "mean_b": 0.198127,
+            "mean_difference": 0.021442,
+            "percentage_gain": 12.14,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 1.511316,
+            "ttest_p_value": 0.132491,
+            "wilcoxon_statistic": 181.0,
+            "wilcoxon_p_value": 0.286088,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.286088,
+            "cohens_d": 0.113278,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      },
+      {
+        "model_a": "M0_TFIDF",
+        "model_b": "M5_LoadBalanced",
+        "model_a_name": "M0: Lexical TF-IDF Baseline",
+        "model_b_name": "M5: Capacity-Aware Balanced Recommender",
+        "metric_tests": {
+          "ndcg_at_5": {
+            "mean_a": 0.251508,
+            "mean_b": 0.710281,
+            "mean_difference": 0.458773,
+            "percentage_gain": 182.41,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": 11.187173,
+            "ttest_p_value": 0.0,
+            "wilcoxon_statistic": 973.0,
+            "wilcoxon_p_value": 0.0,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.0,
+            "cohens_d": 0.838514,
+            "is_significant": true,
+            "significance_level": 0.05
+          },
+          "precision_at_1_strict": {
+            "mean_a": 0.134831,
+            "mean_b": 0.123596,
+            "mean_difference": -0.011236,
+            "percentage_gain": -8.33,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.323626,
+            "ttest_p_value": 0.746603,
+            "wilcoxon_statistic": 351.0,
+            "wilcoxon_p_value": 0.745603,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.745603,
+            "cohens_d": -0.024257,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "precision_at_5_strict": {
+            "mean_a": 0.076404,
+            "mean_b": 0.069663,
+            "mean_difference": -0.006742,
+            "percentage_gain": -8.82,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.7611,
+            "ttest_p_value": 0.44761,
+            "wilcoxon_statistic": 715.0,
+            "wilcoxon_p_value": 0.443845,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.443845,
+            "cohens_d": -0.057047,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "mrr_strict": {
+            "mean_a": 0.213951,
+            "mean_b": 0.198127,
+            "mean_difference": -0.015824,
+            "percentage_gain": -7.4,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.504406,
+            "ttest_p_value": 0.614604,
+            "wilcoxon_statistic": 1548.0,
+            "wilcoxon_p_value": 0.59515,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.59515,
+            "cohens_d": -0.037807,
+            "is_significant": false,
+            "significance_level": 0.05
+          },
+          "map_at_5_strict": {
+            "mean_a": 0.212687,
+            "mean_b": 0.198127,
+            "mean_difference": -0.01456,
+            "percentage_gain": -6.85,
+            "shapiro_p_value": 0.0,
+            "diff_is_normal": false,
+            "ttest_statistic": -0.465315,
+            "ttest_p_value": 0.642278,
+            "wilcoxon_statistic": 1563.5,
+            "wilcoxon_p_value": 0.646892,
+            "primary_test": "wilcoxon",
+            "primary_p_value": 0.646892,
+            "cohens_d": -0.034877,
+            "is_significant": false,
+            "significance_level": 0.05
+          }
+        }
+      }
+    ],
+    "inter_rater_reliability": {
+      "cases_evaluated": 20,
+      "cohens_kappa_unweighted": {
+        "kappa": 0.444444,
+        "observed_agreement": 0.7,
+        "expected_agreement": 0.46,
+        "interpretation": "Moderate Agreement",
+        "weights": "unweighted",
+        "sample_size": 20,
+        "category_count": 2
+      },
+      "cohens_kappa_linear": {
+        "kappa": 0.444444,
+        "observed_agreement": 0.7,
+        "expected_agreement": 0.46,
+        "interpretation": "Moderate Agreement",
+        "weights": "linear",
+        "sample_size": 20,
+        "category_count": 2
+      },
+      "cohens_kappa_quadratic": {
+        "kappa": 0.444444,
+        "observed_agreement": 0.7,
+        "expected_agreement": 0.46,
+        "interpretation": "Moderate Agreement",
+        "weights": "quadratic",
+        "sample_size": 20,
+        "category_count": 2
+      },
+      "fleiss_kappa": {
+        "kappa": 0.393939,
+        "observed_agreement": 0.7,
+        "expected_agreement": 0.505,
+        "interpretation": "Fair Agreement",
+        "subjects": 20,
+        "categories": 3,
+        "raters_per_subject": 2
+      }
+    }
   }
 }

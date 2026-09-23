@@ -98,11 +98,35 @@ def prepare_web_data() -> None:
             m5_summary = json.load(f)
             summary_data["m5_fairness_summary"] = m5_summary
 
+    m6_dir = root / "data" / "outputs" / "m6"
+    m6_json = m6_dir / "consolidated_ir_benchmark.json"
+    if m6_json.exists():
+        with m6_json.open("r", encoding="utf-8") as f:
+            m6_data = json.load(f)
+            summary_data["m6_benchmark_summary"] = m6_data
+        
+        # Also copy m6_benchmark.json directly to web/data/
+        m6_out = web_data_dir / "m6_benchmark.json"
+        with m6_out.open("w", encoding="utf-8") as f:
+            json.dump(m6_data, f, indent=2, ensure_ascii=False)
+        print(f"Exported M6 benchmark to {m6_out.name}")
+
     summary_out = web_data_dir / "summary.json"
     with summary_out.open("w", encoding="utf-8") as f:
         json.dump(summary_data, f, indent=2, ensure_ascii=False)
     print(f"Exported unified summary data to {summary_out.name}")
 
+    # 5. Copy M6 Charts to web/data/charts/
+    m6_charts_dir = m6_dir / "charts"
+    web_charts_dir = web_data_dir / "charts"
+    if m6_charts_dir.exists():
+        web_charts_dir.mkdir(parents=True, exist_ok=True)
+        import shutil
+        for chart_file in m6_charts_dir.glob("*.png"):
+            shutil.copy2(chart_file, web_charts_dir / chart_file.name)
+            print(f"Copied chart: {chart_file.name} to web/data/charts/")
+
 
 if __name__ == "__main__":
     prepare_web_data()
+
