@@ -152,6 +152,9 @@ def main() -> None:
 
     if not benchmark_json_path.exists():
         print("Running M6 benchmark to generate prerequisite JSON...")
+        import sys
+        if str(project_root / "src") not in sys.path:
+            sys.path.insert(0, str(project_root / "src"))
         from m6.pipeline import run_m6_pipeline
         run_m6_pipeline(project_root=project_root)
 

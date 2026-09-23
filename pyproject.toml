@@ -7,7 +7,7 @@ name = "faculty-course-recommender"
 version = "0.1.0"
 description = "An explainable faculty-module ranking and cross-department teaching collaboration system."
 readme = "README.md"
-requires-python = ">=3.11,<3.13"
+requires-python = ">=3.10"
 
 dependencies = [
     "beautifulsoup4>=4.12,<5",
