@@ -162,9 +162,17 @@ def main() -> None:
 
     if PLOTLY_AVAILABLE:
         print("Rendering publication charts with Plotly & Kaleido...")
-        render_with_plotly(benchmark_data, charts_dir)
+        try:
+            render_with_plotly(benchmark_data, charts_dir)
+        except Exception as e:
+            print(f"Plotly/Kaleido export error: {e}. Falling back to Matplotlib...")
+            if MATPLOTLIB_AVAILABLE:
+                render_with_matplotlib(benchmark_data, charts_dir)
+    elif MATPLOTLIB_AVAILABLE:
+        print("Rendering charts with Matplotlib...")
+        render_with_matplotlib(benchmark_data, charts_dir)
     else:
-        print("Plotly not available. Skipping chart export.")
+        print("Neither Plotly nor Matplotlib available for chart export.")
 
     print(f"All M6 evaluation charts rendered into: {charts_dir}")
 

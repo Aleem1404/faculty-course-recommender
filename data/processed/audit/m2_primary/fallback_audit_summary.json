@@ -1,0 +1,15 @@
+{
+  "review_module_count": 331,
+  "unique_external_staff_recommended": 0,
+  "probable_cause_counts": {
+    "probable_organisational_mapping_gap": 331
+  },
+  "fallback_department_counts": {
+    "Brunel Business School": 146,
+    "Department of Electronic and Computer Engineering": 126,
+    "Department of Social Sciences, Media and Communications": 45,
+    "Brunel Medical School": 18
+  },
+  "detailed_output": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\m2_primary\\fallback_review.json",
+  "profiles_output": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\m2_primary\\fallback_recommended_profiles.json"
+}

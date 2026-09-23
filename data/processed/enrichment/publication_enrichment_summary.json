@@ -1,0 +1,28 @@
+{
+  "total_publication_records": 2264,
+  "records_in_output": 2264,
+  "processed_this_run": 2214,
+  "remaining_records": 0,
+  "pipeline_status_counts": {
+    "enriched": 1824,
+    "metadata_not_found": 4,
+    "no_doi": 436
+  },
+  "crossref_status_counts": {
+    "success": 1808,
+    "not_found": 20,
+    "not_requested": 436
+  },
+  "openalex_status_counts": {
+    "success": 1824,
+    "not_found": 4,
+    "not_requested": 436
+  },
+  "records_with_abstract": 1625,
+  "records_with_topics": 1821,
+  "records_with_keywords": 1824,
+  "records_with_expertise_text": 1991,
+  "crossref_cache_hits": 10,
+  "openalex_cache_hits": 10,
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\publication_enrichment.jsonl"
+}

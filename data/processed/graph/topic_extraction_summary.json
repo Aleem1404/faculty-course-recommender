@@ -1,0 +1,14 @@
+{
+  "module_record_count": 1700,
+  "staff_record_count": 634,
+  "modules_with_topics": 1679,
+  "staff_with_topics": 620,
+  "total_module_topics": 13026,
+  "total_staff_topics": 5859,
+  "average_topics_per_module": 7.6624,
+  "average_topics_per_staff": 9.2413,
+  "module_input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\core\\modules.jsonl",
+  "staff_input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\staff_enriched.jsonl",
+  "module_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\module_topics.jsonl",
+  "staff_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\staff_topics.jsonl"
+}

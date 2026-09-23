@@ -1,0 +1,529 @@
+Total staff records: 634
+Records containing teaching evidence: 509
+
+Most common teaching key paths:
+440: record.evidence_pages.teaching
+
+Most common teaching value paths:
+440: record.evidence_pages.teaching.evidence_type
+440: record.evidence_pages.teaching.label
+440: record.evidence_pages.teaching.source_url
+417: record.evidence_pages.teaching.text
+182: record.profile.available_sections[5].section_id
+182: record.profile.available_sections[5].label
+182: record.profile.available_sections[5].url
+155: record.profile.main_sections[0].text
+154: record.profile.summary
+129: record.profile.available_sections[4].section_id
+129: record.profile.available_sections[4].label
+129: record.profile.available_sections[4].url
+66: record.profile.available_sections[3].section_id
+66: record.profile.available_sections[3].label
+66: record.profile.available_sections[3].url
+60: record.evidence_pages.publications.text
+59: record.profile.responsibility
+49: record.profile.main_sections[2].text
+46: record.profile.main_sections[1].text
+35: record.profile.available_sections[6].section_id
+35: record.profile.available_sections[6].label
+35: record.profile.available_sections[6].url
+33: record.evidence_pages.research.text
+29: record.profile.qualifications
+21: record.profile.available_sections[2].section_id
+21: record.profile.available_sections[2].label
+21: record.profile.available_sections[2].url
+20: record.profile.meta_description
+15: record.short_summary
+14: record.evidence_pages.impact.text
+
+Sample records:
+
+{
+  "record_index": 0,
+  "staff_name": "Dr Nura Abubakar",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/nura-abubakar/teaching', 'text': 'Teaching Modules Cybersecurity (Year 3 Module Leader) Network and Operating Systems Network Computing Business Analysis and Process Modelling Student Supervision Dr Abubakar supervises students across three levels of study, supporting the development of independent research and professional skills: Year 2 Group Projects — approximately three groups per ac"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.summary",
+      "Dr Nura Tijjani Abubakar is an Associate Lecturer (Education) and Year 3 Module Leader in Cybersecurity in the Department of Computer Science, Brunel University London. He holds a PhD in Computer Science from Brunel University London (2021), an MSc in Software Engineering from Oxford Brookes University, and a BSc in Computing and Software Engineering with First Class Honours. With over 20 years of experience spanning academic teaching, research, and curriculum design, Dr Abubakar leads undergrad"
+    ],
+    [
+      "record.profile.main_sections[0].text",
+      "Dr Nura Tijjani Abubakar is an Associate Lecturer (Education) and Year 3 Module Leader in Cybersecurity in the Department of Computer Science, Brunel University London. He holds a PhD in Computer Science from Brunel University London (2021), an MSc in Software Engineering from Oxford Brookes University, and a BSc in Computing and Software Engineering with First Class Honours. With over 20 years of experience spanning academic teaching, research, and curriculum design, Dr Abubakar leads undergrad"
+    ],
+    [
+      "record.profile.available_sections[3].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[3].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[3].url",
+      "https://www.brunel.ac.uk/people/nura-abubakar/teaching"
+    ],
+    [
+      "record.evidence_pages.impact.text",
+      "Dr Nura Abubakar Associate Lecturer (Education) Tel: +44 (0)1895 267851 LinkedIn Computer Science College of Engineering, Design and Physical Sciences Membership and affiliation External Examining External Examiner — Department of Computer Science, University of East London. Providing independent oversight of academic standards, reviewing module assessments, and scrutinising marking practices to ensure alignment with national expectations for Computer Science programmes. This role directly enhan"
+    ],
+    [
+      "record.evidence_pages.impact.sections[0].text",
+      "External Examiner — Department of Computer Science, University of East London. Providing independent oversight of academic standards, reviewing module assessments, and scrutinising marking practices to ensure alignment with national expectations for Computer Science programmes. This role directly enhances Brunel's reputation for education quality through external engagement. Resource Person — University of London, BSc in Artificial Intelligence. Engaged to design the Programming for AI module fo"
+    ],
+    [
+      "record.evidence_pages.impact.sections[5].text",
+      "Fellow of the Higher Education Academy (FHEA) — a formal, internationally benchmarked professional award recognising sustained and evidenced contribution to teaching and supporting learning in higher education, assessed against the UK Professional Standards Framework."
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ]
+  ]
+}
+
+{
+  "record_index": 1,
+  "staff_name": "Dr Nadine Aburumman",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/nadine-aburumman/teaching', 'text': \"Teaching Educational Grant & Award Nadine has been nominated for the Lecturer of the Year Award at the Student Led Awards, 2024 and was awarded a runner-up lecturer of the year, University Level. Royal Society Partnership Grants 2024 in partnership with Bishopshalt School (£3K): How can AI and sensors help you create a smarter, more efficient garden? T"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.qualifications",
+      "BSc in computer science, MSc in computer science (computer graphics, vision and imaging), PhD in computer science (digital human and shape simulation), and FHEA (PgCAP in academic practice). Nadine is a Professional Member of the British Computer Society (BCS) Nadine's work; research, teaching, and admin activities contribute towards the following Sustainable Development Goals (SDGs) : 2024: Runner-Up: Lecturer of the Year (Student Led Award-University Level) 2023: The Recognition of Excellence "
+    ],
+    [
+      "record.profile.main_sections[1].text",
+      "BSc in computer science, MSc in computer science (computer graphics, vision and imaging), PhD in computer science (digital human and shape simulation), and FHEA (PgCAP in academic practice). Nadine is a Professional Member of the British Computer Society (BCS) Nadine's work; research, teaching, and admin activities contribute towards the following Sustainable Development Goals (SDGs) : 2024: Runner-Up: Lecturer of the Year (Student Led Award-University Level) 2023: The Recognition of Excellence "
+    ],
+    [
+      "record.profile.available_sections[6].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[6].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[6].url",
+      "https://www.brunel.ac.uk/people/nadine-aburumman/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ],
+    [
+      "record.evidence_pages.teaching.source_url",
+      "https://www.brunel.ac.uk/people/nadine-aburumman/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.text",
+      "Teaching Educational Grant & Award Nadine has been nominated for the Lecturer of the Year Award at the Student Led Awards, 2024 and was awarded a runner-up lecturer of the year, University Level. Royal Society Partnership Grants 2024 in partnership with Bishopshalt School (£3K): How can AI and sensors help you create a smarter, more efficient garden? Teaching areas Computer Graphics Computer Vision and Machine Learning Digital Image Processing Computer Games Advanced Graphics and Animation Virtu"
+    ]
+  ]
+}
+
+{
+  "record_index": 2,
+  "staff_name": "Dr Nour Ali",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/nour-ali/teaching', 'text': 'Teaching Module Leader: CS3100 Software Project Management Other Modules: CS1005 Computation and Logic, Group Project Level 1 CS307x Level 3 Final Year Project.', 'sections': []}"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.summary",
+      "Dr Nour Ali is a Reader in the Department of Computer Science at Brunel University London. She currently co-heads the Brunel Software Engineering Lab ( http://www.brunel-sweng.org/ ) and is the Vice-Dean of Education for the College of Engineering, Design and Physical Sciences. She received her PhD in Software Engineering from Universidad Politecnica de Valencia – Spain and has a Major in Computer Science from Bir-Zeit University- Palestine. Before moving to Brunel, she was a Principal Lecturer "
+    ],
+    [
+      "record.profile.main_sections[0].text",
+      "Dr Nour Ali is a Reader in the Department of Computer Science at Brunel University London. She currently co-heads the Brunel Software Engineering Lab ( http://www.brunel-sweng.org/ ) and is the Vice-Dean of Education for the College of Engineering, Design and Physical Sciences. She received her PhD in Software Engineering from Universidad Politecnica de Valencia – Spain and has a Major in Computer Science from Bir-Zeit University- Palestine. Before moving to Brunel, she was a Principal Lecturer "
+    ],
+    [
+      "record.profile.available_sections[5].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[5].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[5].url",
+      "https://www.brunel.ac.uk/people/nour-ali/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ],
+    [
+      "record.evidence_pages.teaching.source_url",
+      "https://www.brunel.ac.uk/people/nour-ali/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.text",
+      "Teaching Module Leader: CS3100 Software Project Management Other Modules: CS1005 Computation and Logic, Group Project Level 1 CS307x Level 3 Final Year Project."
+    ]
+  ]
+}
+
+{
+  "record_index": 3,
+  "staff_name": "Dr Faris Alwzinani",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/faris-alwzinani/teaching', 'text': 'Teaching Module Leader: CS5709: Digital Innovation and Strategy (MSc-Level 7) Teaching Contributor to Undergraduate and Postgraduate Modules: CS1701: Group Project (Level 4) CS2003: Usability Engineering (Level 5) CS3072-3605: Computer Science/Business Computing Final-Year Projects (Level 6) CS3608: Social Media (Level 6-Module reviewer) CS2555: Work Pl"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.summary",
+      "Dr. Faris Alwzinani is a Lecturer (Assistant Professor) in the Computer Science Department at Brunel University London, where he also earned his MSc and PhD in Information Systems. He leads the Digital Innovation and Strategy module and has extensive experience teaching a variety of undergraduate and postgraduate courses. His research focuses on digital transformation and the application of digital technologies in areas such as healthcare and smart cities."
+    ],
+    [
+      "record.profile.main_sections[0].text",
+      "Dr. Faris Alwzinani is a Lecturer (Assistant Professor) in the Computer Science Department at Brunel University London, where he also earned his MSc and PhD in Information Systems. He leads the Digital Innovation and Strategy module and has extensive experience teaching a variety of undergraduate and postgraduate courses. His research focuses on digital transformation and the application of digital technologies in areas such as healthcare and smart cities."
+    ],
+    [
+      "record.profile.available_sections[4].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[4].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[4].url",
+      "https://www.brunel.ac.uk/people/faris-alwzinani/teaching"
+    ],
+    [
+      "record.evidence_pages.publications.text",
+      "Dr Faris Alwzinani Lecturer (Education) - Computer Science Wilfred Brown Building 111 Email: faris.alwzinani@brunel.ac.uk Tel: +44 (0)1895 268284 Computer Science College of Engineering, Design and Physical Sciences Filter Conference papers Journal articles Filter Reset Kashefi, A., Alwzinani, F. and Malek, N. (2025) ' Enhancing Operational Efficiency in Mumbai's Airport Departure Terminal: A Hybrid Simulation Modeling Approach '. Winter Simulation Conference 2025. Seattle, WA, USA. 7 - 10 Decem"
+    ],
+    [
+      "record.evidence_pages.publications.publications[2].citation",
+      "Kaniadakis, A., Sassoon, I. and Alwzinani, F. (2024) ' Implementing work-based assessments in a level 7 data analytics digital degree apprenticeship: challenges and lessons for HEIs '. New Directions in the Teaching of Natural Sciences . pp. 1 - 9. Open Access Link Journal article"
+    ],
+    [
+      "record.evidence_pages.publications.publications[4].title",
+      "PERSPECTIVES ON TEACHING MODELING AND SIMULATION IN A DEPARTMENT OF COMPUTER SCIENCE"
+    ],
+    [
+      "record.evidence_pages.publications.publications[4].citation",
+      "Kashefi, A., Alwzinani, F. and Bell, D. (2018) ' PERSPECTIVES ON TEACHING MODELING AND SIMULATION IN A DEPARTMENT OF COMPUTER SCIENCE '. Winter Simulation Conference (WSC) 2018. Sweden. 12 - 12 December. Informs. pp. 4058 - 4068. ISSN: 0891-7736 Open Access Link Conference paper"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ]
+  ]
+}
+
+{
+  "record_index": 4,
+  "staff_name": "Dr Anastasia Anagnostou",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/anastasia-anagnostou/teaching', 'text': 'Teaching CS2005 Networks and Operating Systems (Module Leader) CS2001 Level 2 Group Project CS2555 Work Placement CS3004 Network Computing CS3072-3605 Computer Science/Business Computing Final-Year Projects CS5601 Enterprise Modelling (Module reviewer) I also taught: Introduction to Programming, Business Analysis and Process Modelling, Systems Proj"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.selected_publications[0].title",
+      "An international educational framework for teaching simulation"
+    ],
+    [
+      "record.profile.selected_publications[0].citation",
+      "Kogler, C., Roeder, T., Tako, A. and Anagnostou, A. (2026) ' An international educational framework for teaching simulation '. Journal of the Operational Research Society , 0 (ahead of print). pp. 1 - 29. ISSN: 0160-5682 Open Access Link Journal article"
+    ],
+    [
+      "record.profile.available_sections[5].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[5].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[5].url",
+      "https://www.brunel.ac.uk/people/anastasia-anagnostou/teaching"
+    ],
+    [
+      "record.evidence_pages.publications.text",
+      "Dr Anastasia Anagnostou Senior Lecturer in Computer Science Wilfred Brown Building 318 Email: anastasia.anagnostou@brunel.ac.uk Tel: +44 (0)1895 266227 Computer Science College of Engineering, Design and Physical Sciences Filter Book chapters Conference papers Journal articles Posters Filter Reset Kogler, C., Roeder, T., Tako, A. and Anagnostou, A. (2026) ' An international educational framework for teaching simulation '. Journal of the Operational Research Society , 0 (ahead of print). pp. 1 - "
+    ],
+    [
+      "record.evidence_pages.publications.publications[0].title",
+      "An international educational framework for teaching simulation"
+    ],
+    [
+      "record.evidence_pages.publications.publications[0].citation",
+      "Kogler, C., Roeder, T., Tako, A. and Anagnostou, A. (2026) ' An international educational framework for teaching simulation '. Journal of the Operational Research Society , 0 (ahead of print). pp. 1 - 29. ISSN: 0160-5682 Open Access Link Journal article"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ]
+  ]
+}
+
+{
+  "record_index": 7,
+  "staff_name": "Dr Lorraine Ayad",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/lorraine-ayad/teaching', 'text': 'Teaching 2025 - 2026 CS2603 - Fundamentals of Algorithms (Level 5) An Introduction to Python (Level 7) CS1704 - Group Project (Level 4) CS1603 - Introductory Programming (Level 4) CS1602 - Logic and Computation (Level 4) Membership I am a Fellow of the Higher Education Academy .', 'sections': []}"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.available_sections[3].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[3].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[3].url",
+      "https://www.brunel.ac.uk/people/lorraine-ayad/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ],
+    [
+      "record.evidence_pages.teaching.source_url",
+      "https://www.brunel.ac.uk/people/lorraine-ayad/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.text",
+      "Teaching 2025 - 2026 CS2603 - Fundamentals of Algorithms (Level 5) An Introduction to Python (Level 7) CS1704 - Group Project (Level 4) CS1603 - Introductory Programming (Level 4) CS1602 - Logic and Computation (Level 4) Membership I am a Fellow of the Higher Education Academy ."
+    ]
+  ]
+}
+
+{
+  "record_index": 8,
+  "staff_name": "Dr David Bell",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/david-bell/teaching', 'text': 'Teaching Module leader Advanced Topics in Computer Science. Module leader Advanced Topics in Business Computing. Teaching on Cybersecurity.', 'sections': []}"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.available_sections[5].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[5].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[5].url",
+      "https://www.brunel.ac.uk/people/david-bell/teaching"
+    ],
+    [
+      "record.evidence_pages.publications.text",
+      "Dr David Bell Reader and Interim Head of Department Wilfred Brown Building 111 Email: david.bell@brunel.ac.uk Tel: +44 (0)1895 265845 Director of the STAHR Research Centre CTO of Brunel Spinout (HecoAnalytics Limited) Computer Science College of Engineering, Design and Physical Sciences Filter Books Book chapters Conference papers Journal articles Thesis dissertation Filter Reset Fouladi, S., Safaei, AA., Alayari, D. and Bell, D. (2026) ' Advanced Parkinson’s disease diagnosis: leveraging deep l"
+    ],
+    [
+      "record.evidence_pages.publications.publications[27].title",
+      "PERSPECTIVES ON TEACHING MODELING AND SIMULATION IN A DEPARTMENT OF COMPUTER SCIENCE"
+    ],
+    [
+      "record.evidence_pages.publications.publications[27].citation",
+      "Kashefi, A., Alwzinani, F. and Bell, D. (2018) ' PERSPECTIVES ON TEACHING MODELING AND SIMULATION IN A DEPARTMENT OF COMPUTER SCIENCE '. Winter Simulation Conference (WSC) 2018. Sweden. 12 - 12 December. Informs. pp. 4058 - 4068. ISSN: 0891-7736 Open Access Link Conference paper"
+    ],
+    [
+      "record.evidence_pages.publications.publications[43].title",
+      "Designing Effective Teaching Interventions with Semantic Annotation"
+    ],
+    [
+      "record.evidence_pages.publications.publications[43].citation",
+      "Dawod, Z. and Bell, D. (2016) ' Designing Effective Teaching Interventions with Semantic Annotation '. 18th International Conference, HCI International 2016. Toronto, Canada. 19 - 22 July. Springer. pp. 505 - 518. ISSN: 0302-9743 Open Access Link Conference paper"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ]
+  ]
+}
+
+{
+  "record_index": 11,
+  "staff_name": "Dr Thomas Coleman",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/thomas-coleman/teaching', 'text': 'Teaching Thomas is the module leader for CS0001, and also teaches on CS1004 and CS2003, they also tutor and supervise students from 1st year to MSc. and provide support on a number of additional modules.', 'sections': []}"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.summary",
+      "Thomas Coleman is an Associate Lecturer in the Department of Computer Science at Brunel University London since October 2019. They studied for their PhD. in Computer Science from Brunel from 2017 to 2020 and also hold an MSc. in Information Management from Strathclyde University, Glasgow and a BSc. in Computer Science from the University of Birmingham. Thomas's research focuses on the application of technology to education, particularly the role of Games in teaching, learning and assessment. The"
+    ],
+    [
+      "record.profile.main_sections[0].text",
+      "Thomas Coleman is an Associate Lecturer in the Department of Computer Science at Brunel University London since October 2019. They studied for their PhD. in Computer Science from Brunel from 2017 to 2020 and also hold an MSc. in Information Management from Strathclyde University, Glasgow and a BSc. in Computer Science from the University of Birmingham. Thomas's research focuses on the application of technology to education, particularly the role of Games in teaching, learning and assessment. The"
+    ],
+    [
+      "record.profile.available_sections[2].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[2].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[2].url",
+      "https://www.brunel.ac.uk/people/thomas-coleman/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ],
+    [
+      "record.evidence_pages.teaching.source_url",
+      "https://www.brunel.ac.uk/people/thomas-coleman/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.text",
+      "Teaching Thomas is the module leader for CS0001, and also teaches on CS1004 and CS2003, they also tutor and supervise students from 1st year to MSc. and provide support on a number of additional modules."
+    ]
+  ]
+}
+
+{
+  "record_index": 12,
+  "staff_name": "Dr Timothy Cribbin",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/timothy-cribbin/teaching', 'text': 'Teaching Leader of CS5703 Data Visualisation Part-teaching duties on CS5602 Digital Service Design Applications, CS1703 \"Data and Information\" Level 1, Masters and Placement Tutor Supervisory duties for final year Undergraduate and Masters dissertation projects Deputy Senior Tutor (Academic Misconduct)', 'sections': []}"
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.qualifications",
+      "2007 - PGCert Learning and Teaching in Higher Education, Brunel University 2005 - PhD Information Science, Brunel University \"Classifying complex topics using spatial-semantic document visualization: an evaluation of an interaction model to support open-ended search tasks\" \"Classifying complex topics using spatial-semantic document visualization: an evaluation of an interaction model to support open-ended search tasks\" 1996 - MSc Industrial Psychology, University of Hull Awarded Tom Hoyes Memori"
+    ],
+    [
+      "record.profile.main_sections[1].text",
+      "2007 - PGCert Learning and Teaching in Higher Education, Brunel University 2005 - PhD Information Science, Brunel University \"Classifying complex topics using spatial-semantic document visualization: an evaluation of an interaction model to support open-ended search tasks\" \"Classifying complex topics using spatial-semantic document visualization: an evaluation of an interaction model to support open-ended search tasks\" 1996 - MSc Industrial Psychology, University of Hull Awarded Tom Hoyes Memori"
+    ],
+    [
+      "record.profile.available_sections[5].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[5].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[5].url",
+      "https://www.brunel.ac.uk/people/timothy-cribbin/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ],
+    [
+      "record.evidence_pages.teaching.source_url",
+      "https://www.brunel.ac.uk/people/timothy-cribbin/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.text",
+      "Teaching Leader of CS5703 Data Visualisation Part-teaching duties on CS5602 Digital Service Design Applications, CS1703 \"Data and Information\" Level 1, Masters and Placement Tutor Supervisory duties for final year Undergraduate and Masters dissertation projects Deputy Senior Tutor (Academic Misconduct)"
+    ]
+  ]
+}
+
+{
+  "record_index": 13,
+  "staff_name": "Dr Sarath Dantu",
+  "key_matches": [
+    [
+      "record.evidence_pages.teaching",
+      "{'evidence_type': 'teaching', 'label': 'Teaching activities', 'source_url': 'https://www.brunel.ac.uk/people/sarath-dantu/teaching', 'text': 'PhD supervision Computer Science Research for 2244215 Supervisory role: Date: April 2022 - April 2031 Computer Science Research for 1122366 Supervisory role: Date: October 2022 - January 2030 Computer Science Research for 1815460 Supervisory role: Date: October 2021 - June 2025 Development of machine learning methods for automated design of new biological "
+    ]
+  ],
+  "value_matches": [
+    [
+      "record.profile.available_sections[2].section_id",
+      "teaching"
+    ],
+    [
+      "record.profile.available_sections[2].label",
+      "Teaching activities"
+    ],
+    [
+      "record.profile.available_sections[2].url",
+      "https://www.brunel.ac.uk/people/sarath-dantu/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.evidence_type",
+      "teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.label",
+      "Teaching activities"
+    ],
+    [
+      "record.evidence_pages.teaching.source_url",
+      "https://www.brunel.ac.uk/people/sarath-dantu/teaching"
+    ],
+    [
+      "record.evidence_pages.teaching.text",
+      "PhD supervision Computer Science Research for 2244215 Supervisory role: Date: April 2022 - April 2031 Computer Science Research for 1122366 Supervisory role: Date: October 2022 - January 2030 Computer Science Research for 1815460 Supervisory role: Date: October 2021 - June 2025 Development of machine learning methods for automated design of new biological functions in bacterial proteins Supervisory role: Joint supervisor Date: October 2022 Courses taught Quantitative Data Analysis (CS5701/CS5801"
+    ]
+  ]
+}

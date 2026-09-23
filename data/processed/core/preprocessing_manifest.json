@@ -1,0 +1,13 @@
+{
+  "input_staff_records": 634,
+  "input_course_records": 333,
+  "output_counts": {
+    "staff": 634,
+    "courses": 333,
+    "modules": 1700,
+    "course_module_links": 4294,
+    "publications": 2264,
+    "staff_publication_links": 2382,
+    "teaching_evidence": 440
+  }
+}

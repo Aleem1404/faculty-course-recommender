@@ -1,0 +1,159 @@
+{
+  "staff_source": "F:\\Dissertation-new\\faculty-course-recommender\\data\\raw\\staff\\university_faculty_profiles.json",
+  "course_source": "F:\\Dissertation-new\\faculty-course-recommender\\data\\raw\\courses\\brunel_courses_nested.json",
+  "staff": {
+    "total_staff_records": 634,
+    "unique_staff_ids": 634,
+    "duplicate_staff_id_count": 0,
+    "duplicate_staff_ids": [],
+    "unique_profile_urls": 634,
+    "duplicate_profile_url_count": 0,
+    "duplicate_profile_urls": [],
+    "scrape_status_counts": {
+      "success": 634
+    },
+    "staff_with_publications": 508,
+    "total_selected_publications": 2382,
+    "publications_with_doi": 1935,
+    "staff_with_teaching_page": 440,
+    "staff_with_teaching_evidence": 440,
+    "staff_with_module_codes_in_teaching": 270,
+    "field_coverage": {
+      "staff_id": {
+        "available": 634,
+        "missing": 0,
+        "coverage_percentage": 100.0
+      },
+      "full_name": {
+        "available": 634,
+        "missing": 0,
+        "coverage_percentage": 100.0
+      },
+      "position": {
+        "available": 633,
+        "missing": 1,
+        "coverage_percentage": 99.84
+      },
+      "profile_url": {
+        "available": 634,
+        "missing": 0,
+        "coverage_percentage": 100.0
+      },
+      "college_name": {
+        "available": 634,
+        "missing": 0,
+        "coverage_percentage": 100.0
+      },
+      "department_name": {
+        "available": 634,
+        "missing": 0,
+        "coverage_percentage": 100.0
+      },
+      "summary": {
+        "available": 606,
+        "missing": 28,
+        "coverage_percentage": 95.58
+      },
+      "research_keywords": {
+        "available": 68,
+        "missing": 566,
+        "coverage_percentage": 10.73
+      },
+      "qualifications": {
+        "available": 406,
+        "missing": 228,
+        "coverage_percentage": 64.04
+      }
+    },
+    "college_counts": {
+      "College of Engineering, Design and Physical Sciences": 204,
+      "College of Health, Medicine and Life Sciences": 165,
+      "College of Arts, Law and Social Sciences": 162,
+      "Brunel Business School": 103
+    },
+    "department_counts": {
+      "Department of Life Sciences": 95,
+      "Department of Health Sciences": 70,
+      "Social and Political Sciences": 64,
+      "Computer Science": 60,
+      "Arts and Humanities": 39,
+      "Economics, Finance and Accounting": 37,
+      "Strategy, Entrepreneurship and Management": 37,
+      "Brunel Law School": 37,
+      "Mechanical and Aerospace Engineering": 36,
+      "Civil and Environmental Engineering": 29,
+      "Business Analytics and Marketing": 29,
+      "Mathematics": 25,
+      "Brunel Design School": 22,
+      "Electronic and Electrical Engineering": 22,
+      "Education": 22,
+      "Chemical Engineering": 10
+    },
+    "top_level_key_frequency": {
+      "staff_id": 634,
+      "full_name": 634,
+      "position": 634,
+      "short_summary": 634,
+      "profile_url": 634,
+      "college_code": 634,
+      "college_name": 634,
+      "department_code": 634,
+      "department_name": 634,
+      "staff_filter": 634,
+      "source_listing_url": 634,
+      "division_code": 634,
+      "division_name": 634,
+      "organisation_memberships": 634,
+      "listing_scraped_at": 634,
+      "profile": 634,
+      "evidence_pages": 634,
+      "section_errors": 634,
+      "profile_scraped_at": 634,
+      "scrape_status": 634
+    }
+  },
+  "courses": {
+    "total_course_records": 333,
+    "unique_course_ids": 333,
+    "duplicate_course_id_count": 0,
+    "duplicate_course_ids": [],
+    "duplicate_course_url_count": 0,
+    "total_module_occurrences": 4295,
+    "unique_module_entities": 1700,
+    "repeated_module_occurrences": 2595,
+    "unique_module_ids": 1700,
+    "unique_valid_module_codes": 1165,
+    "modules_with_tbc_or_missing_code": 826,
+    "missing_module_title": 0,
+    "missing_module_description": 115,
+    "missing_module_matching_text": 0,
+    "missing_module_credits": 4295,
+    "department_counts": {
+      "Department of Health Sciences": 45,
+      "Department of Social and Political Sciences": 38,
+      "Department of Mechanical and Aerospace Engineering": 35,
+      "Brunel Business School": 30,
+      "Department of Life Sciences": 30,
+      "Department of Arts and Humanities": 28,
+      "Department of Social Sciences, Media and Communications": 22,
+      "Department of Electronic and Computer Engineering": 18,
+      "Brunel Design School": 18,
+      "Department of Computer Science": 15,
+      "Department of Economics, Finance and Accounting": 13,
+      "Department of Education": 12,
+      "Department of Mathematics": 11,
+      "Department of Civil and Environmental Engineering": 9,
+      "Brunel Law School": 4,
+      "Brunel Language Centre": 3,
+      "Department of Chemical Engineering": 1,
+      "Brunel Medical School": 1
+    },
+    "college_counts": {
+      "College of Arts, Law and Social Sciences": 111,
+      "College of Engineering, Design and Physical Sciences": 106,
+      "College of Health, Medicine and Life Sciences": 77,
+      "Brunel Business School": 36,
+      "Brunel Language Centre": 3
+    }
+  }
+}

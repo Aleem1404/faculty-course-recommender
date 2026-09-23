@@ -26,12 +26,12 @@ htmlcov/
 logs/
 *.log
 
-# Raw data is tracked so Google Colab can execute all pipelines from scratch
-# Generated intermediate data is ignored
-data/processed/
+# Data tracking for Google Colab reproducibility
 data/interim/
 data/cache/
 data/outputs/
+data/processed/audit/m2_primary/fallback_review.json
+
 
 # Machine learning artifacts
 *.joblib

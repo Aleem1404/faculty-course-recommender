@@ -1,0 +1,42 @@
+{
+  "hierarchy": {
+    "unit_count": 39,
+    "level_counts": {
+      "college": 4,
+      "department": 17,
+      "division": 18
+    },
+    "validation_errors": [],
+    "alias_collision_count": 2,
+    "alias_collisions": {
+      "health sciences": [
+        "chmls/health-sciences",
+        "chmls/health-sciences/health-sciences",
+        "chmls/health-sciences/clinical-sciences"
+      ],
+      "life sciences": [
+        "chmls/life-sciences",
+        "chmls/life-sciences/life-sciences"
+      ]
+    }
+  },
+  "staff": {
+    "record_count": 634,
+    "mapping_status_counts": {
+      "resolved": 634
+    },
+    "unresolved_label_counts": {}
+  },
+  "modules": {
+    "record_count": 1700,
+    "mapping_status_counts": {
+      "resolved": 1700
+    },
+    "unresolved_label_counts": {}
+  },
+  "outputs": {
+    "academic_units": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\academic_structure\\academic_units.jsonl",
+    "staff_mappings": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\academic_structure\\staff_unit_mappings.jsonl",
+    "module_mappings": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\academic_structure\\module_unit_mappings.jsonl"
+  }
+}

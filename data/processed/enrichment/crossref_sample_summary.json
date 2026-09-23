@@ -1,0 +1,11 @@
+{
+  "requested": 10,
+  "status_counts": {
+    "success": 10
+  },
+  "successful": 10,
+  "successful_with_abstract": 6,
+  "successful_with_subjects": 0,
+  "cache_directory": "F:\\Dissertation-new\\faculty-course-recommender\\data\\cache\\publications\\crossref",
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\crossref_sample.jsonl"
+}

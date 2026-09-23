@@ -1,0 +1,24 @@
+{
+  "node_count": 14302,
+  "edge_count": 21524,
+  "node_type_counts": {
+    "module": 1700,
+    "department": 29,
+    "college": 4,
+    "topic": 11935,
+    "staff": 634
+  },
+  "edge_type_counts": {
+    "module_in_department": 1960,
+    "module_has_topic": 13026,
+    "department_in_college": 45,
+    "staff_in_department": 634,
+    "staff_has_topic": 5859
+  },
+  "module_topic_input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\module_topics.jsonl",
+  "staff_topic_input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\staff_topics.jsonl",
+  "graphml_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\faculty_course_graph.graphml",
+  "json_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\faculty_course_graph.json",
+  "module_topic_record_count": 1700,
+  "staff_topic_record_count": 634
+}

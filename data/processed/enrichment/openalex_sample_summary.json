@@ -1,0 +1,13 @@
+{
+  "requested": 10,
+  "status_counts": {
+    "success": 10
+  },
+  "successful": 10,
+  "successful_with_abstract": 8,
+  "successful_with_topics": 10,
+  "successful_with_keywords": 10,
+  "missing_crossref_abstracts_filled": 2,
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\openalex_sample.jsonl",
+  "cache_directory": "F:\\Dissertation-new\\faculty-course-recommender\\data\\cache\\publications\\openalex"
+}

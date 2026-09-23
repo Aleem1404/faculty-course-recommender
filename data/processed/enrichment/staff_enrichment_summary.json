@@ -1,0 +1,21 @@
+{
+  "input_staff_records": 634,
+  "output_staff_records": 634,
+  "input_publication_records": 2264,
+  "input_link_records": 2382,
+  "unique_link_records": 2382,
+  "evidence_records": 2382,
+  "staff_with_publications": 508,
+  "staff_with_enriched_publications": 493,
+  "staff_with_publication_abstracts": 487,
+  "staff_with_publication_topics": 493,
+  "staff_with_publication_keywords": 493,
+  "invalid_link_records": 0,
+  "duplicate_links": 0,
+  "links_with_unknown_staff": 0,
+  "unresolved_publication_links": 0,
+  "original_mojibake_records": 0,
+  "suspicious_truncated_abstracts": 17,
+  "staff_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\staff_enriched.jsonl",
+  "evidence_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\staff_publication_evidence.jsonl"
+}

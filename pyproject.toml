@@ -22,7 +22,11 @@ dependencies = [
     "PyYAML>=6.0,<7",
     "rapidfuzz>=3.9,<4",
     "scikit-learn>=1.5,<2",
-    "tenacity>=9.0,<10"
+    "tenacity>=9.0,<10",
+    "matplotlib>=3.8,<4",
+    "seaborn>=0.13,<1",
+    "plotly>=5.20,<6",
+    "kaleido>=0.2.1"
 ]
 
 [project.optional-dependencies]
