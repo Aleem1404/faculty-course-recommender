@@ -1,0 +1,16 @@
+{
+  "chart_data_rows": 10,
+  "chart_groups": [
+    "case_types",
+    "score_means",
+    "shared_topics",
+    "top_rank_change"
+  ],
+  "compared_modules": 1575,
+  "top_rank_changed_modules": 86,
+  "selected_review_cases": 20,
+  "comparison_summary_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_vs_m3\\m2_h_vs_m3_kg_summary.json",
+  "case_study_summary_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\case_studies\\m3_case_studies_summary.json",
+  "expert_summary_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\expert_judgement\\expert_judgement_summary.json",
+  "chart_data_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\evaluation_chart_data.csv"
+}

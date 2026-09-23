@@ -1,0 +1,17 @@
+{
+  "m2_module_results": 1575,
+  "m3_module_results": 1575,
+  "compared_modules": 1575,
+  "top_rank_changed_modules": 86,
+  "top_rank_changed_percentage": 5.46,
+  "total_rank_changes": 651,
+  "total_candidates_with_shared_topics": 905,
+  "average_m2_semantic_score": 0.34607,
+  "average_m3_semantic_score": 0.34607,
+  "average_m3_kg_score": 0.30366,
+  "average_m3_graph_support_score": 0.134019,
+  "m2_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules.jsonl",
+  "m3_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_recommendations.jsonl",
+  "module_comparisons_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_vs_m3\\m2_h_vs_m3_kg_module_comparisons.json",
+  "case_rows_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_vs_m3\\m2_h_vs_m3_kg_case_rows.csv"
+}

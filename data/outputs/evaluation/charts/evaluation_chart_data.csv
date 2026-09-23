@@ -1,0 +1,11 @@
+chart_group,label,value
+top_rank_change,Changed,86
+top_rank_change,Unchanged,1489
+shared_topics,Shared topics,905
+shared_topics,No shared topics,6834
+case_types,Changed top,10
+case_types,Strong graph,5
+case_types,Stable explained,5
+score_means,M2-H top,0.398847
+score_means,M3-KG top,0.351134
+score_means,Graph support,0.166233

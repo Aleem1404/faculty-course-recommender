@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-09-22T08:32:48.378166+00:00",
+  "total_catalog_modules_evaluated": 1575,
+  "total_taught_modules": 1528,
+  "total_exempt_non_taught_modules": 47,
+  "total_without_collaboration": 323,
+  "taught_modules_without_collaboration": 276,
+  "taught_uncovered_percentage": 18.06,
+  "reasons_breakdown": {
+    "Narrow Domain (Below Interdisciplinary Aspect Thresholds)": 242,
+    "Non-Taught Independent Project / Placement (Formally Exempt)": 47,
+    "Saturated / Fully Covered by Primary Lead": 13,
+    "Sparse / Missing Syllabus Description": 21
+  },
+  "department_breakdown": {
+    "Department of Social Sciences, Media and Communications": 51,
+    "Department of Arts and Humanities": 63,
+    "Brunel Design School": 10,
+    "Department of Education": 19,
+    "Brunel Law School": 1,
+    "Department of Civil and Environmental Engineering": 17,
+    "Department of Social and Political Sciences": 41,
+    "Department of Computer Science": 3,
+    "Department of Electronic and Computer Engineering": 14,
+    "Brunel Business School": 5,
+    "Department of Health Sciences": 45,
+    "Department of Life Sciences": 20,
+    "Department of Mechanical and Aerospace Engineering": 13,
+    "Department of Economics, Finance and Accounting": 9,
+    "Brunel Medical School": 6,
+    "Department of Mathematics": 5,
+    "Department of Chemical Engineering": 1
+  },
+  "output_files": {
+    "jsonl": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m4_v2\\modules_without_collaborations.jsonl",
+    "csv": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m4_v2\\modules_without_collaborations.csv"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "caption": "Mean ranking components",
+  "description": "Bar chart comparing the mean top M2-H semantic score, mean top M3-KG score, and mean top graph-support score."
+}

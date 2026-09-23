@@ -1,0 +1,10 @@
+{
+  "chart_data_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\evaluation_chart_data.csv",
+  "generated_chart_files": [
+    "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\top_rank_changes.png",
+    "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\shared_topic_coverage.png",
+    "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\expert_review_case_types.png",
+    "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\ranking_score_components.png"
+  ],
+  "generated_chart_count": 4
+}

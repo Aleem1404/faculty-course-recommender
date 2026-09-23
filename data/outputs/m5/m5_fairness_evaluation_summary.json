@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-09-23T00:05:55.212478+00:00",
+  "model_version": "M5 (Multi-Objective Load-Balanced & Fair Allocation)",
+  "total_catalog_modules": 1575,
+  "total_taught_modules": 1528,
+  "exempt_modules": 47,
+  "capacity_policy": {
+    "default_max_primary_modules": 3,
+    "min_competency_threshold": 0.15
+  },
+  "comparison_metrics": {
+    "baseline_greedy_m4": {
+      "total_modules": 1506,
+      "total_faculty_in_pool": 634,
+      "allocated_faculty_count": 310,
+      "faculty_utilization_pct": 48.9,
+      "gini_coefficient": 0.7587,
+      "max_workload": 46,
+      "min_workload_active": 1,
+      "mean_workload_active": 4.858,
+      "workload_standard_deviation": 5.618,
+      "top_10_faculty_concentration_pct": 17.93,
+      "top_5_percent_concentration_pct": 38.51,
+      "average_relevance_score": 0.3516,
+      "workload_distribution_histogram": {
+        "1": 81,
+        "2": 52,
+        "3": 44,
+        "4": 35,
+        "5": 18,
+        "6": 12,
+        "7": 9,
+        "8": 10,
+        "9": 9,
+        "10": 5,
+        "11": 5,
+        "12": 7,
+        "13": 1,
+        "14": 4,
+        "15": 2,
+        "16": 1,
+        "17": 2,
+        "18": 2,
+        "19": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 2,
+        "25": 2,
+        "26": 1,
+        "34": 1,
+        "46": 1
+      },
+      "lorenz_curve_points": [
+        {
+          "faculty_share": 0.0,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.1106,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.2212,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.3333,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.4439,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.5545,
+          "workload_share": 0.0186
+        },
+        {
+          "faculty_share": 0.6667,
+          "workload_share": 0.0777
+        },
+        {
+          "faculty_share": 0.7773,
+          "workload_share": 0.1946
+        },
+        {
+          "faculty_share": 0.8878,
+          "workload_share": 0.3991
+        },
+        {
+          "faculty_share": 1.0,
+          "workload_share": 1.0
+        }
+      ]
+    },
+    "m5_load_balanced": {
+      "total_modules": 1528,
+      "total_faculty_in_pool": 635,
+      "allocated_faculty_count": 411,
+      "faculty_utilization_pct": 64.72,
+      "gini_coefficient": 0.5385,
+      "max_workload": 22,
+      "min_workload_active": 1,
+      "mean_workload_active": 3.718,
+      "workload_standard_deviation": 2.361,
+      "top_10_faculty_concentration_pct": 9.62,
+      "top_5_percent_concentration_pct": 19.18,
+      "average_relevance_score": 0.3268,
+      "workload_distribution_histogram": {
+        "1": 44,
+        "2": 66,
+        "3": 103,
+        "4": 91,
+        "5": 64,
+        "6": 25,
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 3,
+        "16": 2,
+        "18": 2,
+        "22": 1
+      },
+      "lorenz_curve_points": [
+        {
+          "faculty_share": 0.0,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.1104,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.2208,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.3328,
+          "workload_share": 0.0
+        },
+        {
+          "faculty_share": 0.4432,
+          "workload_share": 0.0471
+        },
+        {
+          "faculty_share": 0.5552,
+          "workload_share": 0.1525
+        },
+        {
+          "faculty_share": 0.6656,
+          "workload_share": 0.2899
+        },
+        {
+          "faculty_share": 0.7776,
+          "workload_share": 0.4666
+        },
+        {
+          "faculty_share": 0.888,
+          "workload_share": 0.6734
+        },
+        {
+          "faculty_share": 1.0,
+          "workload_share": 1.0
+        }
+      ]
+    },
+    "delta_improvements": {
+      "gini_reduction": 0.2202,
+      "gini_reduction_pct": 29.02,
+      "faculty_utilization_increase_pct": 15.82,
+      "top_10_concentration_reduction_pct": 8.31,
+      "relevance_tradeoff_cost": 0.0248,
+      "relevance_retention_pct": 92.95,
+      "reallocated_modules_count": 724,
+      "reallocated_modules_pct": 47.38
+    }
+  },
+  "outputs": {
+    "jsonl_recommendations": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m5\\m5_balanced_recommendations.jsonl",
+    "csv_audit_sheet": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m5\\m5_allocation_audit_sheet.csv"
+  }
+}

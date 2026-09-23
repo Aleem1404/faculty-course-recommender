@@ -1,0 +1,40 @@
+{
+  "module_results": 1575,
+  "status_counts": {
+    "hierarchy_internal_ranked": 1540,
+    "limited_hierarchy_internal_pool": 13,
+    "no_hierarchy_internal_staff": 17,
+    "all_internal_candidates_failed_gate": 5
+  },
+  "fully_ranked_modules": 1540,
+  "limited_pool_modules": 13,
+  "gate_failed_modules": 5,
+  "review_required_modules": 35,
+  "total_recommendations": 7739,
+  "gate": {
+    "passed_recommendations": 7739,
+    "failed_candidates": 231,
+    "reason_counts": {
+      "passed": 7739,
+      "low_total_score": 231
+    }
+  },
+  "source_input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary\\m2_hierarchy_primary_recommendations.jsonl",
+  "source_rejections_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary\\m2_hierarchy_primary_gate_rejections.jsonl",
+  "filtered_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules.jsonl",
+  "filtered_rejections_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules_gate_rejections.jsonl",
+  "excluded_modules_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\excluded_modules.json",
+  "excluded_module_count": 125,
+  "kept_module_count": 1575,
+  "filtered_rejection_count": 231,
+  "administrative_module_patterns": [
+    "major group project",
+    "design and branding research project",
+    "capstone project",
+    "practice placement",
+    "dissertation",
+    "dissertation project",
+    "student selected component",
+    "performance"
+  ]
+}

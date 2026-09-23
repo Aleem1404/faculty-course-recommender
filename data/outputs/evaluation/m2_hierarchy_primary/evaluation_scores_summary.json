@@ -1,0 +1,231 @@
+{
+  "input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_hierarchy_primary\\evaluation_reviewer_template.csv",
+  "module_metrics_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_hierarchy_primary\\evaluation_module_metrics.json",
+  "scoring_scale": {
+    "2": "Relevant",
+    "1": "Partly relevant",
+    "0": "Not relevant"
+  },
+  "notes": {
+    "precision_at_5_relaxed": "Counts ratings 1 and 2 as relevant.",
+    "precision_at_5_strict": "Counts only rating 2 as relevant.",
+    "ndcg_at_5": "Uses graded relevance with higher weight for better-ranked relevant recommendations."
+  },
+  "overall": {
+    "module_count": 30,
+    "modules_with_any_scores": 0,
+    "fully_scored_modules": 0,
+    "average_mean_relevance_all_scored": 0.0,
+    "average_precision_at_5_relaxed_all_scored": 0.0,
+    "average_precision_at_5_strict_all_scored": 0.0,
+    "average_ndcg_at_5_all_scored": 0.0,
+    "average_mean_relevance_fully_scored": 0.0,
+    "average_precision_at_5_relaxed_fully_scored": 0.0,
+    "average_precision_at_5_strict_fully_scored": 0.0,
+    "average_ndcg_at_5_fully_scored": 0.0,
+    "rating_distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    }
+  },
+  "by_decision_status": {
+    "all_internal_candidates_failed_gate": {
+      "module_count": 5,
+      "modules_with_any_scores": 0,
+      "fully_scored_modules": 0,
+      "average_mean_relevance_all_scored": 0.0,
+      "average_precision_at_5_relaxed_all_scored": 0.0,
+      "average_precision_at_5_strict_all_scored": 0.0,
+      "average_ndcg_at_5_all_scored": 0.0,
+      "average_mean_relevance_fully_scored": 0.0,
+      "average_precision_at_5_relaxed_fully_scored": 0.0,
+      "average_precision_at_5_strict_fully_scored": 0.0,
+      "average_ndcg_at_5_fully_scored": 0.0,
+      "rating_distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    "hierarchy_internal_ranked": {
+      "module_count": 15,
+      "modules_with_any_scores": 0,
+      "fully_scored_modules": 0,
+      "average_mean_relevance_all_scored": 0.0,
+      "average_precision_at_5_relaxed_all_scored": 0.0,
+      "average_precision_at_5_strict_all_scored": 0.0,
+      "average_ndcg_at_5_all_scored": 0.0,
+      "average_mean_relevance_fully_scored": 0.0,
+      "average_precision_at_5_relaxed_fully_scored": 0.0,
+      "average_precision_at_5_strict_fully_scored": 0.0,
+      "average_ndcg_at_5_fully_scored": 0.0,
+      "rating_distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    "limited_hierarchy_internal_pool": {
+      "module_count": 5,
+      "modules_with_any_scores": 0,
+      "fully_scored_modules": 0,
+      "average_mean_relevance_all_scored": 0.0,
+      "average_precision_at_5_relaxed_all_scored": 0.0,
+      "average_precision_at_5_strict_all_scored": 0.0,
+      "average_ndcg_at_5_all_scored": 0.0,
+      "average_mean_relevance_fully_scored": 0.0,
+      "average_precision_at_5_relaxed_fully_scored": 0.0,
+      "average_precision_at_5_strict_fully_scored": 0.0,
+      "average_ndcg_at_5_fully_scored": 0.0,
+      "rating_distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    "no_hierarchy_internal_staff": {
+      "module_count": 5,
+      "modules_with_any_scores": 0,
+      "fully_scored_modules": 0,
+      "average_mean_relevance_all_scored": 0.0,
+      "average_precision_at_5_relaxed_all_scored": 0.0,
+      "average_precision_at_5_strict_all_scored": 0.0,
+      "average_ndcg_at_5_all_scored": 0.0,
+      "average_mean_relevance_fully_scored": 0.0,
+      "average_precision_at_5_relaxed_fully_scored": 0.0,
+      "average_precision_at_5_strict_fully_scored": 0.0,
+      "average_ndcg_at_5_fully_scored": 0.0,
+      "rating_distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    }
+  },
+  "validation": {
+    "modules_with_missing_ratings": [
+      {
+        "module_id": "module_262a4c558e0dd9dd",
+        "module_code": "",
+        "module_title": "Current Topics in Aerospace and Advanced CAD",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_71fcd426c83678b6",
+        "module_code": "",
+        "module_title": "Major Group Project",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_f5ad0cd29aa6ddbc",
+        "module_code": "",
+        "module_title": "Design and Branding Research Project 2",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_1222c9dc3d89c5ef",
+        "module_code": "CO2608",
+        "module_title": "CO2608 - Global Communication",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_9c14d57adce2aa3b",
+        "module_code": "DR2631",
+        "module_title": "DR2631 - Acting as a Critical Practice",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_082b3656560c0706",
+        "module_code": "EC5603",
+        "module_title": "EC5603 - Business Finance",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_1d24d2f044054a22",
+        "module_code": "LX5614",
+        "module_title": "LX5614 - Theory and Practice of International Human Rights",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_dd68980bb44db7c7",
+        "module_code": "LX5672",
+        "module_title": "LX5672 - Corporate Responsibility, Sustainability and ESG",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_124ffe640a82ab43",
+        "module_code": "MB5526",
+        "module_title": "MB5526 - Managing for the Future",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_e4649bf3577d40dd",
+        "module_code": "MB5606",
+        "module_title": "MB5606 - Capstone Project",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_2bcdfee0acde0a87",
+        "module_code": "MG2618",
+        "module_title": "MG2618 - Accounting Information Systems",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_3ceced9450309e3b",
+        "module_code": "PH3604",
+        "module_title": "PH3604 - Practice Placement 3",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_1c408e05b178a287",
+        "module_code": "PY2610",
+        "module_title": "PY2610 - Developmental Psychology",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_4a1c88cf21650bb9",
+        "module_code": "SP5535",
+        "module_title": "SP5535 - Social Processes in Exercise and Sport",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_222ccc9f2d6c1064",
+        "module_code": "SP5602",
+        "module_title": "SP5602 - Mental Health and Wellbeing in Elite Sport Performance Lifestyle",
+        "missing_rating_count": 5
+      },
+      {
+        "module_id": "module_019c8f47c4fa6e7f",
+        "module_code": "",
+        "module_title": "Electronics and Mathematics",
+        "missing_rating_count": 1
+      },
+      {
+        "module_id": "module_e8eb509cc5253f94",
+        "module_code": "GD2608",
+        "module_title": "GD2608 - Games Development 2: Methodologies and Practices",
+        "missing_rating_count": 3
+      },
+      {
+        "module_id": "module_46856a70ea9f1d28",
+        "module_code": "MA5640",
+        "module_title": "MA5640 - Research Methods and Case Studies",
+        "missing_rating_count": 3
+      },
+      {
+        "module_id": "module_803506cb0909ff2f",
+        "module_code": "TB",
+        "module_title": "Dissertation",
+        "missing_rating_count": 2
+      },
+      {
+        "module_id": "module_9081198672521ecc",
+        "module_code": "TB",
+        "module_title": "Dissertation Project",
+        "missing_rating_count": 4
+      }
+    ],
+    "modules_with_invalid_ratings": []
+  }
+}

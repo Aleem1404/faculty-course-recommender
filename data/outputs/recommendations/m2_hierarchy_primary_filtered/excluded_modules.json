@@ -1,0 +1,1002 @@
+[
+  {
+    "module_id": "module_0063cc45a7a4a508",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_0098d99a1e5ab4c1",
+    "module_code": "ME5500",
+    "module_title": "ME5500 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_00a40c4a70813395",
+    "module_code": "JR3XXX",
+    "module_title": "Journalism Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_03a99979b1b11ccc",
+    "module_code": "",
+    "module_title": "Major Project - Research Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_0ca71c6e9450045b",
+    "module_code": "SC3601",
+    "module_title": "SC3601 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_100bc667412612c3",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_13464f4c30df7859",
+    "module_code": "SP5530",
+    "module_title": "SP5530 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_1adc198e41579520",
+    "module_code": "DR3627",
+    "module_title": "DR3627 - Drama, Theatre, and Performance Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_1b8d26c6cd51eb54",
+    "module_code": "PY5634",
+    "module_title": "Dissertation in Psychological Sciences",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_1bfdf2ee36b2d883",
+    "module_code": "MG5638",
+    "module_title": "MG5638 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_1fb9729077114342",
+    "module_code": "DR16BB",
+    "module_title": "DR16bb - Performance and the World",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_222ccc9f2d6c1064",
+    "module_code": "SP5602",
+    "module_title": "SP5602 - Mental Health and Wellbeing in Elite Sport Performance Lifestyle",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_2a1327e356d7087d",
+    "module_code": "SA5629",
+    "module_title": "SA5629 - Ethnographic Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_2a9bf45513ed8aae",
+    "module_code": "PH5687",
+    "module_title": "PH5687 - Practice Placement 4",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_2ad4fe7cc1b0e221",
+    "module_code": "TB",
+    "module_title": "Major Group Project",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "major group project"
+  },
+  {
+    "module_id": "module_2b020af22753695c",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "limited_hierarchy_internal_pool",
+    "review_required": true,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_2b04c8f036292666",
+    "module_code": "ME5681",
+    "module_title": "ME5681 - Major Group Project in Aerospace Engineering",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "major group project"
+  },
+  {
+    "module_id": "module_2c67141fb0161e96",
+    "module_code": "OT5600",
+    "module_title": "OT5600 - The Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_2d1e3601ed287044",
+    "module_code": "CL5614",
+    "module_title": "CL5614 - Research Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_30dd63b673ae74a8",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_315fd624cf9e78ec",
+    "module_code": "BB56YY",
+    "module_title": "BB56yy - Dissertation in Antimicrobial Resistance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_3390817928128159",
+    "module_code": "MG5605",
+    "module_title": "MG5605 - Business Performance Management",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_3a69dfb6ec4b1b44",
+    "module_code": "SP5602",
+    "module_title": "SP5602 - Mental Health and Wellbeing in Elite Sport Performance Lifestyle",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_3a860092d0c4c2ed",
+    "module_code": "PH2603",
+    "module_title": "PH2603 - Practice Placement 1",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_3c569c1d5e38d20c",
+    "module_code": "BB56ZZ",
+    "module_title": "BB56zz - Dissertation in Infection and Immunity",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_3ceced9450309e3b",
+    "module_code": "PH3604",
+    "module_title": "PH3604 - Practice Placement 3",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_3edf2f043da51921",
+    "module_code": "SC3601",
+    "module_title": "SC3601 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_3fb408e88ef22505",
+    "module_code": "PH2604",
+    "module_title": "PH2604 - Practice Placement 2",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_40b545aff4f32d4f",
+    "module_code": "LX5500",
+    "module_title": "LX5500 - Dissertation (in a relevant field of Artificial Intelligence, Law and Technology)",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_416dadea85914365",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_41764f0b1a2c9b06",
+    "module_code": "LX5500",
+    "module_title": "LX5500 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_41b53bb0fbd49d6c",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_4816e914ba7dc699",
+    "module_code": "DR26CC",
+    "module_title": "DR26cc - Performance Perspectives",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_482fc3896d4fedc0",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_48cdc5ce56b8113f",
+    "module_code": "BB5604",
+    "module_title": "BB5604 - Dissertation Research Project",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_4f768ec0f1bbff9a",
+    "module_code": "JR5614",
+    "module_title": "JR5614 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_50693a79c404b53e",
+    "module_code": "",
+    "module_title": "Practice Placement 1B",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_518d2ea9eb6480bd",
+    "module_code": "TB",
+    "module_title": "EE5500 - Project and Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_53aec0a72ee717e3",
+    "module_code": "SP5530",
+    "module_title": "SP5530 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_5440f27a36b7ae0c",
+    "module_code": "TB",
+    "module_title": "Racing Vehicle Design and Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_58306c499648980f",
+    "module_code": "CY5603",
+    "module_title": "CY5603 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_5956e52f86573507",
+    "module_code": "FM3643",
+    "module_title": "FM3643 - Dissertation Video Essay",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_5bc73256553c7d50",
+    "module_code": "PH5678",
+    "module_title": "PH5678 - Practice Placement 1",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_5c4791046d7af77f",
+    "module_code": "CW5600",
+    "module_title": "CW5600 - Creative Writing Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_5fdbc0bc88b1ddbf",
+    "module_code": "PRACTICEPLACEMENT3",
+    "module_title": "OT3609 - Practice Placement 3",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_6090ffb5b1aa91ed",
+    "module_code": "PP5608",
+    "module_title": "PP5608 - Dissertation and Research Skills in International Relations",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_60f5556adc3d5480",
+    "module_code": "PH5679",
+    "module_title": "PH5679 - Practice Placement 2",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_615ac9bd4a189b79",
+    "module_code": "",
+    "module_title": "High Performance Computational Infrastructures",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_6366a76d92baabf9",
+    "module_code": "GD5600",
+    "module_title": "Dissertation in Digital Games",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_64370721a670ea4f",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_6690ad08be2b1ad7",
+    "module_code": "SC3XXB",
+    "module_title": "SC3xxB - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_66d3c3c5b8cce32b",
+    "module_code": "ED5615",
+    "module_title": "ED5615 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_6b22e825907eb4db",
+    "module_code": "",
+    "module_title": "Vehicle Design and Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_6c2b85a5f273d1ba",
+    "module_code": "LX3609",
+    "module_title": "LX3609 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_6ee874b74e1f19fe",
+    "module_code": "CO5600",
+    "module_title": "CO5600 Written Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_701d22d246fb823d",
+    "module_code": "SP5522",
+    "module_title": "SP5522 - Research and Application in the Psychology of Sports Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_70e3aad676865587",
+    "module_code": "DR16AA",
+    "module_title": "DR16aa - Why Performance Matters",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_71fcd426c83678b6",
+    "module_code": "",
+    "module_title": "Major Group Project",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "major group project"
+  },
+  {
+    "module_id": "module_72719255107b75ea",
+    "module_code": "DR3627",
+    "module_title": "DR3627 - Drama, Theatre, and Performance Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_72c99e903e106bb9",
+    "module_code": "SW5637",
+    "module_title": "SW5637 Practice Placement 2",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_75fcbd3ce2f31045",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_76164e36aacd4271",
+    "module_code": "PRACTICEPLACEMENT1A",
+    "module_title": "OT1605 - Practice Placement 1A",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_772edab7a8f0bea6",
+    "module_code": "ES5500",
+    "module_title": "ES5500 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_79b5d3c709226d71",
+    "module_code": "FM3648",
+    "module_title": "FM3648 - Dissertation – Practice",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_79f6807d671d4b8d",
+    "module_code": "CO5609",
+    "module_title": "CO5609 - Digital Multimedia Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_7a197d6e804f0b72",
+    "module_code": "MG5657",
+    "module_title": "MG5657 - HRM in Context Resourcing, Performance and Technology",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_7b5ea855b7278395",
+    "module_code": "",
+    "module_title": "Practice Placement 1A",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_7bb3e071e579031f",
+    "module_code": "SW5635",
+    "module_title": "SW5635 - The Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_7df530e8658cb765",
+    "module_code": "FM3642",
+    "module_title": "FM3642 - Written Dissertation in Film and Television Studies",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_7e30dbf986895bb1",
+    "module_code": "",
+    "module_title": "Financial Mathematics Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_803506cb0909ff2f",
+    "module_code": "TB",
+    "module_title": "Dissertation",
+    "decision_status": "limited_hierarchy_internal_pool",
+    "review_required": true,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_824aa99242cd6415",
+    "module_code": "PH3605",
+    "module_title": "PH3605 - Practice Placement 4",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_8468c93eab58067f",
+    "module_code": "MG3636",
+    "module_title": "MG3636 - HRM in Context: Resourcing, Performance and Assessment",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_8b13a539f5ca7f67",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_8b9db6fa6cb6417d",
+    "module_code": "SW5632",
+    "module_title": "SW5632 Year 1 Practice Placement",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_8d162583e7b6025b",
+    "module_code": "DR2621",
+    "module_title": "DR2621 - Performance Lab",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_8e1e0175874891bf",
+    "module_code": "ED3607",
+    "module_title": "ED3607 - Education and Research 3 – Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_9081198672521ecc",
+    "module_code": "TB",
+    "module_title": "Dissertation Project",
+    "decision_status": "limited_hierarchy_internal_pool",
+    "review_required": true,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_90a6b7175b0d4db3",
+    "module_code": "PH5680",
+    "module_title": "PH5680 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_9264b3e1880b342f",
+    "module_code": "LX5500",
+    "module_title": "LX5500 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_93424a8d40e18238",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_99b9013787374344",
+    "module_code": "PP5620",
+    "module_title": "PP5620 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_9b4560ed860b641f",
+    "module_code": "EN5605",
+    "module_title": "EN5605 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_9f1d8ed1e1300103",
+    "module_code": "SP56YY",
+    "module_title": "SP56yy - Professional Practice and Evidence Based Research in High Performance Sport",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_9fb79cc87eb9b644",
+    "module_code": "",
+    "module_title": "Civil Engineering Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_a2066a226975954b",
+    "module_code": "MG5642",
+    "module_title": "MG5642 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_a29703a5459ff36b",
+    "module_code": "",
+    "module_title": "Major Project (Dissertation)",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_a305937ecc11aea6",
+    "module_code": "OT5605",
+    "module_title": "OT5605 - Practice Placement 1A",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_a900986f5aab9949",
+    "module_code": "LX5500",
+    "module_title": "LX5500 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_aa6d09a438d86f77",
+    "module_code": "PH3606",
+    "module_title": "PH3606 - Practice Placement 5",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_aa9575644ab238d3",
+    "module_code": "",
+    "module_title": "Extended Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_abdc9c0569c9be83",
+    "module_code": "PP5520",
+    "module_title": "Intelligence and Security Studies Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_b32a2a015291866d",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_b71a00fd3c6e3a75",
+    "module_code": "MU1AAA",
+    "module_title": "MU1AAA - Performance 1 (A)",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_bb3013c314eb2b19",
+    "module_code": "0",
+    "module_title": "Student Selected Component",
+    "decision_status": "no_hierarchy_internal_staff",
+    "review_required": true,
+    "exclusion_reason": "student selected component"
+  },
+  {
+    "module_id": "module_bc93f3e3518cdec7",
+    "module_code": "MU2635",
+    "module_title": "MU2635 - Performance 2",
+    "decision_status": "all_internal_candidates_failed_gate",
+    "review_required": true,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_be0119216ee47b46",
+    "module_code": "BB56XX",
+    "module_title": "BB56xx - Dissertation in Cancer Research",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_bfdfc0cd2660ce4e",
+    "module_code": "SP3618",
+    "module_title": "SP3618 - Physiological Limitations to Exercise Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_c0380f2af8f314c8",
+    "module_code": "EC5500",
+    "module_title": "EC5500 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_c179031be250132c",
+    "module_code": "OT5608",
+    "module_title": "OT5608 - Practice Placement 1B",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_c2cb4da844b4f8ad",
+    "module_code": "OT5609",
+    "module_title": "OT5609 - Practice Placement 2",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_c671edafa5f56eaa",
+    "module_code": "",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_c7bee68aab8224a1",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_c85a84d0c9a40cb8",
+    "module_code": "DISSERTATIONINPSYCHOLOGY",
+    "module_title": "Dissertation in Psychology",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_c93ca644b804f23f",
+    "module_code": "",
+    "module_title": "OT2605 - Practice Placement 2",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_d2af653224aeec85",
+    "module_code": "MU36X1",
+    "module_title": "MU36X1 - Performance 3",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_d34f4c2e0fd41c74",
+    "module_code": "SP5522",
+    "module_title": "SP5522 - Research and Application in the Psychology of Sports Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_d636c15a5feea0dc",
+    "module_code": "MU1BBB",
+    "module_title": "MU1BBB - Performance 1 (B)",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_dc84b153af54f934",
+    "module_code": "OT5615",
+    "module_title": "OT5615 - Practice Placement 3",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_dccdf9a61e45fe1b",
+    "module_code": "EE5098",
+    "module_title": "EE5098 - Major Group Project",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "major group project"
+  },
+  {
+    "module_id": "module_dd26c36cd1f69c9e",
+    "module_code": "PH5688",
+    "module_title": "PH5688 - Practice Placement 5",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_de27bb18357b953c",
+    "module_code": "DISSERTATION",
+    "module_title": "Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_e02fc35bf1b91d45",
+    "module_code": "SP56XX",
+    "module_title": "SP56xx - Effective Professional Practice in High Performance Sport",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_e0b8e424e70d4ee4",
+    "module_code": "OT1608",
+    "module_title": "OT1608 - Practice Placement 1B",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_e224d30af45975b6",
+    "module_code": "DR3629",
+    "module_title": "DR3629 - Anti-Racism and Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_e3bfdaedb22a60a5",
+    "module_code": "PH5611",
+    "module_title": "PH5611 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_e4649bf3577d40dd",
+    "module_code": "MB5606",
+    "module_title": "MB5606 - Capstone Project",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "capstone project"
+  },
+  {
+    "module_id": "module_e89d3b3e8a5f6ec5",
+    "module_code": "SP5603",
+    "module_title": "SP5603 - Sports Performance Science",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_ec82d143cf151242",
+    "module_code": "CM5625",
+    "module_title": "CM5625 - MSc Top-Up Module - The Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_ef20820fc3fdcd4c",
+    "module_code": "PY5617",
+    "module_title": "PY5617 - Dissertation in Cognitive and Clinical Neuroscience",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_f1dcc45a554dbc16",
+    "module_code": "MG55GG",
+    "module_title": "MG55GG - Dissertation: Applied Research Project",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  },
+  {
+    "module_id": "module_f5ad0cd29aa6ddbc",
+    "module_code": "",
+    "module_title": "Design and Branding Research Project 2",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "design and branding research project"
+  },
+  {
+    "module_id": "module_f61a08f6b8dd58e9",
+    "module_code": "SP5604",
+    "module_title": "SP5604 - Assessment of Human Performance",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "performance"
+  },
+  {
+    "module_id": "module_f64bf6f0538cd140",
+    "module_code": "PH5686",
+    "module_title": "PH5686 - Practice Placement 3",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "practice placement"
+  },
+  {
+    "module_id": "module_f781a87c8ff7b805",
+    "module_code": "MG5642",
+    "module_title": "MG5642 - Dissertation",
+    "decision_status": "hierarchy_internal_ranked",
+    "review_required": false,
+    "exclusion_reason": "dissertation"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "module_results": 1700,
+  "status_counts": {
+    "home_department_ranked": 1369,
+    "no_eligible_internal_staff": 331
+  },
+  "home_department_results": 1369,
+  "fallback_results": 0,
+  "review_required": 331,
+  "total_recommendations": 6845,
+  "model": "M2-P",
+  "semantic_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "policy": "home_department_first",
+  "fallback_policy": "only_when_zero_eligible_internal_staff",
+  "top_k": 5,
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_primary\\m2_primary_recommendations.jsonl"
+}

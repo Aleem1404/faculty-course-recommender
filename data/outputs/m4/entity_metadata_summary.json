@@ -1,0 +1,36 @@
+{
+  "generated_at_utc": "2026-09-21T08:35:47.703901+00:00",
+  "inputs": {
+    "staff_source": "data\\raw\\staff\\university_faculty_profiles.json",
+    "module_source": "data\\raw\\courses\\brunel_courses_nested.json",
+    "staff_profiles": "data\\outputs\\m4\\staff_topic_profiles_filtered.jsonl",
+    "module_profiles": "data\\outputs\\m4\\module_topic_profiles_filtered.jsonl"
+  },
+  "outputs": {
+    "entity_metadata": "data\\outputs\\m4\\entity_metadata.json"
+  },
+  "counts": {
+    "staff_records_read": 634,
+    "module_records_read": 4295,
+    "staff_metadata_entries": 634,
+    "module_metadata_entries": 1700
+  },
+  "m4_profile_id_coverage": {
+    "staff": {
+      "profile_ids": 620,
+      "metadata_ids": 634,
+      "matched_profile_ids": 620,
+      "unmatched_profile_ids": 0,
+      "coverage_rate": 1.0,
+      "unmatched_id_examples": []
+    },
+    "modules": {
+      "profile_ids": 1676,
+      "metadata_ids": 1700,
+      "matched_profile_ids": 1676,
+      "unmatched_profile_ids": 0,
+      "coverage_rate": 1.0,
+      "unmatched_id_examples": []
+    }
+  }
+}

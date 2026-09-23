@@ -1,0 +1,224 @@
+{
+  "pipeline_status": "success",
+  "dry_run": false,
+  "agent_results": [
+    {
+      "agent_name": "DataAgent",
+      "status": "success",
+      "started_at": "2026-09-21T02:38:39+00:00",
+      "completed_at": "2026-09-21T02:38:39+00:00",
+      "message": "Core processed data and hierarchy files validated",
+      "inputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\core\\modules.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\enrichment\\staff_enriched.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\academic_structure\\staff_unit_mappings.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\audit\\academic_structure\\module_unit_mappings.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\config\\academic_structure.json"
+      ],
+      "outputs": [],
+      "validations": [
+        "Found modules.jsonl",
+        "Found staff_enriched.jsonl",
+        "Found staff_unit_mappings.jsonl",
+        "Found module_unit_mappings.jsonl",
+        "Found academic_structure.json"
+      ],
+      "metrics": {
+        "module_count": 1700,
+        "staff_count": 634,
+        "staff_mapping_count": 634,
+        "module_mapping_count": 1700,
+        "hierarchy_root_keys": 4
+      },
+      "errors": []
+    },
+    {
+      "agent_name": "GraphAgent",
+      "status": "success",
+      "started_at": "2026-09-21T02:38:39+00:00",
+      "completed_at": "2026-09-21T02:38:39+00:00",
+      "message": "Knowledge graph resources validated",
+      "inputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\module_topics.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\staff_topics.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_summary.json"
+      ],
+      "outputs": [],
+      "validations": [
+        "Found module_topics.jsonl",
+        "Found staff_topics.jsonl",
+        "Found m3_kg_summary.json"
+      ],
+      "metrics": {
+        "module_topic_records": 1700,
+        "staff_topic_records": 634,
+        "kg_summary_keys": [
+          "base_model",
+          "candidates_with_shared_topics",
+          "graph_weight",
+          "m2_h_results_path",
+          "model",
+          "module_results",
+          "module_topics_path",
+          "modules_with_graph_overlap",
+          "recommendations_output_path",
+          "semantic_weight",
+          "staff_topics_path",
+          "status_counts",
+          "total_recommendations"
+        ],
+        "non_empty_module_topics": 1679,
+        "non_empty_staff_topics": 620,
+        "module_topic_coverage_rate": 0.9876,
+        "staff_topic_coverage_rate": 0.9779,
+        "modules_with_graph_overlap": 346,
+        "candidates_with_shared_topics": 905
+      },
+      "errors": []
+    },
+    {
+      "agent_name": "MatchingAgent",
+      "status": "success",
+      "started_at": "2026-09-21T02:38:39+00:00",
+      "completed_at": "2026-09-21T02:38:48+00:00",
+      "message": "M2-H and M3-KG recommendation pipelines executed",
+      "inputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\scripts\\run_m2_hierarchy_primary.py",
+        "F:\\Dissertation-new\\faculty-course-recommender\\scripts\\run_m3_kg_rerank.py"
+      ],
+      "outputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary\\m2_hierarchy_primary_recommendations.jsonl",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_recommendations.jsonl"
+      ],
+      "validations": [
+        "Found run_m2_hierarchy_primary.py",
+        "Found run_m3_kg_rerank.py",
+        "Produced m2_hierarchy_primary_recommendations.jsonl",
+        "Produced m3_kg_recommendations.jsonl"
+      ],
+      "metrics": {
+        "m2_module_results": 1700,
+        "m3_module_results": 1575,
+        "m3_coverage_rate": 0.9265,
+        "m3_excluded_modules": 125,
+        "module_topic_coverage_rate": 0.9876,
+        "staff_topic_coverage_rate": 0.9779
+      },
+      "errors": []
+    },
+    {
+      "agent_name": "ExplanationAgent",
+      "status": "success",
+      "started_at": "2026-09-21T02:38:48+00:00",
+      "completed_at": "2026-09-21T02:38:48+00:00",
+      "message": "M3-KG explanation coverage validated",
+      "inputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_recommendations.jsonl"
+      ],
+      "outputs": [],
+      "validations": [
+        "Found m3_kg_recommendations.jsonl",
+        "Explanation fields inspected"
+      ],
+      "metrics": {
+        "recommendation_count": 7739,
+        "recommendations_with_explanation": 7631,
+        "recommendations_with_shared_topics": 905,
+        "recommendations_with_graph_support": 7631
+      },
+      "errors": []
+    },
+    {
+      "agent_name": "EvaluationAgent",
+      "status": "success",
+      "started_at": "2026-09-21T02:38:48+00:00",
+      "completed_at": "2026-09-21T02:38:51+00:00",
+      "message": "Evaluation scripts executed and outputs validated",
+      "inputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\scripts\\compare_m2_h_vs_m3_kg.py",
+        "F:\\Dissertation-new\\faculty-course-recommender\\scripts\\select_m3_case_studies.py",
+        "F:\\Dissertation-new\\faculty-course-recommender\\scripts\\build_expert_judgement_sheet.py",
+        "F:\\Dissertation-new\\faculty-course-recommender\\scripts\\make_evaluation_charts.py"
+      ],
+      "outputs": [
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_vs_m3\\m2_h_vs_m3_kg_summary.json",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\case_studies\\m3_case_studies_summary.json",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\expert_judgement\\expert_judgement_summary.json",
+        "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\charts\\evaluation_chart_summary.json"
+      ],
+      "validations": [
+        "Found compare_m2_h_vs_m3_kg.py",
+        "Found select_m3_case_studies.py",
+        "Found build_expert_judgement_sheet.py",
+        "Found make_evaluation_charts.py",
+        "Produced m2_h_vs_m3_kg_summary.json",
+        "Produced m3_case_studies_summary.json",
+        "Produced expert_judgement_summary.json",
+        "Produced evaluation_chart_summary.json"
+      ],
+      "metrics": {
+        "compared_modules": 1575,
+        "top_rank_changed_modules": 86,
+        "case_studies_selected": 40,
+        "expert_review_cases": 20,
+        "chart_data_rows": 10
+      },
+      "errors": []
+    }
+  ],
+  "context_metadata": {
+    "data_agent_summary": {
+      "module_count": 1700,
+      "staff_count": 634,
+      "staff_mapping_count": 634,
+      "module_mapping_count": 1700,
+      "hierarchy_root_keys": 4
+    },
+    "graph_agent_summary": {
+      "module_topic_records": 1700,
+      "staff_topic_records": 634,
+      "kg_summary_keys": [
+        "base_model",
+        "candidates_with_shared_topics",
+        "graph_weight",
+        "m2_h_results_path",
+        "model",
+        "module_results",
+        "module_topics_path",
+        "modules_with_graph_overlap",
+        "recommendations_output_path",
+        "semantic_weight",
+        "staff_topics_path",
+        "status_counts",
+        "total_recommendations"
+      ],
+      "non_empty_module_topics": 1679,
+      "non_empty_staff_topics": 620,
+      "module_topic_coverage_rate": 0.9876,
+      "staff_topic_coverage_rate": 0.9779,
+      "modules_with_graph_overlap": 346,
+      "candidates_with_shared_topics": 905
+    },
+    "matching_agent_summary": {
+      "m2_module_results": 1700,
+      "m3_module_results": 1575,
+      "m3_coverage_rate": 0.9265,
+      "m3_excluded_modules": 125,
+      "module_topic_coverage_rate": 0.9876,
+      "staff_topic_coverage_rate": 0.9779
+    },
+    "explanation_agent_summary": {
+      "recommendation_count": 7739,
+      "recommendations_with_explanation": 7631,
+      "recommendations_with_shared_topics": 905,
+      "recommendations_with_graph_support": 7631
+    },
+    "evaluation_agent_summary": {
+      "compared_modules": 1575,
+      "top_rank_changed_modules": 86,
+      "case_studies_selected": 40,
+      "expert_review_cases": 20,
+      "chart_data_rows": 10
+    }
+  }
+}

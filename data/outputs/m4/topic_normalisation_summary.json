@@ -1,0 +1,35 @@
+{
+  "module_input_records": 1700,
+  "staff_input_records": 634,
+  "canonical_topic_count": 10383,
+  "assignment_count": 18340,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "similarity_threshold": 0.84,
+  "module_topic_fields": [
+    "topics",
+    "topic_keywords",
+    "keywords",
+    "research_keywords",
+    "topic_names",
+    "extracted_topics",
+    "staff_topics",
+    "expertise_topics",
+    "research_interests_topics"
+  ],
+  "staff_topic_fields": [
+    "topics",
+    "topic_keywords",
+    "keywords",
+    "research_keywords",
+    "topic_names",
+    "extracted_topics",
+    "staff_topics",
+    "expertise_topics",
+    "research_interests_topics"
+  ],
+  "outputs": {
+    "canonical_topics": "data\\outputs\\m4\\canonical_topics.jsonl",
+    "topic_assignments": "data\\outputs\\m4\\topic_assignments.jsonl",
+    "topic_vectors": "data\\outputs\\m4\\topic_vectors.jsonl"
+  }
+}

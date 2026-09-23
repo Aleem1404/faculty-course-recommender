@@ -1,0 +1,28 @@
+{
+  "module_results": 1700,
+  "status_counts": {
+    "hierarchy_internal_ranked": 1660,
+    "limited_hierarchy_internal_pool": 16,
+    "no_hierarchy_internal_staff": 18,
+    "all_internal_candidates_failed_gate": 6
+  },
+  "fully_ranked_modules": 1660,
+  "limited_pool_modules": 16,
+  "gate_failed_modules": 6,
+  "review_required_modules": 40,
+  "total_recommendations": 8348,
+  "gate": {
+    "passed_recommendations": 8348,
+    "failed_candidates": 282,
+    "reason_counts": {
+      "passed": 8348,
+      "low_total_score": 282
+    }
+  },
+  "model": "M2-H",
+  "policy": "hierarchy_internal_only",
+  "semantic_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 5,
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary\\m2_hierarchy_primary_recommendations.jsonl",
+  "gate_rejections_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary\\m2_hierarchy_primary_gate_rejections.jsonl"
+}

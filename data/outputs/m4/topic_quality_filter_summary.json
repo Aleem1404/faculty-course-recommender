@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-09-21T07:51:25.650259+00:00",
+  "inputs": {
+    "staff_profiles": "data\\outputs\\m4\\staff_topic_profiles.jsonl",
+    "module_profiles": "data\\outputs\\m4\\module_topic_profiles.jsonl"
+  },
+  "outputs": {
+    "staff_profiles_filtered": "data\\outputs\\m4\\staff_topic_profiles_filtered.jsonl",
+    "module_profiles_filtered": "data\\outputs\\m4\\module_topic_profiles_filtered.jsonl",
+    "rejected_topics": "data\\outputs\\m4\\rejected_topics.jsonl"
+  },
+  "staff": {
+    "input_profiles": 620,
+    "output_profiles": 620,
+    "empty_profiles_removed": 0,
+    "accepted_topics": 5032,
+    "rejected_topics": 682
+  },
+  "modules": {
+    "input_profiles": 1679,
+    "output_profiles": 1676,
+    "empty_profiles_removed": 3,
+    "accepted_topics": 12222,
+    "rejected_topics": 404
+  },
+  "rejected_topic_reasons": {
+    "generic_low_value_phrase": 31,
+    "likely_broken_phrase_order": 15,
+    "location_or_institution_term": 50,
+    "malformed_token": 130,
+    "too_short_or_generic_single_token": 860
+  }
+}

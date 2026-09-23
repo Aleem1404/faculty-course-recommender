@@ -1,0 +1,4 @@
+{
+  "caption": "Top recommendation changes",
+  "description": "Bar chart showing how many modules had changed versus unchanged top-ranked recommendations after M3-KG reranking."
+}

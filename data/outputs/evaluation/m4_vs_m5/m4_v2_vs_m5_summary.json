@@ -1,0 +1,18 @@
+{
+  "comparison_title": "Ablation Comparison: M4-v2 (Greedy Matching) vs M5 (Load-Balanced Allocation)",
+  "total_catalog_modules": 1575,
+  "total_taught_modules": 1528,
+  "exempt_modules": 47,
+  "reallocated_modules_count": 746,
+  "reallocated_modules_pct": 48.82,
+  "stable_modules_count": 782,
+  "stable_modules_pct": 51.18,
+  "average_m4_greedy_score": 0.3466,
+  "average_m5_balanced_score": 0.3268,
+  "score_tradeoff_delta": 0.0198,
+  "score_retention_pct": 94.3,
+  "outputs": {
+    "detailed_comparisons_json": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m4_vs_m5\\m4_v2_vs_m5_module_comparisons.json",
+    "comparison_table_csv": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m4_vs_m5\\m4_v2_vs_m5_case_rows.csv"
+  }
+}

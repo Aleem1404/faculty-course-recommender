@@ -1,0 +1,14 @@
+{
+  "selected_review_cases": 20,
+  "sheet_rows": 20,
+  "case_type_counts": {
+    "changed_top_rank": 10,
+    "stable_but_explained": 5,
+    "strong_graph_evidence": 5
+  },
+  "case_studies_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\case_studies\\m3_case_studies.json",
+  "m2_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules.jsonl",
+  "m3_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_recommendations.jsonl",
+  "sheet_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\expert_judgement\\expert_judgement_sheet.csv",
+  "selected_cases_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\expert_judgement\\expert_judgement_selected_cases.json"
+}

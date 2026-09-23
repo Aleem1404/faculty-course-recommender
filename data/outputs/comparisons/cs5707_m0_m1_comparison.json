@@ -1,0 +1,318 @@
+{
+  "module_id": "module_eb92002d708f076e",
+  "module_code": "CS5707",
+  "module_title": "Artificial Intelligence",
+  "m0_top_five": [
+    {
+      "rank": 1,
+      "staff_id": "francesca-mazzi",
+      "full_name": "Dr Francesca Mazzi",
+      "department_name": "Brunel Law School",
+      "score": 0.118204
+    },
+    {
+      "rank": 2,
+      "staff_id": "zoi-krokida",
+      "full_name": "Dr Zoi Krokida",
+      "department_name": "Brunel Law School",
+      "score": 0.093867
+    },
+    {
+      "rank": 3,
+      "staff_id": "mdnazmul-huda",
+      "full_name": "Dr Md Nazmul Huda",
+      "department_name": "Electronic and Electrical Engineering",
+      "score": 0.075068
+    },
+    {
+      "rank": 4,
+      "staff_id": "arthur-ekwue",
+      "full_name": "Professor Arthur Ekwue",
+      "department_name": "Electronic and Electrical Engineering",
+      "score": 0.071335
+    },
+    {
+      "rank": 5,
+      "staff_id": "fotios-spyridonis",
+      "full_name": "Dr Fotios Spyridonis",
+      "department_name": "Computer Science",
+      "score": 0.070725
+    }
+  ],
+  "m1_top_five": [
+    {
+      "rank": 1,
+      "staff_id": "francesca-mazzi",
+      "full_name": "Dr Francesca Mazzi",
+      "department_name": "Brunel Law School",
+      "score": 0.125614,
+      "field_scores": {
+        "core": 0.118204,
+        "publication_titles": 0.186797,
+        "publication_abstracts": 0.080897,
+        "publication_topics": 0.195041,
+        "publication_keywords": 0.067423
+      },
+      "field_contributions": {
+        "core": 0.041371,
+        "publication_titles": 0.02802,
+        "publication_abstracts": 0.020224,
+        "publication_topics": 0.029256,
+        "publication_keywords": 0.006742
+      }
+    },
+    {
+      "rank": 2,
+      "staff_id": "xiaoqing-li",
+      "full_name": "Dr Xiaoqing Li",
+      "department_name": "Strategy, Entrepreneurship and Management",
+      "score": 0.076027,
+      "field_scores": {
+        "core": 0.043137,
+        "publication_titles": 0.127333,
+        "publication_abstracts": 0.08777,
+        "publication_topics": 0.085898,
+        "publication_keywords": 0.070017
+      },
+      "field_contributions": {
+        "core": 0.015098,
+        "publication_titles": 0.0191,
+        "publication_abstracts": 0.021943,
+        "publication_topics": 0.012885,
+        "publication_keywords": 0.007002
+      }
+    },
+    {
+      "rank": 3,
+      "staff_id": "mahir-arzoky",
+      "full_name": "Dr Mahir Arzoky",
+      "department_name": "Computer Science",
+      "score": 0.069592,
+      "field_scores": {
+        "core": 0.067963,
+        "publication_titles": 0.078065,
+        "publication_abstracts": 0.048884,
+        "publication_topics": 0.107178,
+        "publication_keywords": 0.057973
+      },
+      "field_contributions": {
+        "core": 0.023787,
+        "publication_titles": 0.01171,
+        "publication_abstracts": 0.012221,
+        "publication_topics": 0.016077,
+        "publication_keywords": 0.005797
+      }
+    },
+    {
+      "rank": 4,
+      "staff_id": "mdnazmul-huda",
+      "full_name": "Dr Md Nazmul Huda",
+      "department_name": "Electronic and Electrical Engineering",
+      "score": 0.069174,
+      "field_scores": {
+        "core": 0.075068,
+        "publication_titles": 0.1022,
+        "publication_abstracts": 0.034882,
+        "publication_topics": 0.083991,
+        "publication_keywords": 0.062513
+      },
+      "field_contributions": {
+        "core": 0.026274,
+        "publication_titles": 0.01533,
+        "publication_abstracts": 0.008721,
+        "publication_topics": 0.012599,
+        "publication_keywords": 0.006251
+      }
+    },
+    {
+      "rank": 5,
+      "staff_id": "kevin-lu",
+      "full_name": "Dr Kevin Lu",
+      "department_name": "Business Analytics and Marketing",
+      "score": 0.06454,
+      "field_scores": {
+        "core": 0.067503,
+        "publication_titles": 0.107369,
+        "publication_abstracts": 0.038066,
+        "publication_topics": 0.058574,
+        "publication_keywords": 0.065063
+      },
+      "field_contributions": {
+        "core": 0.023626,
+        "publication_titles": 0.016105,
+        "publication_abstracts": 0.009517,
+        "publication_topics": 0.008786,
+        "publication_keywords": 0.006506
+      }
+    }
+  ],
+  "staff_comparison": [
+    {
+      "staff_id": "francesca-mazzi",
+      "full_name": "Dr Francesca Mazzi",
+      "department_name": "Brunel Law School",
+      "m0_rank": 1,
+      "m0_score": 0.118204,
+      "m1_rank": 1,
+      "m1_score": 0.125614,
+      "rank_change": 0,
+      "m1_field_scores": {
+        "core": 0.118204,
+        "publication_titles": 0.186797,
+        "publication_abstracts": 0.080897,
+        "publication_topics": 0.195041,
+        "publication_keywords": 0.067423
+      },
+      "m1_field_contributions": {
+        "core": 0.041371,
+        "publication_titles": 0.02802,
+        "publication_abstracts": 0.020224,
+        "publication_topics": 0.029256,
+        "publication_keywords": 0.006742
+      }
+    },
+    {
+      "staff_id": "xiaoqing-li",
+      "full_name": "Dr Xiaoqing Li",
+      "department_name": "Strategy, Entrepreneurship and Management",
+      "m0_rank": null,
+      "m0_score": null,
+      "m1_rank": 2,
+      "m1_score": 0.076027,
+      "rank_change": null,
+      "m1_field_scores": {
+        "core": 0.043137,
+        "publication_titles": 0.127333,
+        "publication_abstracts": 0.08777,
+        "publication_topics": 0.085898,
+        "publication_keywords": 0.070017
+      },
+      "m1_field_contributions": {
+        "core": 0.015098,
+        "publication_titles": 0.0191,
+        "publication_abstracts": 0.021943,
+        "publication_topics": 0.012885,
+        "publication_keywords": 0.007002
+      }
+    },
+    {
+      "staff_id": "mahir-arzoky",
+      "full_name": "Dr Mahir Arzoky",
+      "department_name": "Computer Science",
+      "m0_rank": null,
+      "m0_score": null,
+      "m1_rank": 3,
+      "m1_score": 0.069592,
+      "rank_change": null,
+      "m1_field_scores": {
+        "core": 0.067963,
+        "publication_titles": 0.078065,
+        "publication_abstracts": 0.048884,
+        "publication_topics": 0.107178,
+        "publication_keywords": 0.057973
+      },
+      "m1_field_contributions": {
+        "core": 0.023787,
+        "publication_titles": 0.01171,
+        "publication_abstracts": 0.012221,
+        "publication_topics": 0.016077,
+        "publication_keywords": 0.005797
+      }
+    },
+    {
+      "staff_id": "mdnazmul-huda",
+      "full_name": "Dr Md Nazmul Huda",
+      "department_name": "Electronic and Electrical Engineering",
+      "m0_rank": 3,
+      "m0_score": 0.075068,
+      "m1_rank": 4,
+      "m1_score": 0.069174,
+      "rank_change": -1,
+      "m1_field_scores": {
+        "core": 0.075068,
+        "publication_titles": 0.1022,
+        "publication_abstracts": 0.034882,
+        "publication_topics": 0.083991,
+        "publication_keywords": 0.062513
+      },
+      "m1_field_contributions": {
+        "core": 0.026274,
+        "publication_titles": 0.01533,
+        "publication_abstracts": 0.008721,
+        "publication_topics": 0.012599,
+        "publication_keywords": 0.006251
+      }
+    },
+    {
+      "staff_id": "kevin-lu",
+      "full_name": "Dr Kevin Lu",
+      "department_name": "Business Analytics and Marketing",
+      "m0_rank": null,
+      "m0_score": null,
+      "m1_rank": 5,
+      "m1_score": 0.06454,
+      "rank_change": null,
+      "m1_field_scores": {
+        "core": 0.067503,
+        "publication_titles": 0.107369,
+        "publication_abstracts": 0.038066,
+        "publication_topics": 0.058574,
+        "publication_keywords": 0.065063
+      },
+      "m1_field_contributions": {
+        "core": 0.023626,
+        "publication_titles": 0.016105,
+        "publication_abstracts": 0.009517,
+        "publication_topics": 0.008786,
+        "publication_keywords": 0.006506
+      }
+    },
+    {
+      "staff_id": "zoi-krokida",
+      "full_name": "Dr Zoi Krokida",
+      "department_name": "Brunel Law School",
+      "m0_rank": 2,
+      "m0_score": 0.093867,
+      "m1_rank": null,
+      "m1_score": null,
+      "rank_change": null,
+      "m1_field_scores": {},
+      "m1_field_contributions": {}
+    },
+    {
+      "staff_id": "arthur-ekwue",
+      "full_name": "Professor Arthur Ekwue",
+      "department_name": "Electronic and Electrical Engineering",
+      "m0_rank": 4,
+      "m0_score": 0.071335,
+      "m1_rank": null,
+      "m1_score": null,
+      "rank_change": null,
+      "m1_field_scores": {},
+      "m1_field_contributions": {}
+    },
+    {
+      "staff_id": "fotios-spyridonis",
+      "full_name": "Dr Fotios Spyridonis",
+      "department_name": "Computer Science",
+      "m0_rank": 5,
+      "m0_score": 0.070725,
+      "m1_rank": null,
+      "m1_score": null,
+      "rank_change": null,
+      "m1_field_scores": {},
+      "m1_field_contributions": {}
+    }
+  ],
+  "top_five_overlap": 2,
+  "entered_m1_top_five": [
+    "kevin-lu",
+    "mahir-arzoky",
+    "xiaoqing-li"
+  ],
+  "left_m1_top_five": [
+    "arthur-ekwue",
+    "fotios-spyridonis",
+    "zoi-krokida"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "generated_at_utc": "2026-09-21T09:01:22.641026+00:00",
+  "inputs": {
+    "enriched_recommendations": "data\\outputs\\m4\\collaboration_recommendations_enriched.jsonl",
+    "display_recommendations": "data\\outputs\\m4\\m4_display_recommendations.jsonl",
+    "case_studies": "data\\outputs\\m4\\m4_case_studies.jsonl"
+  },
+  "parameters": {
+    "numeric_tolerance": 1e-05,
+    "display_minimum_combined_coverage": 0.4,
+    "display_minimum_complementarity_gain": 0.1
+  },
+  "counts": {
+    "recommendations_checked": 1635,
+    "modules_with_recommendations": 120,
+    "recommendations_by_level": {
+      "exploratory": 539,
+      "high": 61,
+      "moderate": 1035
+    },
+    "recommendations_with_positive_gain": 1635,
+    "recommendations_with_topic_evidence": 1635,
+    "recommendations_with_complete_explanation": 1635,
+    "record_level_failure_count": 0
+  },
+  "rates": {
+    "positive_complementarity_rate": 1.0,
+    "topic_evidence_rate": 1.0,
+    "complete_explanation_rate": 1.0,
+    "modules_with_shared_foundation_rate": 0.566667
+  },
+  "numeric_distributions": {
+    "collaboration_score": {
+      "count": 1635,
+      "minimum": 0.130532,
+      "maximum": 0.555047,
+      "mean": 0.230121,
+      "median": 0.217623
+    },
+    "combined_module_coverage": {
+      "count": 1635,
+      "minimum": 0.172809,
+      "maximum": 0.797249,
+      "mean": 0.322936,
+      "median": 0.307036
+    },
+    "best_individual_coverage": {
+      "count": 1635,
+      "minimum": 0.102734,
+      "maximum": 0.557126,
+      "mean": 0.199637,
+      "median": 0.18623
+    },
+    "complementarity_gain": {
+      "count": 1635,
+      "minimum": 0.050017,
+      "maximum": 0.240123,
+      "mean": 0.123299,
+      "median": 0.115989
+    },
+    "staff_topic_overlap_ratio": {
+      "count": 1635,
+      "minimum": 0.0,
+      "maximum": 0.333333,
+      "mean": 0.022352,
+      "median": 0.0
+    },
+    "combined_module_coverage_bands": {
+      "0.00-0.20": 5,
+      "0.20-0.40": 1391,
+      "0.40-0.60": 234,
+      "0.60-0.80": 5
+    },
+    "complementarity_gain_bands": {
+      "0.05-0.10": 212,
+      "0.10-0.20": 1354,
+      "0.20-0.30": 69
+    }
+  },
+  "display_policy_validation": {
+    "records_checked": 5,
+    "failure_count": 0,
+    "policy_compliant": true
+  },
+  "case_study_validation": {
+    "case_studies_checked": 21,
+    "selection_group_counts": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "recommendation_level_counts": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "duplicate_case_ids": [],
+    "duplicate_case_id_count": 0,
+    "duplicate_module_ids": [
+      "module_bc53cf387812deb1",
+      "module_bf6b68f99a540786",
+      "module_e3efd8fb7afe1d60",
+      "module_a9f408cf3ce0fdf9",
+      "module_cd11f4139c160850"
+    ],
+    "duplicate_module_id_count": 5
+  },
+  "failure_summary": {
+    "total_failure_rows": 0,
+    "failure_counts": {},
+    "failure_csv": "data\\outputs\\m4\\m4_structural_validation_failures.csv"
+  },
+  "interpretation": {
+    "scope": "This report validates structural and internal consistency properties of M4 outputs. It does not establish domain-level teaching suitability, which requires subject-expert judgement.",
+    "recommended_use": "Use this report for technical evaluation, reproducibility, explanation traceability, and limitation discussion in the dissertation."
+  }
+}

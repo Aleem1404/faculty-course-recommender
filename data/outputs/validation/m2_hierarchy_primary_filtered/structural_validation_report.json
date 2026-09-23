@@ -1,0 +1,31 @@
+{
+  "input_paths": {
+    "filtered_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules.jsonl",
+    "filtered_summary_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules_summary.json",
+    "rejection_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules_gate_rejections.jsonl"
+  },
+  "top_k": 5,
+  "record_count": 1575,
+  "records_with_issues": 0,
+  "records_with_warnings": 0,
+  "issue_type_counts": {},
+  "warning_type_counts": {},
+  "summary_alignment_checks": {
+    "module_results_match": true,
+    "status_counts_match": true,
+    "fully_ranked_modules_match": true,
+    "limited_pool_modules_match": true,
+    "gate_failed_modules_match": true,
+    "review_required_modules_match": true,
+    "total_recommendations_match": true,
+    "gate_passed_recommendations_match": true,
+    "gate_failed_candidates_match": true,
+    "gate_reason_counts_match": true
+  },
+  "rejection_alignment_checks": {
+    "rejection_file_count_matches_summary": true,
+    "rejection_file_count": 231,
+    "summary_failed_candidates": 231
+  },
+  "overall_pass": true
+}

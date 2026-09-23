@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-09-21T08:00:07.628374+00:00",
+  "inputs": {
+    "staff_profiles": "data\\outputs\\m4\\staff_topic_profiles_filtered.jsonl",
+    "module_profiles": "data\\outputs\\m4\\module_topic_profiles_filtered.jsonl"
+  },
+  "parameters": {
+    "min_staff_relevance": 0.1,
+    "max_individual_candidates": 20,
+    "min_complementarity": 0.05,
+    "max_pairs_per_module": 50
+  },
+  "outputs": {
+    "collaboration_candidates": "data\\outputs\\m4\\collaboration_candidates.jsonl"
+  },
+  "counts": {
+    "staff_profiles_loaded": 620,
+    "module_profiles_loaded": 1676,
+    "modules_with_collaboration_candidates": 120,
+    "modules_without_collaboration_candidates": 1556,
+    "candidate_staff_total_across_modules": 3948,
+    "pair_candidates_before_per_module_limit": 2037,
+    "pair_candidates_written": 1635,
+    "average_individual_candidates_per_eligible_module": 32.9
+  }
+}

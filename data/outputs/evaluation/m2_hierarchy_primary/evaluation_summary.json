@@ -1,0 +1,41 @@
+{
+  "input_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary\\m2_hierarchy_primary_recommendations.jsonl",
+  "module_sample_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_hierarchy_primary\\evaluation_module_sample.json",
+  "reviewer_csv_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_hierarchy_primary\\evaluation_reviewer_template.csv",
+  "random_seed": 42,
+  "target_status_counts": {
+    "hierarchy_internal_ranked": 15,
+    "limited_hierarchy_internal_pool": 5,
+    "no_hierarchy_internal_staff": 5,
+    "all_internal_candidates_failed_gate": 5
+  },
+  "sampling_report": {
+    "hierarchy_internal_ranked": {
+      "target_count": 15,
+      "available_count": 1660,
+      "selected_count": 15
+    },
+    "limited_hierarchy_internal_pool": {
+      "target_count": 5,
+      "available_count": 16,
+      "selected_count": 5
+    },
+    "no_hierarchy_internal_staff": {
+      "target_count": 5,
+      "available_count": 18,
+      "selected_count": 5
+    },
+    "all_internal_candidates_failed_gate": {
+      "target_count": 5,
+      "available_count": 6,
+      "selected_count": 5
+    }
+  },
+  "sampled_module_count": 30,
+  "reviewer_row_count": 98,
+  "rating_scale": {
+    "2": "Relevant",
+    "1": "Partly relevant",
+    "0": "Not relevant"
+  }
+}

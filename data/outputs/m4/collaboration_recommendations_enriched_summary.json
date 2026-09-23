@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-09-21T08:39:17.743949+00:00",
+  "inputs": {
+    "collaboration_recommendations": "data\\outputs\\m4\\collaboration_recommendations.jsonl",
+    "entity_metadata": "data\\outputs\\m4\\entity_metadata.json"
+  },
+  "outputs": {
+    "enriched_collaboration_recommendations": "data\\outputs\\m4\\collaboration_recommendations_enriched.jsonl"
+  },
+  "counts": {
+    "recommendations_read": 1635,
+    "recommendations_written": 1635,
+    "module_metadata_matched": 1635,
+    "module_metadata_unmatched": 0,
+    "staff_a_metadata_matched": 1635,
+    "staff_a_metadata_unmatched": 0,
+    "staff_b_metadata_matched": 1635,
+    "staff_b_metadata_unmatched": 0,
+    "recommendation_levels": {
+      "exploratory": 539,
+      "high": 61,
+      "moderate": 1035
+    }
+  },
+  "coverage": {
+    "module_metadata_coverage": 1.0,
+    "staff_a_metadata_coverage": 1.0,
+    "staff_b_metadata_coverage": 1.0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-22T08:32:28.514424+00:00",
+  "total_catalog_modules_evaluated": 1575,
+  "taught_lecture_modules_count": 1528,
+  "non_taught_exempt_modules_count": 47,
+  "taught_curriculum_with_collaborations": 1252,
+  "taught_curriculum_coverage_pct": 81.94,
+  "overall_catalog_collaboration_pct": 79.49,
+  "total_cross_department_collaborations": 2100,
+  "average_collaborations_per_taught_module": 1.374,
+  "aspect_distribution": {
+    "Ethics, Governance, Law & Policy": 121,
+    "Macroeconomic Policy, Global Trade & Financial Systems": 133,
+    "Behavioural Economics & Decision Sciences": 113,
+    "Visual Perception, Graphic Storytelling & HCI": 341,
+    "Computational Modeling, Numerical Simulation & Algorithms": 188,
+    "Robotics, Embedded Systems & Hardware Integration": 173,
+    "Business Analytics, Enterprise Strategy & Management": 324,
+    "Healthcare & Biomedical Applications": 226,
+    "Environmental Sustainability & Clean Tech": 182,
+    "Cybersecurity, Cryptography & Digital Trust": 84,
+    "Behavioural Psychology & Cognitive Science": 215
+  },
+  "outputs": {
+    "unified_recommendations_jsonl": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m4_v2\\unified_recommendations.jsonl",
+    "case_study_review_csv": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m4_v2\\m4_v2_case_study_review_sheet.csv",
+    "summary_json": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\m4_v2\\m4_v2_evaluation_summary.json"
+  }
+}

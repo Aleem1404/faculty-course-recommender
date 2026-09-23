@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-09-21T08:48:47.026822+00:00",
+  "inputs": {
+    "case_studies": "data\\outputs\\m4\\m4_case_studies.jsonl"
+  },
+  "outputs": {
+    "review_sheet_csv": "data\\outputs\\m4\\m4_case_study_review_sheet.csv"
+  },
+  "review_guidance": {
+    "staff_a_relevance": "Allowed values: relevant | partly_relevant | not_relevant",
+    "staff_b_relevance": "Allowed values: relevant | partly_relevant | not_relevant",
+    "complementary_expertise": "Allowed values: clear | partial | not_clear",
+    "explanation_clarity": "Allowed values: clear | partly_clear | unclear",
+    "practical_plausibility": "Allowed values: plausible | partly_plausible | not_plausible",
+    "overall_recommendation_quality": "Allowed values: good | acceptable | weak",
+    "reviewer_comments": "Free-text comments, limitations, justification, or corrections"
+  },
+  "counts": {
+    "case_studies_exported": 21,
+    "selection_groups": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "recommendation_levels": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "shared_foundation": {
+      "no": 9,
+      "yes": 12
+    }
+  }
+}

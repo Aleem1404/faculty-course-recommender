@@ -1,0 +1,172 @@
+{
+  "generated_at_utc": "2026-09-22T02:40:16.308809+00:00",
+  "report_scope": {
+    "title": "M4 Collaboration Recommendation Evaluation Report",
+    "purpose": "This report consolidates technical, structural, coverage, explainability and semantic-foundation evaluation evidence for the M4 collaboration recommendation component.",
+    "evaluation_boundary": "The results validate structural correctness and traceable recommendation evidence. They do not establish domain-level teaching suitability across all subject areas, which requires relevant academic or course-leader judgement."
+  },
+  "source_files": {
+    "topic_profiles_summary": "data\\outputs\\m4\\topic_profiles_summary.json",
+    "topic_quality_filter_summary": "data\\outputs\\m4\\topic_quality_filter_summary.json",
+    "collaboration_candidates_summary": "data\\outputs\\m4\\collaboration_candidates_summary.json",
+    "collaboration_recommendations_summary": "data\\outputs\\m4\\collaboration_recommendations_summary.json",
+    "entity_metadata_summary": "data\\outputs\\m4\\entity_metadata_summary.json",
+    "case_studies_summary": "data\\outputs\\m4\\m4_case_studies_summary.json",
+    "structural_validation_report": "data\\outputs\\m4\\m4_structural_validation_report.json",
+    "semantic_shared_foundation_summary": "data\\outputs\\m4\\semantic_shared_foundation_summary.json"
+  },
+  "parameters": {
+    "topic_normalisation_embedding_model": "all-MiniLM-L6-v2",
+    "topic_normalisation_similarity_threshold": 0.84,
+    "minimum_staff_relevance": 0.1,
+    "maximum_individual_candidates": 20,
+    "minimum_complementarity_gain": 0.05,
+    "maximum_pairs_per_module": 50,
+    "display_minimum_combined_coverage": 0.4,
+    "display_minimum_complementarity_gain": 0.1,
+    "semantic_shared_foundation_threshold": 0.8
+  },
+  "data_and_profile_coverage": {
+    "topic_assignments_processed": 18340,
+    "staff_topic_profiles": 620,
+    "module_topic_profiles": 1679,
+    "average_topics_per_staff": 9.2161,
+    "average_topics_per_module": 7.52,
+    "staff_topics_retained_after_filtering": 5032,
+    "staff_topics_rejected_by_filtering": 682,
+    "module_topics_retained_after_filtering": 12222,
+    "module_topics_rejected_by_filtering": 404,
+    "staff_metadata_coverage_rate": 1.0,
+    "module_metadata_coverage_rate": 1.0
+  },
+  "candidate_generation": {
+    "staff_profiles_loaded": 620,
+    "module_profiles_loaded": 1676,
+    "modules_with_collaboration_candidates": 120,
+    "modules_without_collaboration_candidates": 1556,
+    "pair_candidates_before_limit": 2037,
+    "collaboration_candidates_written": 1635
+  },
+  "recommendation_output": {
+    "recommendations_written": 1635,
+    "recommendation_levels": {
+      "high": 61,
+      "moderate": 1035,
+      "exploratory": 539
+    },
+    "strict_display_recommendations": 5,
+    "case_studies_selected": 21
+  },
+  "structural_validation": {
+    "recommendations_checked": 1635,
+    "modules_with_recommendations": 120,
+    "positive_complementarity_rate": 1.0,
+    "topic_evidence_rate": 1.0,
+    "complete_explanation_rate": 1.0,
+    "modules_with_shared_foundation_rate": 0.566667,
+    "record_level_failure_count": 0,
+    "display_policy_compliant": true,
+    "display_policy_failure_count": 0,
+    "total_failure_rows": 0,
+    "failure_counts": {}
+  },
+  "numeric_results": {
+    "collaboration_score": {
+      "count": 1635,
+      "minimum": 0.130532,
+      "maximum": 0.555047,
+      "mean": 0.230121,
+      "median": 0.217623
+    },
+    "combined_module_coverage": {
+      "count": 1635,
+      "minimum": 0.172809,
+      "maximum": 0.797249,
+      "mean": 0.322936,
+      "median": 0.307036
+    },
+    "best_individual_coverage": {
+      "count": 1635,
+      "minimum": 0.102734,
+      "maximum": 0.557126,
+      "mean": 0.199637,
+      "median": 0.18623
+    },
+    "complementarity_gain": {
+      "count": 1635,
+      "minimum": 0.050017,
+      "maximum": 0.240123,
+      "mean": 0.123299,
+      "median": 0.115989
+    },
+    "staff_topic_overlap_ratio": {
+      "count": 1635,
+      "minimum": 0.0,
+      "maximum": 0.333333,
+      "mean": 0.022352,
+      "median": 0.0
+    },
+    "combined_module_coverage_bands": {
+      "0.00-0.20": 5,
+      "0.20-0.40": 1391,
+      "0.40-0.60": 234,
+      "0.60-0.80": 5
+    },
+    "complementarity_gain_bands": {
+      "0.05-0.10": 212,
+      "0.10-0.20": 1354,
+      "0.20-0.30": 69
+    }
+  },
+  "case_study_evaluation_set": {
+    "case_studies_checked": 21,
+    "selection_group_counts": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "recommendation_level_counts": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "duplicate_case_id_count": 0,
+    "duplicate_module_id_count": 5,
+    "duplicate_module_ids": [
+      "module_bc53cf387812deb1",
+      "module_bf6b68f99a540786",
+      "module_e3efd8fb7afe1d60",
+      "module_a9f408cf3ce0fdf9",
+      "module_cd11f4139c160850"
+    ]
+  },
+  "semantic_shared_foundation_analysis": {
+    "available": true,
+    "threshold": 0.8,
+    "recommendations_processed": 1635,
+    "exact_foundation_recommendations": 460,
+    "semantic_only_foundation_recommendations": 22,
+    "no_foundation_recommendations": 1153,
+    "top_ranked_modules": 120,
+    "exact_only_foundation_rate": 0.4,
+    "exact_plus_semantic_foundation_rate": 0.4,
+    "additional_modules_supported_by_semantic_evidence": 0,
+    "interpretation": "Semantic shared-foundation analysis is supplementary. It adds explainable evidence but does not alter the original M4 collaboration score, rank, topic coverage or complementarity-gain calculation."
+  },
+  "key_findings": [
+    "M4 produced 1,635 collaboration recommendations across 120 modules.",
+    "All retained recommendations had positive complementarity gain (100.0%) and traceable topic evidence (100.0%).",
+    "All recommendations contained complete readable explanations (100.0%).",
+    "The mean combined module coverage was 0.323, while mean best individual coverage was 0.200.",
+    "The mean complementarity gain was 0.123.",
+    "Structural validation recorded 0 record-level failures and the display policy was compliant.",
+    "At semantic threshold 0.80, 22 recommendations gained semantic-only shared-foundation evidence."
+  ],
+  "limitations": [
+    "The recommendations are based on publicly available course and staff-profile information, which may be incomplete or outdated.",
+    "Topic extraction and canonicalisation may retain awkward, overly broad or imperfectly ordered phrases.",
+    "The framework does not include staff availability, workload, timetabling, contractual responsibilities, teaching preferences or institutional allocation rules.",
+    "Structural validation confirms internal consistency and explanation traceability, not domain-level teaching suitability.",
+    "Domain-level assessment should be performed by module leaders, subject specialists or academic managers in future work."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "model": "field_weighted_semantic",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "cpu",
+  "input_staff": 634,
+  "fitted_staff": 624,
+  "excluded_staff": 10,
+  "input_modules": 1700,
+  "fitted_modules": 1700,
+  "excluded_modules": 0,
+  "embedding_dimension": 384,
+  "chunk_counts": {
+    "modules": 1721,
+    "core": 1945,
+    "publication_titles": 499,
+    "publication_abstracts": 2447,
+    "publication_topics": 493,
+    "publication_keywords": 493
+  },
+  "field_weights": {
+    "core": 0.35,
+    "publication_titles": 0.15,
+    "publication_abstracts": 0.25,
+    "publication_topics": 0.15,
+    "publication_keywords": 0.1
+  },
+  "top_k": 5,
+  "output_module_results": 1700,
+  "output_recommendations": 8500,
+  "zero_score_modules": 0,
+  "mean_recommendation_score": 0.37838,
+  "maximum_recommendation_score": 0.636065,
+  "elapsed_seconds": 381.08,
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\semantic\\semantic_module_recommendations.jsonl",
+  "embedding_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\cache\\embeddings\\semantic\\semantic_embeddings.npz",
+  "index_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\cache\\embeddings\\semantic\\semantic_embedding_index.json"
+}

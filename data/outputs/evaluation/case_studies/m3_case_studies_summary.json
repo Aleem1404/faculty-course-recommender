@@ -1,0 +1,13 @@
+{
+  "selected_case_count": 40,
+  "selected_case_studies": 40,
+  "case_type_counts": {
+    "changed_top_rank": 15,
+    "stable_but_explained": 10,
+    "strong_graph_evidence": 15
+  },
+  "module_comparisons_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\m2_vs_m3\\m2_h_vs_m3_kg_module_comparisons.json",
+  "m3_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_recommendations.jsonl",
+  "json_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\case_studies\\m3_case_studies.json",
+  "csv_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\evaluation\\case_studies\\m3_case_studies.csv"
+}

@@ -1,0 +1,39 @@
+{
+  "cases_evaluated": 20,
+  "cohens_kappa_unweighted": {
+    "kappa": 0.444444,
+    "observed_agreement": 0.7,
+    "expected_agreement": 0.46,
+    "interpretation": "Moderate Agreement",
+    "weights": "unweighted",
+    "sample_size": 20,
+    "category_count": 2
+  },
+  "cohens_kappa_linear": {
+    "kappa": 0.444444,
+    "observed_agreement": 0.7,
+    "expected_agreement": 0.46,
+    "interpretation": "Moderate Agreement",
+    "weights": "linear",
+    "sample_size": 20,
+    "category_count": 2
+  },
+  "cohens_kappa_quadratic": {
+    "kappa": 0.444444,
+    "observed_agreement": 0.7,
+    "expected_agreement": 0.46,
+    "interpretation": "Moderate Agreement",
+    "weights": "quadratic",
+    "sample_size": 20,
+    "category_count": 2
+  },
+  "fleiss_kappa": {
+    "kappa": 0.393939,
+    "observed_agreement": 0.7,
+    "expected_agreement": 0.505,
+    "interpretation": "Fair Agreement",
+    "subjects": 20,
+    "categories": 3,
+    "raters_per_subject": 2
+  }
+}

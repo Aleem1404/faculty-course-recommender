@@ -1,0 +1,818 @@
+[
+    {
+        "module_id":  "module_019c8f47c4fa6e7f",
+        "module_code":  "",
+        "module_title":  "Electronics and Mathematics",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  22,
+                            "eligible_internal_staff_count":  22,
+                            "fitted_internal_staff_count":  20,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  1
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  1,
+                                                        "low_total_score":  14
+                                                    },
+                             "passed_count":  1,
+                             "failed_count":  14
+                         }
+    },
+    {
+        "module_id":  "module_1e6c81c5acea7919",
+        "module_code":  "ME0006",
+        "module_title":  "Mathematical Methods",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  36,
+                            "eligible_internal_staff_count":  36,
+                            "fitted_internal_staff_count":  34,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  1
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  1,
+                                                        "low_total_score":  14
+                                                    },
+                             "passed_count":  1,
+                             "failed_count":  14
+                         }
+    },
+    {
+        "module_id":  "module_2997d46d0e826070",
+        "module_code":  "MS1701",
+        "module_title":  "Introduction to Medical Sciences 1",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_2b020af22753695c",
+        "module_code":  "",
+        "module_title":  "Dissertation",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  36,
+                            "eligible_internal_staff_count":  36,
+                            "fitted_internal_staff_count":  34,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  3
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  3,
+                                                        "low_total_score":  12
+                                                    },
+                             "passed_count":  3,
+                             "failed_count":  12
+                         }
+    },
+    {
+        "module_id":  "module_2cb129ac62087818",
+        "module_code":  "MS1702",
+        "module_title":  "Psychology, Sociology and Lifestyle Medicine",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_2efb7cf8fe2d3485",
+        "module_code":  "0",
+        "module_title":  "Professionalism, Ethics \u0026 and Law",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_3fe2b0d50a28e2a0",
+        "module_code":  "EC5618",
+        "module_title":  "Placement",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  37,
+                            "eligible_internal_staff_count":  37,
+                            "fitted_internal_staff_count":  37,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  2
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  2,
+                                                        "low_total_score":  13
+                                                    },
+                             "passed_count":  2,
+                             "failed_count":  13
+                         }
+    },
+    {
+        "module_id":  "module_46856a70ea9f1d28",
+        "module_code":  "MA5640",
+        "module_title":  "MA5640 - Research Methods and Case Studies",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  25,
+                            "eligible_internal_staff_count":  25,
+                            "fitted_internal_staff_count":  24,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  3
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  3,
+                                                        "low_total_score":  12
+                                                    },
+                             "passed_count":  3,
+                             "failed_count":  12
+                         }
+    },
+    {
+        "module_id":  "module_4ac61ef7714e591d",
+        "module_code":  "MS1708",
+        "module_title":  "Limbs, Joints and Movement",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_4d84458e86fb8db9",
+        "module_code":  "GY200F",
+        "module_title":  "GY200F Dynamic Earth (field-based)",
+        "decision_status":  "all_internal_candidates_failed_gate",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  64,
+                            "eligible_internal_staff_count":  64,
+                            "fitted_internal_staff_count":  64,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "low_total_score":  15
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  15
+                         }
+    },
+    {
+        "module_id":  "module_4f858b5a4b254ee4",
+        "module_code":  "",
+        "module_title":  "Algebra B",
+        "decision_status":  "all_internal_candidates_failed_gate",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  62,
+                            "eligible_internal_staff_count":  62,
+                            "fitted_internal_staff_count":  61,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "low_total_score":  15
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  15
+                         }
+    },
+    {
+        "module_id":  "module_57ef4667081b08d8",
+        "module_code":  "GD1604",
+        "module_title":  "GD1604 - Game Development 1A: Fundamentals of Prototyping",
+        "decision_status":  "all_internal_candidates_failed_gate",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  64,
+                            "eligible_internal_staff_count":  64,
+                            "fitted_internal_staff_count":  64,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "low_total_score":  15
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  15
+                         }
+    },
+    {
+        "module_id":  "module_5f2a28e3d405930a",
+        "module_code":  "0",
+        "module_title":  "Nutrition, Digestion and Absorption",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_6c3960fe910c65d3",
+        "module_code":  "MS1703",
+        "module_title":  "Health Systems, Technologies and Population Health",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_6eefd392540efb64",
+        "module_code":  "MU2632",
+        "module_title":  "MU2632 - Sound Engineering Theory",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  39,
+                            "eligible_internal_staff_count":  39,
+                            "fitted_internal_staff_count":  38,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  3
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  3,
+                                                        "low_total_score":  12
+                                                    },
+                             "passed_count":  3,
+                             "failed_count":  12
+                         }
+    },
+    {
+        "module_id":  "module_77e55b3a15ed2188",
+        "module_code":  "MS1704",
+        "module_title":  "Professionalism, Ethics and Law",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_784a3498b1ce81ce",
+        "module_code":  "0",
+        "module_title":  "Health Systems, Technologies and Population Health",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_7b5c97e1c955d813",
+        "module_code":  "MS1706",
+        "module_title":  "Blood, Circulation and Respiration",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_7c653221056e201c",
+        "module_code":  "PX3628",
+        "module_title":  "PX3628 - Primary Source Workshop",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  64,
+                            "eligible_internal_staff_count":  64,
+                            "fitted_internal_staff_count":  64,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  4
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  4,
+                                                        "low_total_score":  11
+                                                    },
+                             "passed_count":  4,
+                             "failed_count":  11
+                         }
+    },
+    {
+        "module_id":  "module_803506cb0909ff2f",
+        "module_code":  "TB",
+        "module_title":  "Dissertation",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  36,
+                            "eligible_internal_staff_count":  36,
+                            "fitted_internal_staff_count":  34,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  2
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  2,
+                                                        "low_total_score":  13
+                                                    },
+                             "passed_count":  2,
+                             "failed_count":  13
+                         }
+    },
+    {
+        "module_id":  "module_8cfd060256437201",
+        "module_code":  "LX5658",
+        "module_title":  "LX5658 - Banking and Technology Law",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  64,
+                            "eligible_internal_staff_count":  64,
+                            "fitted_internal_staff_count":  64,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  4
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  4,
+                                                        "low_total_score":  11
+                                                    },
+                             "passed_count":  4,
+                             "failed_count":  11
+                         }
+    },
+    {
+        "module_id":  "module_900758439bb9fcbf",
+        "module_code":  "0",
+        "module_title":  "Introduction to Medical Sciences 2",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_9081198672521ecc",
+        "module_code":  "TB",
+        "module_title":  "Dissertation Project",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  36,
+                            "eligible_internal_staff_count":  36,
+                            "fitted_internal_staff_count":  34,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  4
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  4,
+                                                        "low_total_score":  11
+                                                    },
+                             "passed_count":  4,
+                             "failed_count":  11
+                         }
+    },
+    {
+        "module_id":  "module_95af159efcc8da5e",
+        "module_code":  "CS0001",
+        "module_title":  "Introduction to Computing",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  25,
+                            "eligible_internal_staff_count":  25,
+                            "fitted_internal_staff_count":  24,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  4
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  4,
+                                                        "low_total_score":  11
+                                                    },
+                             "passed_count":  4,
+                             "failed_count":  11
+                         }
+    },
+    {
+        "module_id":  "module_af8ed9599cebbe6f",
+        "module_code":  "MS1705",
+        "module_title":  "Clinical Practice and Community Care",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_afd1265eb4466d23",
+        "module_code":  "0",
+        "module_title":  "Reproduction, Growth \u0026 Ageing",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_b6e0e4ab873256e1",
+        "module_code":  "GDBBBB",
+        "module_title":  "GDBBBB - Game Design Project 1",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  64,
+                            "eligible_internal_staff_count":  64,
+                            "fitted_internal_staff_count":  64,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  4
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  4,
+                                                        "low_total_score":  11
+                                                    },
+                             "passed_count":  4,
+                             "failed_count":  11
+                         }
+    },
+    {
+        "module_id":  "module_b9ec71ca37d1fe77",
+        "module_code":  "0",
+        "module_title":  "Clinical Practice and Community Care",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_bb3013c314eb2b19",
+        "module_code":  "0",
+        "module_title":  "Student Selected Component",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_bc93f3e3518cdec7",
+        "module_code":  "MU2635",
+        "module_title":  "MU2635 - Performance 2",
+        "decision_status":  "all_internal_candidates_failed_gate",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  39,
+                            "eligible_internal_staff_count":  39,
+                            "fitted_internal_staff_count":  38,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "low_total_score":  15
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  15
+                         }
+    },
+    {
+        "module_id":  "module_c555a14e9c3f09fb",
+        "module_code":  "0",
+        "module_title":  "Psychology, Sociology and Lifestyle Medicine",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_cd229f51ade9f1f9",
+        "module_code":  "MA1631",
+        "module_title":  "MA1631 - Linear Algebra",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  25,
+                            "eligible_internal_staff_count":  25,
+                            "fitted_internal_staff_count":  24,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  4
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  4,
+                                                        "low_total_score":  11
+                                                    },
+                             "passed_count":  4,
+                             "failed_count":  11
+                         }
+    },
+    {
+        "module_id":  "module_d09730d88b73fdae",
+        "module_code":  "MS1707",
+        "module_title":  "Hormones, Regulation and Excretion",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_d75d9fb30e1bde0c",
+        "module_code":  "0",
+        "module_title":  "Neuroscience, Special Senses \u0026 Behaviour",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_e58bc13fcf23b816",
+        "module_code":  "0",
+        "module_title":  "Pharmacology",
+        "decision_status":  "no_hierarchy_internal_staff",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  0,
+                            "eligible_internal_staff_count":  0,
+                            "fitted_internal_staff_count":  0,
+                            "ungated_candidate_count":  0,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  0
+                         }
+    },
+    {
+        "module_id":  "module_e6d54e45aa23a084",
+        "module_code":  "",
+        "module_title":  "Algebra A",
+        "decision_status":  "all_internal_candidates_failed_gate",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  62,
+                            "eligible_internal_staff_count":  62,
+                            "fitted_internal_staff_count":  61,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "low_total_score":  15
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  15
+                         }
+    },
+    {
+        "module_id":  "module_e8eb509cc5253f94",
+        "module_code":  "GD2608",
+        "module_title":  "GD2608 - Games Development 2: Methodologies and Practices",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  64,
+                            "eligible_internal_staff_count":  64,
+                            "fitted_internal_staff_count":  64,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  3
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  3,
+                                                        "low_total_score":  12
+                                                    },
+                             "passed_count":  3,
+                             "failed_count":  12
+                         }
+    },
+    {
+        "module_id":  "module_ede0277e5e32dd4f",
+        "module_code":  "",
+        "module_title":  "Calculus",
+        "decision_status":  "all_internal_candidates_failed_gate",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  37,
+                            "eligible_internal_staff_count":  37,
+                            "fitted_internal_staff_count":  37,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  0
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "low_total_score":  15
+                                                    },
+                             "passed_count":  0,
+                             "failed_count":  15
+                         }
+    },
+    {
+        "module_id":  "module_f335671f5423d6f8",
+        "module_code":  "FM26123D",
+        "module_title":  "3D Modelling for Games",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  39,
+                            "eligible_internal_staff_count":  39,
+                            "fitted_internal_staff_count":  38,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  3
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  3,
+                                                        "low_total_score":  12
+                                                    },
+                             "passed_count":  3,
+                             "failed_count":  12
+                         }
+    },
+    {
+        "module_id":  "module_f5877c4d53eea55c",
+        "module_code":  "MA3611",
+        "module_title":  "MA3611 - Final Year Project",
+        "decision_status":  "limited_hierarchy_internal_pool",
+        "diagnostics":  {
+                            "raw_internal_staff_count":  25,
+                            "eligible_internal_staff_count":  25,
+                            "fitted_internal_staff_count":  24,
+                            "ungated_candidate_count":  15,
+                            "returned_candidate_count":  3
+                        },
+        "gate_summary":  {
+                             "gate_reason_counts":  {
+                                                        "passed":  3,
+                                                        "low_total_score":  12
+                                                    },
+                             "passed_count":  3,
+                             "failed_count":  12
+                         }
+    }
+]

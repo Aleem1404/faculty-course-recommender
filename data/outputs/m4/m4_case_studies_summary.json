@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-09-21T08:48:40.113886+00:00",
+  "selection_policy": {
+    "display_rule": "Top-ranked high-level recommendation per module with sufficient combined coverage and complementarity gain.",
+    "minimum_display_combined_coverage": 0.4,
+    "minimum_display_complementarity_gain": 0.1,
+    "requested_case_studies": {
+      "high": 10,
+      "moderate": 10,
+      "exploratory": 5
+    }
+  },
+  "counts": {
+    "recommendations_read": 1635,
+    "recommendations_by_level": {
+      "exploratory": 539,
+      "high": 61,
+      "moderate": 1035
+    },
+    "display_recommendations_written": 5,
+    "display_recommendations_by_level": {
+      "high": 5
+    },
+    "case_studies_written": 21,
+    "case_studies_by_level": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "case_studies_by_selection_group": {
+      "exploratory": 5,
+      "high": 6,
+      "moderate": 10
+    },
+    "case_studies_by_foundation_type": {
+      "with_shared_foundation": 12,
+      "without_shared_foundation": 9
+    }
+  }
+}

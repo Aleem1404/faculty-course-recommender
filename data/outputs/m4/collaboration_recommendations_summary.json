@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-09-21T08:07:17.439921+00:00",
+  "inputs": {
+    "collaboration_candidates": "data\\outputs\\m4\\collaboration_candidates.jsonl"
+  },
+  "outputs": {
+    "collaboration_recommendations": "data\\outputs\\m4\\collaboration_recommendations.jsonl"
+  },
+  "counts": {
+    "recommendations_written": 1635,
+    "recommendation_levels": {
+      "high": 61,
+      "moderate": 1035,
+      "exploratory": 539
+    }
+  }
+}

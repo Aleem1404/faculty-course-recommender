@@ -1,0 +1,20 @@
+{
+  "module_results": 1575,
+  "status_counts": {
+    "hierarchy_internal_ranked": 1540,
+    "limited_hierarchy_internal_pool": 13,
+    "no_hierarchy_internal_staff": 17,
+    "all_internal_candidates_failed_gate": 5
+  },
+  "total_recommendations": 7739,
+  "modules_with_graph_overlap": 346,
+  "candidates_with_shared_topics": 905,
+  "model": "M3-KG",
+  "base_model": "M2-H",
+  "semantic_weight": 0.8,
+  "graph_weight": 0.2,
+  "m2_h_results_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m2_hierarchy_primary_filtered\\m2_hierarchy_primary_taught_modules.jsonl",
+  "module_topics_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\module_topics.jsonl",
+  "staff_topics_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\processed\\graph\\staff_topics.jsonl",
+  "recommendations_output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\m3_kg\\m3_kg_recommendations.jsonl"
+}

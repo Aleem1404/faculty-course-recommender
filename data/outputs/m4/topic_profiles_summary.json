@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-09-21T07:40:15.931963+00:00",
+  "input": {
+    "topic_assignments": "data\\outputs\\m4\\topic_assignments.jsonl"
+  },
+  "counts": {
+    "assignment_records_read": 18340,
+    "staff_assignments_used": 5714,
+    "module_assignments_used": 12626,
+    "unknown_entity_type_skipped": 0,
+    "incomplete_assignment_skipped": 0,
+    "staff_profiles": 620,
+    "module_profiles": 1679,
+    "staff_topics_total": 5714,
+    "module_topics_total": 12626,
+    "average_topics_per_staff": 9.2161,
+    "average_topics_per_module": 7.52
+  },
+  "outputs": {
+    "staff_topic_profiles": "data\\outputs\\m4\\staff_topic_profiles.jsonl",
+    "module_topic_profiles": "data\\outputs\\m4\\module_topic_profiles.jsonl"
+  }
+}

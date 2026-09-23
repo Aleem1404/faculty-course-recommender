@@ -1,0 +1,22 @@
+{
+  "model": "field_weighted_enriched_tfidf",
+  "input_staff": 634,
+  "fitted_staff": 624,
+  "excluded_staff": 10,
+  "input_modules": 1700,
+  "fitted_modules": 1700,
+  "excluded_modules": 0,
+  "output_module_results": 1700,
+  "output_recommendations": 8500,
+  "mean_recommendation_score": 0.065301,
+  "maximum_recommendation_score": 0.286676,
+  "field_weights": {
+    "core": 0.35,
+    "publication_titles": 0.15,
+    "publication_abstracts": 0.25,
+    "publication_topics": 0.15,
+    "publication_keywords": 0.1
+  },
+  "output_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\outputs\\recommendations\\enriched_tfidf\\enriched_tfidf_recommendations.jsonl",
+  "cache_path": "F:\\Dissertation-new\\faculty-course-recommender\\data\\cache\\embeddings\\enriched_tfidf.joblib"
+}
