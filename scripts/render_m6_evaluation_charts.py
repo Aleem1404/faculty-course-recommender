@@ -142,6 +142,106 @@ def render_with_plotly(benchmark_data: dict, charts_dir: Path) -> None:
     print(f"Rendered: {chart3_path}")
 
 
+def render_with_matplotlib(benchmark_data: dict, charts_dir: Path) -> None:
+    models_summary = benchmark_data["model_performance_summary"]
+    model_labels = ["M0\n(TF-IDF)", "M1\n(Enr. TF-IDF)", "M2\n(Semantic)", "M3\n(KG)", "M4-v2\n(Dual)", "M5\n(Balanced)"]
+    model_keys = list(models_summary.keys())
+
+    ndcg_vals = [models_summary[k]["macro_metrics"]["mean_ndcg_at_5"] for k in model_keys]
+    ndcg_ci_low = [models_summary[k]["confidence_intervals_95"]["ndcg_at_5"]["ci_lower"] for k in model_keys]
+    ndcg_ci_high = [models_summary[k]["confidence_intervals_95"]["ndcg_at_5"]["ci_upper"] for k in model_keys]
+    p1_vals = [models_summary[k]["macro_metrics"]["mean_precision_at_1_strict"] for k in model_keys]
+    p5_vals = [models_summary[k]["macro_metrics"]["mean_precision_at_5_strict"] for k in model_keys]
+    mrr_vals = [models_summary[k]["macro_metrics"]["mean_mrr_strict"] for k in model_keys]
+    map_vals = [models_summary[k]["macro_metrics"]["mean_map_at_5_strict"] for k in model_keys]
+
+    x = np.arange(len(model_labels))
+    width = 0.16
+
+    # Chart 1: Grouped IR Metrics Progression
+    fig, ax = plt.subplots(figsize=(11, 6), dpi=200)
+    ax.bar(x - 2*width, ndcg_vals, width, label="NDCG@5", color="#1E3A8A")
+    ax.bar(x - width, p1_vals, width, label="Precision@1 (Strict)", color="#3B82F6")
+    ax.bar(x, p5_vals, width, label="Precision@5 (Strict)", color="#60A5FA")
+    ax.bar(x + width, mrr_vals, width, label="MRR (Strict)", color="#10B981")
+    ax.bar(x + 2*width, map_vals, width, label="MAP@5 (Strict)", color="#F59E0B")
+
+    ax.set_title("M6 Information Retrieval Benchmark: Ablation Progression (M0 → M5)", fontsize=14, fontweight="bold", pad=15)
+    ax.set_xlabel("Model Architecture Tier", fontweight="bold", labelpad=10)
+    ax.set_ylabel("Metric Score [0.0 - 1.0]", fontweight="bold")
+    ax.set_xticks(x)
+    ax.set_xticklabels(model_labels, fontsize=10)
+    ax.set_ylim(0, 1.0)
+    ax.grid(axis="y", linestyle="--", alpha=0.5)
+    ax.legend(loc="upper right", frameon=True)
+    plt.tight_layout()
+    chart1_path = charts_dir / "ir_metrics_progression_m0_to_m5.png"
+    plt.savefig(chart1_path)
+    plt.close()
+    print(f"Rendered (Matplotlib): {chart1_path}")
+
+    # Chart 2: NDCG@5 with 95% Confidence Intervals
+    fig, ax = plt.subplots(figsize=(9, 5), dpi=200)
+    err_low = np.array(ndcg_vals) - np.array(ndcg_ci_low)
+    err_high = np.array(ndcg_ci_high) - np.array(ndcg_vals)
+    yerr = [err_low, err_high]
+
+    ax.errorbar(x, ndcg_vals, yerr=yerr, fmt="-o", color="#2563EB", ecolor="#EF4444", elinewidth=2, capsize=5, capthick=1.5, label="NDCG@5 (95% Bootstrap CI)")
+    for i, v in enumerate(ndcg_vals):
+        ax.annotate(f"{v:.3f}", (x[i], v + 0.03), ha="center", fontsize=9, fontweight="bold")
+
+    ax.set_title("Empirical Ranking Quality: NDCG@5 with 95% Non-Parametric Bootstrap CIs (B=2000)", fontsize=12, fontweight="bold", pad=15)
+    ax.set_xlabel("Model Tier", fontweight="bold")
+    ax.set_ylabel("Mean NDCG@5 Score", fontweight="bold")
+    ax.set_xticks(x)
+    ax.set_xticklabels(model_labels, fontsize=10)
+    ax.set_ylim(0, max(ndcg_ci_high) + 0.1 if max(ndcg_ci_high) > 0 else 1.0)
+    ax.grid(True, linestyle="--", alpha=0.5)
+    ax.legend(loc="upper left")
+    plt.tight_layout()
+    chart2_path = charts_dir / "ndcg_confidence_intervals.png"
+    plt.savefig(chart2_path)
+    plt.close()
+    print(f"Rendered (Matplotlib): {chart2_path}")
+
+    # Chart 3: Radar Chart
+    categories = ["NDCG@5", "P@1", "P@5", "MRR", "MAP@5"]
+    num_vars = len(categories)
+    angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
+    angles += angles[:1]
+
+    fig, ax = plt.subplots(figsize=(7, 7), subplot_kw=dict(polar=True), dpi=200)
+    colors = ["#94A3B8", "#64748B", "#2563EB", "#8B5CF6", "#EC4899", "#10B981"]
+
+    for idx, (m_id, label) in enumerate(zip(model_keys, model_labels)):
+        m = models_summary[m_id]["macro_metrics"]
+        values = [
+            m["mean_ndcg_at_5"],
+            m["mean_precision_at_1_strict"],
+            m["mean_precision_at_5_strict"],
+            m["mean_mrr_strict"],
+            m["mean_map_at_5_strict"],
+        ]
+        values += values[:1]
+        clean_label = label.replace("\n", " ")
+        ax.plot(angles, values, color=colors[idx], linewidth=1.5, label=clean_label)
+        if m_id in ("M2_Semantic", "M5_LoadBalanced"):
+            ax.fill(angles, values, color=colors[idx], alpha=0.15)
+
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels(categories, fontsize=10, fontweight="bold")
+    ax.set_ylim(0, 1.0)
+    ax.set_title("Multi-Dimensional IR Performance Radar (M0 → M5)", fontsize=13, fontweight="bold", pad=20)
+    ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1), fontsize=8)
+    plt.tight_layout()
+    chart3_path = charts_dir / "radar_ablation_comparison.png"
+    plt.savefig(chart3_path)
+    plt.close()
+    print(f"Rendered (Matplotlib): {chart3_path}")
+
+
 def main() -> None:
     project_root = Path(__file__).resolve().parents[1]
     benchmark_json_path = (
