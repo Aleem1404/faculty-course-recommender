@@ -26,10 +26,10 @@ htmlcov/
 logs/
 *.log
 
-# Raw and generated data
-data/raw/
-data/interim/
+# Raw data is tracked so Google Colab can execute all pipelines from scratch
+# Generated intermediate data is ignored
 data/processed/
+data/interim/
 data/cache/
 data/outputs/
 
